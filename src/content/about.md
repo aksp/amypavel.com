@@ -2,7 +2,7 @@ I am an Assistant Professor in the Department of Computer Science at The Univers
 
 Previously, I was a postdoctoral fellow at [Carnegie Mellon University][cmu] (supervised by [Jeff Bigham][jeff]) and a Research Scientist at [Apple][apple]. I received my PhD from the department of [Electrical Engineering and Computer Science][eecs] at [UC Berkeley][berkeley], advised by professors [Björn Hartmann][bjoern] at UC Berkeley and [Maneesh Agrawala][maneesh] at Stanford. My PhD work was supported by an [NDSEG fellowship][NDSEGgeneral], a departmental Excellence Award, and a Sandisk Fellowship.
 
-I regularly teach a Computer Science class covers the design and development of user interfaces (Introduction to Human-Computer Interaction). Prior versions of this class include [CS160 at UC Berkeley in Summer 2018][coursewebsite] and [CS378 at UT Austin in Fall 2021][coursewebsiteut].
+I regularly teach a Computer Science class covers the design and development of user interfaces (Introduction to Human-Computer Interaction). Prior versions of this class include [CS160 at UC Berkeley in Summer 2018][coursewebsite] and [CS378 at UT Austin in Spring 2022][coursewebsiteut].
 
 [berkeley]: http://www.berkeley.edu
 [maneesh]: http://vis.berkeley.edu/~maneesh/

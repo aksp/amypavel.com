@@ -54,15 +54,48 @@
     ],
     "publications": [
         {
+            "name": "AVscript: Accessible Video Editing with Audio-Visual Scripts",
+            "releaseDate": "04-04-2023",
+            "authors": ["mhuh", "syang", "ypeng","xchen","ykim","apavel"],
+            "publisher": "CHI 2023",
+            "tags": ["paper"],
+            "link": "https://minahuh.com/AVscript/",
+            "image": "avscript",
+            "imageAlt": "A thumbnail of the audio visual script that includes a transcript of the video coupled with detected errors in the video footage (e.g., camera blur).",
+            "content": "[PDF](papers/avscript.pdf) | [Project Page](https://minahuh.com/AVscript/)"
+        },
+        {
+            "name": "Exploratory Thematic Analysis of Crowdsourced Photosensitivity Warnings",
+            "releaseDate": "04-02-2023",
+            "authors": ["lsouth", "cyildirim", "apavel", "mborkin"],
+            "publisher": "CHI 2023 (Extended Abstract)",
+            "tags": ["poster"],
+            "image": "photosensitive",
+            "imageAlt": "A thumbnail screenshot of a forum people use to report flashing lights.",
+            "link": "https://dl.acm.org/doi/10.1145/3544549.3585649",
+            "content": "[PDF](papers/photosensitive.pdf)"
+        },
+        {
+            "name": "SlideSpecs: Automatic and Interactive Presentation Feedback Collation",
+            "releaseDate": "04-01-2023",
+            "authors": ["jwarner", "apavel", "tnguyen","magrawala","bhartmann"],
+            "publisher": "IUI 2023",
+            "tags": ["paper"],
+            "link": "https://jeremywrnr.com/SlideSpecs/",
+            "image": "slidespecs",
+            "imageAlt": "A thumbnail of SlideSpecs featuring numbered slides and audience feedback on the slides.",
+            "content": "[PDF](papers/slidespecs.pdf) | [Project Page](https://jeremywrnr.com/SlideSpecs/) | [Demo](https://slidespecs.berkeley.edu/guide) | [Code](https://github.com/BerkeleyHCI/SlideSpecs)"
+        },
+        {
             "name": "Diffscriber: Describing Visual Design Changes to Support Mixed-Ability Collaborative Presentation Authoring",
             "releaseDate": "10-31-2022",
             "authors": ["ypeng", "jwu", "jbigham","apavel"],
             "publisher": "UIST 2022",
             "tags": ["paper"],
-            "link": "",
+            "link": "https://dl.acm.org/doi/abs/10.1145/3526113.3545637",
             "image": "diffscriber",
-            "imageAlt": "",
-            "content": "[PDF](papers/diffscriber.pdf)"
+            "imageAlt": "A thumbnail of Diffscriber's interface for reviewing slide changes.",
+            "content": "[PDF](papers/diffscriber.pdf) | [Video Preview](https://www.youtube.com/watch?v=zzgvQLxm5-U)"
         },
         {
             "name": "CrossA11y: Identifying Video Accessibility Issues via Cross-modal Grounding",
@@ -70,10 +103,10 @@
             "authors": ["xliu", "rwang", "dli","xchen","apavel"],
             "publisher": "UIST 2022",
             "tags": ["paper", "bestpaper"],
-            "link": "",
+            "link": "https://liubruce.me/CrossA11y/",
             "image": "crossa11y",
-            "imageAlt": "",
-            "content": "[PDF](papers/crossa11y.pdf)"
+            "imageAlt": "A thumbnail depicting CrossA11y's computational approach that compares video frames with the corresponding audio.",
+            "content": "[PDF](papers/crossa11y.pdf) | [Project Page](https://liubruce.me/CrossA11y/) | [Video](https://www.youtube.com/watch?v=HDqjnHOZ7J8)"
         },
         {
             "name": "Tech Help Desk: Support for Local Entrepreneurs Addressing the Long Tail of Computing Challenges",
@@ -83,7 +116,7 @@
             "tags": ["paper"],
             "link": "https://dl.acm.org/doi/10.1145/3491102.3517708",
             "image": "techhelpdesk",
-            "imageAlt": "",
+            "imageAlt": "Three images of Tech Help Desk including the Tech Help Desk classroom, the Tech Help Desk sign on the classroom door and the building entrance.",
             "content": "[PDF](papers/techhelpdesk.pdf)"
         },
         {
@@ -94,7 +127,7 @@
             "tags": ["paper"],
             "link": "https://dl.acm.org/doi/10.1145/3493612.3520449",
             "image": "towardsalttext",
-            "imageAlt": "",
+            "imageAlt": "A thumbnail image of a chart of alt text coverage that appears in the paper.",
             "content": "[PDF](papers/towardsalttext.pdf)"
         },
         {
@@ -105,7 +138,7 @@
             "tags": ["paper"],
             "link": "https://dl.acm.org/doi/10.1145/3485279.3485289",
             "image": "tutoriallens",
-            "imageAlt": "",
+            "imageAlt": "A thumnbail image of the tutorial lens interface.",
             "content": "[PDF](papers/tutoriallens.pdf)"
         },
         {
@@ -116,7 +149,7 @@
             "tags": ["paper"],
             "link": "https://dl.acm.org/doi/10.1145/3441852.3471234",
             "image": "slidecho",
-            "imageAlt": "",
+            "imageAlt": "A thumnail image of SlideCho's interface for surfacing information in slide videos.",
             "content": "[PDF](papers/slidecho.pdf)"
         },
         {
@@ -151,6 +184,17 @@
             "image": "sayitall",
             "imageAlt": "A slide from a lecture where most text is in black but some of the text has been colored green to represent that it has been spoken by the presenter. There is an image with a squiggly circle brush on the slide, and it has a green border to indicate the presenter described the image.",
             "content": "[PDF][1] | [30s Video][2] | [Presentation (5 min)][3] | [Presentation Transcript][4]\n\n[1]: papers/sayitall.pdf\n[2]: https://www.youtube.com/watch?v=tBaSqMYP4yI\n[3]: https://www.youtube.com/watch?v=AvXBiZ3C3yY\n[4]: https://sayitall.github.io/slides/"
+        },
+        {
+            "name": "Controlling Dialogue Generation with Semantic Exemplars.",
+            "releaseDate": "06-20-2021",
+            "authors": ["pgupta", "jbigham", "ytsvetkov", "apavel"],
+            "publisher": "NAACL 2021",
+            "tags": ["paper"],
+            "link": "https://aclanthology.org/2021.naacl-main.240/",
+            "image": "exemplars",
+            "imageAlt": "A thumnail image of a semantic exemplar with three corresponding examples.",
+            "content": "[PDF](papers/exemplars.pdf)"
         },
         {
             "name": "Rescribe: Authoring and Automatically Editing Audio Descriptions.",
@@ -424,13 +468,6 @@
             "imageAlt": "A thumbnail of the Sifter interface for browsing common sets of image editing commands."
         },
         {
-            "name": "Controlling Dialogue Generation with Semantic Exemplars.",
-            "releaseDate": "08-20-2020",
-            "authors": ["pgupta", "jbigham", "ytsvetkov", "apavel"],
-            "publisher": "arXiv:2008.09075",
-            "tags": ["preprint"]
-        },
-        {
             "name": "Extracting Structured Data from Physician-Patient Conversations By Predicting Noteworthy Utterances.",
             "releaseDate": "07-14-2020",
             "authors": ["kkrishna", "apavel", "bschloss", "jbigham", "zlipton"],
@@ -607,6 +644,14 @@
         }
     ],
     "teaching": [
+        {
+            "position": "Instructor",
+            "institution": "UT Austin",
+            "course": "CS 378: Introduction to Human-Computer Interaction",
+            "link": "",
+            "summary": [],
+            "startDate": "Spring 2023"
+        },
         {
             "position": "Instructor",
             "institution": "UT Austin",

@@ -33,6 +33,17 @@ export default function IndexPage({ data }) {
           </div>
           <div className="py-6">
             <p>
+              Assistant Professor 
+              <br />
+              <a href="https://www.utexas.edu">University of Texas at Austin</a>
+              <br />
+              <a href="https://www.cs.utexas.edu/">
+                Computer Science
+              </a>
+            </p>
+          </div>
+          <div className="pb-7">
+            <p>
               Email{" "}
               <a href="mailto:apavel@cs.utexas.edu">apavel@cs.utexas.edu</a>
             </p>
@@ -52,18 +63,22 @@ export default function IndexPage({ data }) {
               </a>
             </p>
             <p>
-              <a href="docs/pavel-cv.pdf">CV</a>
+              Curriculum Vitae{" "}
+              <a href="docs/pavel-cv.pdf">PDF</a>
             </p>
           </div>
+          
           <div className="pb-7">
             <p>
-              <a href="https://www.utexas.edu">University of Texas at Austin</a>
-              <br />
-              <a href="https://www.cs.utexas.edu/">
-                Department of Computer Science
-              </a>
-              <br />
-              <em>Assistant Professor</em>
+              <b>People</b>
+              <br></br>
+              <em>Ph.D. Students:</em> mhuh, ypeng (w/ jbigham)
+              <br></br>
+              <em>Masters, Undergraduates, and RAs:</em> dkillough, tvandaele, jderry, ajiao, skole, cgupta, pvenkatesh
+              <br></br>
+              <em>Recent Collaborators:</em>
+              
+
             </p>
           </div>
           <div>
