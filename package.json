@@ -11,7 +11,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "deploy": "npm run build && s3cmd sync public/ s3://amypavel.com/"
+    "deploy": "npm run build && s3cmd sync public/ s3://amypavel.com/",
+    "cv": ""
   },
   "dependencies": {
     "@heroicons/react": "^2.0.12",
