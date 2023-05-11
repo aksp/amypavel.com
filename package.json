@@ -5,14 +5,14 @@
   "description": "amypavel.com",
   "author": "Amy Pavel, Steve Rubin",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
+    "develop": "npm run cv && gatsby develop",
+    "start": "npm run cv && gatsby develop",
+    "build": "npm run cv && gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "deploy": "npm run build && s3cmd sync public/ s3://amypavel.com/",
-    "cv": ""
+    "cv": "cd cv-latex && ./build.sh && cd ..  && cp cv-latex/dist/cv.pdf static/docs/pavel-cv.pdf"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.12",

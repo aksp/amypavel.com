@@ -1,0 +1,198 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{tabularx, ltxtable}
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage{fontspec}
+
+% Uncomment to stop using Computer Modern
+
+\newfontfamily\myheaderfont{Graphik Compact}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Amy Pavel}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+% \def\footerlink{http://jblevins.org/projects/cv-template/}
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science, human-computer interaction, hci, accessibility},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\myheaderfont\name}
+\thispagestyle{empty}
+
+% change spacing between table columns
+% \setlength{\tabcolsep}{0.9em}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\myheaderfont\bfseries\Large\uppercase}
+\subsectionfont{\myheaderfont\mdseries\itshape\large}
+
+% change the spacing around the section titles
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+      {7ex}% <beforeskip>
+      {2ex}% <afterskip>
+      {\normalfont\Large\bfseries\SS@sectfont}}
+\makeatother
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \myheaderfont \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}[t]{0.45\linewidth}
+  University of Texas at Austin \\
+  Assistant Professor \\
+  Department of Computer Science \\
+  \href{mailto:apavel@cs.utexas.edu}{\tt apavel@cs.utexas.edu} \\
+  \href{https://amypavel.com}{\tt amypavel.com} \\
+  \\
+\end{minipage}
+% \begin{minipage}[t]{0.45\linewidth}
+% \end{minipage}
+
+\section*{Education}
+
+\begin{tabularx}{\textwidth}{Xr}
+    \textbf{UC Berkeley, EECS} & \textbf{Berkeley, CA}  \\
+    PhD in Computer Science &  Awarded 2019 \\
+    Advisors: Björn Hartmann (Berkeley), Maneesh Agrawala (Stanford) \\
+    Additional Committee Members: Eric Paulos, Abigail De Kosnik \\
+    \\
+    \textbf{UC Berkeley, College of Engineering} & \textbf{Berkeley, CA} \\
+    BS in Electrical Engineering and Computer Science & Awarded 2013
+\end{tabularx}
+
+\section*{Research Positions}
+
+\begin{tabularx}{\textwidth}{Xr}
+
+	\textbf{The University of Texas at Austin} -- \textit{Assistant Professor} & \textbf{Austin, TX} \\
+	Department of Computer Science & 2022-Present \\
+	\\
+
+
+	\textbf{Apple Inc}, AI/ML -- \textit{Research Scientist (50\% time)} & \textbf{Cupertino, CA} \\
+	Machine Intelligence Accessibility Group & 2019-2022 \\
+	\\
+
+	\textbf{Carnegie Mellon University}, HCII -- \textit{Postdoctoral Fellow (50\% time)} & \textbf{Pittsburgh, PA} \\
+	Supervised by Professor Jeffrey P. Bigham & 2019-2022 \\
+	\\
+
+	\textbf{UC Berkeley}, Visual Computing Lab -- \textit{Graduate Researcher} & \textbf{Berkeley, CA} \\
+	Advised by Professors Björn Hartmann and Maneesh Agrawala & 2013-2019 \\
+	\\
+
+	\textbf{Adobe}, Creative Technologies Lab -- \textit{Research Intern} & \textbf{Seattle, WA} \\
+	Advised by Principal Scientist Dan Goldman & Summer 2014, Summer 2015 \\
+	\\
+
+	\textbf{UC Berkeley}, BiD Lab, Visual Computing Lab -- \textit{Undergraduate Researcher} & \textbf{Berkeley, CA} \\
+	Advised by Professors Björn Hartmann and Maneesh Agrawala & 2011-2013
+\end{tabularx}
+
+\section*{Peer Reviewed Publications (Papers)}
+
+\emph{ACM UIST} and \emph{ACM CHI} are top conferences for technical HCI work. In Computer Science, the primary student author typically appears first in the author list, and the lead faculty mentor appears last.
+% Application-specific venues include \emph{ACM ASSETS} (accessibility), \emph{IEEE VR} (virtual reality), and \emph{ACM SIGDIAL} (dialogue).
+
+\LTXtable{\textwidth}{cv-tables/publications.tex}
+
+\section*{Lightly Peer Reviewed Publications (Posters, Workshops)}
+\LTXtable{\textwidth}{cv-tables/posters.tex}
+
+\section*{Thesis, Preprints, and Technical Reports}
+\LTXtable{\textwidth}{cv-tables/tech-reports.tex}
+
+\section*{Awards and Grants}
+\LTXtable{\textwidth}{cv-tables/awards.tex}
+
+\section*{Service}
+\LTXtable{\textwidth}{cv-tables/service.tex}
+
+\section*{Teaching}
+\LTXtable{\textwidth}{cv-tables/teaching.tex}
+
+\section*{Mentorship}
+\LTXtable{\textwidth}{cv-tables/mentorship.tex}
+
+\section*{Invited Talks}
+\LTXtable{\textwidth}{cv-tables/talks.tex}
+
+\section*{Selected Press}
+\LTXtable{\textwidth}{cv-tables/press.tex}
+
+\bigskip
+
+% Footer
+% \begin{center}
+%   \begin{footnotesize}
+%     Last updated: \today \\
+%     \href{\footerlink}{\texttt{\footerlink}}
+%   \end{footnotesize}
+% \end{center}
+
+\end{document}
