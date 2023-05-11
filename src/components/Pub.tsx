@@ -5,13 +5,20 @@ import ReactMarkdown from "react-markdown";
 import PubImage from "./PubImage";
 import { BookmarkIcon, TrophyIcon } from "@heroicons/react/20/solid";
 
-export function PeopleIdList({ people }: { people: string[] }) {
-  return <PeopleList people={people.map((id) => PEOPLE.get(id)!)} />
+export function RawPeopleIdList({ peopleIds }: { peopleIds: string[] }) {
+  const people = peopleIds.map((id) => {
+    const person = PEOPLE.get(id);
+    if (!person) {
+      throw new Error(`Unknown person ${id}`);
+    }
+    return person;
+  });
+  return <RawPeopleList people={people} />;
 }
 
-export function PeopleList({ people }: { people: Person[] }) {
+export function RawPeopleList({ people }: { people: Person[] }) {
   return (
-    <p>
+    <>
       {people.map((person, i) => {
         const comma = i === people.length - 1 ? "" : ", ";
         const name =
@@ -29,6 +36,14 @@ export function PeopleList({ people }: { people: Person[] }) {
           </>
         );
       })}
+    </>
+  );
+}
+
+export function PeopleList({ people }: { people: Person[] }) {
+  return (
+    <p>
+      <RawPeopleList people={people} />
     </p>
   );
 }

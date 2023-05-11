@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
-import PubComponent, { PeopleIdList, PeopleList } from "../components/Pub";
+import PubComponent, { RawPeopleIdList, PeopleList } from "../components/Pub";
 import { cv } from "../cv";
 import { PEOPLE } from "../people";
 import WorkComponent from "../components/Work";
@@ -9,7 +9,7 @@ import TeachingComponent from "../components/Teaching";
 import HighlightComponent from "../components/Highlight";
 import parse from "date-fns/parse";
 import ReactMarkdown from "react-markdown";
-import AmyPavelSmall from '../images/amypavel-small.png'
+import AmyPavelSmall from "../images/amypavel-small.png";
 
 function sortByDate<T>(items: T[], key: keyof T): T[] {
   return [...items].sort((a, b) => {
@@ -30,17 +30,19 @@ export default function IndexPage({ data }) {
         <div className="col-span-1 mb-10">
           <div className="w-48 h-52 md:h-auto md:w-auto">
             {/* using img instead of StaticImage to avoid the fade-in */}
-            <img className="w-48 md:h-auto md:w-auto" src={AmyPavelSmall} alt="Amy Pavel headshot"   />
+            <img
+              className="w-48 md:h-auto md:w-auto"
+              src={AmyPavelSmall}
+              alt="Amy Pavel headshot"
+            />
           </div>
           <div className="py-6">
             <p>
-              Assistant Professor 
+              Assistant Professor
               <br />
               <a href="https://www.utexas.edu">University of Texas at Austin</a>
               <br />
-              <a href="https://www.cs.utexas.edu/">
-                Computer Science
-              </a>
+              <a href="https://www.cs.utexas.edu/">Computer Science</a>
             </p>
           </div>
           <div className="pb-7">
@@ -64,22 +66,31 @@ export default function IndexPage({ data }) {
               </a>
             </p>
             <p>
-              Curriculum Vitae{" "}
-              <a href="docs/pavel-cv.pdf">PDF</a>
+              Curriculum Vitae <a href="docs/pavel-cv.pdf">PDF</a>
             </p>
           </div>
-          
+
           <div className="pb-7">
             <p>
               <b>People</b>
               <br></br>
-              <em>Ph.D. Students:</em> <PeopleIdList people={["mhuh", "ypeng"]}/>  (w/ <PeopleIdList people={["jbigham"]}/>)
+              <em>Ph.D. Students:</em>{" "}
+              <RawPeopleIdList peopleIds={["mhuh", "ypeng"]} /> (co-advised with{" "}
+              <RawPeopleIdList peopleIds={["jbigham"]} />)<br></br>
+              <em>Masters, Undergraduates, and RAs:</em>{" "}
+              <RawPeopleIdList
+                peopleIds={[
+                  "dkillough",
+                  "tvandaele",
+                  "jderry",
+                  "ajiao",
+                  "skole",
+                  "cgupta",
+                  "pvenkatesh",
+                ]}
+              />
               <br></br>
-              <em>Masters, Undergraduates, and RAs:</em> dkillough, tvandaele, jderry, ajiao, skole, cgupta, pvenkatesh
-              <br></br>
-              <em>Recent Collaborators:</em>
-              
-
+              {/*<em>Recent Collaborators:</em>*/}
             </p>
           </div>
           <div>
@@ -97,27 +108,27 @@ export default function IndexPage({ data }) {
             dangerouslySetInnerHTML={{ __html: aboutHtml }}
           />
           <hr />
-          <h2 className="text-2xl font-medium pb-7 pt-8">
-            Research Highlights
-          </h2>
-          <div className="container">
-            <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 gap-3">
-              {pubs
-                .filter((pub) => pub.tags.includes("highlight"))
-                .map((pub) => (
-                  <div className="col-span-1 pb-4 sm:pb-0">
-                    <HighlightComponent
-                      title={pub.shortName ?? pub.name}
-                      subtitle={pub.publisher}
-                      imageName={pub.image}
-                      imageAlt={pub.imageAlt}
-                    >
-                      <ReactMarkdown>{pub.content ?? ""}</ReactMarkdown>
-                    </HighlightComponent>
-                  </div>
-                ))}
-            </div>
-          </div>
+          {/*<h2 className="text-2xl font-medium pb-7 pt-8">*/}
+          {/*  Research Highlights*/}
+          {/*</h2>*/}
+          {/*<div className="container">*/}
+          {/*  <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 gap-3">*/}
+          {/*    {pubs*/}
+          {/*      .filter((pub) => pub.tags.includes("highlight"))*/}
+          {/*      .map((pub) => (*/}
+          {/*        <div className="col-span-1 pb-4 sm:pb-0">*/}
+          {/*          <HighlightComponent*/}
+          {/*            title={pub.shortName ?? pub.name}*/}
+          {/*            subtitle={pub.publisher}*/}
+          {/*            imageName={pub.image}*/}
+          {/*            imageAlt={pub.imageAlt}*/}
+          {/*          >*/}
+          {/*            <ReactMarkdown>{pub.content ?? ""}</ReactMarkdown>*/}
+          {/*          </HighlightComponent>*/}
+          {/*        </div>*/}
+          {/*      ))}*/}
+          {/*  </div>*/}
+          {/*</div>*/}
           <h2 className="text-2xl font-medium pb-7 pt-8">Research Summary</h2>
           <div
             className="writing"
