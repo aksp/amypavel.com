@@ -1,8 +1,9 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
-import PubComponent from "../components/Pub";
+import PubComponent, { PeopleIdList, PeopleList } from "../components/Pub";
 import { cv } from "../cv";
+import { PEOPLE } from "../people";
 import WorkComponent from "../components/Work";
 import TeachingComponent from "../components/Teaching";
 import HighlightComponent from "../components/Highlight";
@@ -72,7 +73,7 @@ export default function IndexPage({ data }) {
             <p>
               <b>People</b>
               <br></br>
-              <em>Ph.D. Students:</em> mhuh, ypeng (w/ jbigham)
+              <em>Ph.D. Students:</em> <PeopleIdList people={["mhuh", "ypeng"]}/>  (w/ <PeopleIdList people={["jbigham"]}/>)
               <br></br>
               <em>Masters, Undergraduates, and RAs:</em> dkillough, tvandaele, jderry, ajiao, skole, cgupta, pvenkatesh
               <br></br>

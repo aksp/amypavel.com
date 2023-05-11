@@ -5,7 +5,11 @@ import ReactMarkdown from "react-markdown";
 import PubImage from "./PubImage";
 import { BookmarkIcon, TrophyIcon } from "@heroicons/react/20/solid";
 
-function PeopleList({ people }: { people: Person[] }) {
+export function PeopleIdList({ people }: { people: string[] }) {
+  return <PeopleList people={people.map((id) => PEOPLE.get(id)!)} />
+}
+
+export function PeopleList({ people }: { people: Person[] }) {
   return (
     <p>
       {people.map((person, i) => {
