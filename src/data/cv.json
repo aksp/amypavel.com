@@ -54,6 +54,28 @@
     ],
     "publications": [
         {
+            "name": "GenAssist: Making Image Generation Accessible",
+            "releaseDate": "10-04-2023",
+            "authors": ["mhuh", "ypeng", "apavel"],
+            "publisher": "To Appear at UIST 2024",
+            "tags": ["paper"],
+            "link": "https://minahuh.com/GenAssist/",
+            "image": "genassist",
+            "imageAlt": "A thumbnail depicting four generated image options of a young chef cooking dinner and their descriptions.",
+            "content": "[PDF](papers/genassist.pdf) | [Project Page](https://minahuh.com/GenAssist/)"
+        },
+        {
+            "name": "Exploring Community-Driven Descriptions for Making Livestreams Accessible",
+            "releaseDate": "10-03-2023",
+            "authors": ["dkillough", "apavel"],
+            "publisher": "To Appear at ASSETS 2024",
+            "tags": ["paper"],
+            "link": "",
+            "image": "livestream",
+            "imageAlt": "A thumbnail of a livestream paired with a set of descriptions with timestamps.",
+            "content": "PDF Coming Soon"
+        },
+        {
             "name": "AVscript: Accessible Video Editing with Audio-Visual Scripts",
             "releaseDate": "04-04-2023",
             "authors": ["mhuh", "syang", "ypeng","xchen","ykim","apavel"],
