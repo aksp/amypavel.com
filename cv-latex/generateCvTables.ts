@@ -120,12 +120,18 @@ function workItems(resume: CV): TwoColumnItem[] {
 function publicationItems(resume: CV, filterTags: string[]): TwoColumnItem[] {
   return resume.publications
     .filter(({ tags }) => tags.some((tag) => filterTags.some((t) => t === tag)))
-    .map(({ authors, summary, name, publisher, releaseDate }) => {
+    .map(({ authors, summary, name, publisher, releaseDate, tags }) => {
       let leftMatter = `${authorsString(authors)}. \`\`${name}'' ${italic(
         publisher
       )}`;
       if (summary) {
         leftMatter += ` ${summary}`;
+      }
+      if (tags.includes("bestpaper")) {
+        leftMatter += ` --- ${bold("Best Paper Award")}`;
+      }
+      if (tags.includes("honorablemention")) {
+        leftMatter += ` --- ${bold("Best Paper Honorable Mention Award")}`;
       }
       const left = [leftMatter];
       const date = new Date(releaseDate);

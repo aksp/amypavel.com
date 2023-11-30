@@ -281,7 +281,7 @@
             "name": "Conversational Agency in Augmentative and Alternative Communication.",
             "releaseDate": "05-01-2020",
             "authors": ["svalencia", "apavel", "jsantamaria", "syu", "jbigham", "hadmoni"],
-            "summary": "(24.3% acceptance rate, 10 pages) -- Best Paper Honorable Mention",
+            "summary": "(24.3% acceptance rate, 10 pages)",
             "publisher": "CHI 2020",
             "tags": ["paper", "honorablemention"],
             "link": "https://dl.acm.org/doi/10.1145/3313831.3376376",
@@ -301,7 +301,7 @@
                 "kkitani",
                 "jbigham"
             ],
-            "summary": "(24.3% acceptance rate, 10 pages) -- Best Paper Honorable Mention",
+            "summary": "(24.3% acceptance rate, 10 pages)",
             "publisher": "CHI 2020",
             "tags": ["paper", "honorablemention"],
             "link": "https://dl.acm.org/doi/10.1145/3313831.3376728",
