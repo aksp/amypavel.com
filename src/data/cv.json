@@ -57,8 +57,8 @@
             "name": "GenAssist: Making Image Generation Accessible",
             "releaseDate": "10-04-2023",
             "authors": ["mhuh", "ypeng", "apavel"],
-            "publisher": "To Appear at UIST 2024",
-            "tags": ["paper"],
+            "publisher": "UIST 2024",
+            "tags": ["paper", "bestpaper"],
             "link": "https://minahuh.com/GenAssist/",
             "image": "genassist",
             "imageAlt": "A thumbnail depicting four generated image options of a young chef cooking dinner and their descriptions.",
@@ -68,7 +68,7 @@
             "name": "Exploring Community-Driven Descriptions for Making Livestreams Accessible",
             "releaseDate": "10-03-2023",
             "authors": ["dkillough", "apavel"],
-            "publisher": "To Appear at ASSETS 2024",
+            "publisher": "ASSETS 2024",
             "tags": ["paper"],
             "link": "",
             "image": "livestream",
@@ -113,7 +113,7 @@
             "releaseDate": "10-31-2022",
             "authors": ["ypeng", "jwu", "jbigham","apavel"],
             "publisher": "UIST 2022",
-            "tags": ["paper"],
+            "tags": ["paper", "bestpaper"],
             "link": "https://dl.acm.org/doi/abs/10.1145/3526113.3545637",
             "image": "diffscriber",
             "imageAlt": "A thumbnail of Diffscriber's interface for reviewing slide changes.",
@@ -519,6 +519,14 @@
     ],
     "awards": [
         {
+            "title": "UIST Best Paper Award",
+            "date": "2023"
+        },
+        {
+            "title": "UIST Best Paper Award",
+            "date": "2022"
+        },
+        {
             "title": "Selected for EECS Rising Stars",
             "date": "2020"
         },
@@ -562,6 +570,42 @@
         }
     ],
     "volunteer": [
+        {
+            "position": "PC Committee Member (Subcommittee: Blending Interaction)",
+            "organization": "CHI",
+            "startDate": "Fall 2023",
+            "tags": ["pc"]
+        },
+        {
+            "position": "PC Committee Member",
+            "organization": "UIST",
+            "startDate": "Summer 2023",
+            "tags": ["pc"]
+        },
+        {
+            "position": "PC Committee Member (Subcommittee: Blending Interaction)",
+            "organization": "CHI",
+            "startDate": "Fall 2022",
+            "tags": ["pc"]
+        },
+        {
+            "position": "PC Committee Member",
+            "organization": "UIST",
+            "startDate": "Summer 2022",
+            "tags": ["pc"]
+        },
+        {
+            "position": "PC Committee Member (Subcommittee: Blending Interaction)",
+            "organization": "CHI",
+            "startDate": "Fall 2021",
+            "tags": ["pc"]
+        },
+        {
+            "position": "PC Committee Member",
+            "organization": "UIST",
+            "startDate": "Summer 2021",
+            "tags": ["pc"]
+        },
         {
             "position": "PC Committee Member (Subcommittee: Computational Interaction)",
             "organization": "CHI",
@@ -666,6 +710,14 @@
         }
     ],
     "teaching": [
+        {
+            "position": "Instructor",
+            "institution": "UT Austin",
+            "course": "CS 395T: Human-Computer Interaction Research",
+            "link": "",
+            "summary": [],
+            "startDate": "Fall 2023"
+        },
         {
             "position": "Instructor",
             "institution": "UT Austin",
