@@ -75,8 +75,9 @@ export default function IndexPage({ data }) {
               <b>People</b>
               <br></br>
               <em>Ph.D. Students:</em>{" "}
-              <RawPeopleIdList peopleIds={["mhuh", "kbenharrak", "ypeng"]} /> (co-advised with{" "}
-              <RawPeopleIdList peopleIds={["jbigham"]} />)<br></br>
+              <RawPeopleIdList peopleIds={["mhuh", "kbenharrak", "ypeng"]} />{" "}
+              (co-advised with <RawPeopleIdList peopleIds={["jbigham"]} />)
+              <br></br>
               <em>Masters, Undergraduates, and RAs:</em>{" "}
               <RawPeopleIdList
                 peopleIds={[
@@ -92,26 +93,20 @@ export default function IndexPage({ data }) {
               <br></br>
               <em>Recent Alumni:</em>{" "}
               <RawPeopleIdList
-                peopleIds={[
-                  "dkillough",
-                  "jderry",
-                  "ajiao",
-                  "skole",
-                  "cgupta"
-                ]}
+                peopleIds={["dkillough", "jderry", "ajiao", "skole", "cgupta"]}
               />
               <br></br>
               {/*<em>Recent Collaborators:</em>*/}
             </p>
           </div>
-          <div>
-            <p>
-              Archived job materials
-              <br />
-              <a href="docs/pavel-research.pdf">Research</a> ·{" "}
-              <a href="docs/pavel-teaching.pdf">Teaching</a>
-            </p>
-          </div>
+          {/*<div>*/}
+          {/*  <p>*/}
+          {/*    Archived job materials*/}
+          {/*    <br />*/}
+          {/*    <a href="docs/pavel-research.pdf">Research</a> ·{" "}*/}
+          {/*    <a href="docs/pavel-teaching.pdf">Teaching</a>*/}
+          {/*  </p>*/}
+          {/*</div>*/}
         </div>
         <div className="col-span-3">
           <div
