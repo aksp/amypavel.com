@@ -75,18 +75,29 @@ export default function IndexPage({ data }) {
               <b>People</b>
               <br></br>
               <em>Ph.D. Students:</em>{" "}
-              <RawPeopleIdList peopleIds={["mhuh", "ypeng"]} /> (co-advised with{" "}
+              <RawPeopleIdList peopleIds={["mhuh", "kbenharrak", "ypeng"]} /> (co-advised with{" "}
               <RawPeopleIdList peopleIds={["jbigham"]} />)<br></br>
               <em>Masters, Undergraduates, and RAs:</em>{" "}
               <RawPeopleIdList
                 peopleIds={[
-                  "dkillough",
+                  "agm",
+                  "abarua",
+                  "aiyer",
+                  "yzhang",
+                  "dlee",
                   "tvandaele",
+                  "pvenkatesh",
+                ]}
+              />
+              <br></br>
+              <em>Recent Alumni:</em>{" "}
+              <RawPeopleIdList
+                peopleIds={[
+                  "dkillough",
                   "jderry",
                   "ajiao",
                   "skole",
-                  "cgupta",
-                  "pvenkatesh",
+                  "cgupta"
                 ]}
               />
               <br></br>

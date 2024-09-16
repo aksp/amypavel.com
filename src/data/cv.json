@@ -54,6 +54,39 @@
     ],
     "publications": [
         {
+            "name": "ShortScribe: Making Short-Form Videos Accessible with Hierarchical Video Summaries",
+            "releaseDate": "05-06-2024",
+            "authors": ["tvandaele", "aiyer", "yzhang", "jderry", "mhuh", "apavel"],
+            "publisher": "CHI 2024",
+            "tags": ["paper"],
+            "link": "",
+            "image": "shortscribe",
+            "imageAlt": "A thumbnail of the ShortScribe pipeline. The pipeline takes the video as input, transcribes it and describes the keyframes, then uses GPT-4 to generate multiple types of descriptions.",
+            "content": "PDF coming soon"
+        },
+        {
+            "name": "COMPA: Using Conversation Context to Achieve Common Ground in AAC",
+            "releaseDate": "05-05-2024",
+            "authors": ["svalencia", "jhuynh", "eyjiang", "ywu", "twan", "zzheng", "hadmoni", "jbigham", "apavel"],
+            "publisher": "CHI 2024",
+            "tags": ["paper"],
+            "link": "",
+            "image": "compa",
+            "imageAlt": "A thumbnail of the COMPA interface that features views for the AAC user and their conversational partners.",
+            "content": "PDF coming soon"
+        },        
+        {
+            "name": "Barriers to Photosensitive Accessibility in Virtual Reality",
+            "releaseDate": "05-04-2024",
+            "authors": ["lsouth", "cyildirim", "apavel", "mborkin"],
+            "publisher": "CHI 2024",
+            "tags": ["paper"],
+            "link": "https://osf.io/preprints/osf/ywqba",
+            "image": "photovr",
+            "imageAlt": "A thumbnail of a table of potential accessibility barriers in VR.",
+            "content": "[PDF](papers/photoVR.pdf)"
+        },
+        {
             "name": "GenAssist: Making Image Generation Accessible",
             "releaseDate": "10-04-2023",
             "authors": ["mhuh", "ypeng", "apavel"],
@@ -70,10 +103,10 @@
             "authors": ["dkillough", "apavel"],
             "publisher": "ASSETS 2023",
             "tags": ["paper"],
-            "link": "",
+            "link": "https://dl.acm.org/doi/10.1145/3597638.3608425",
             "image": "livestream",
             "imageAlt": "A thumbnail of a livestream paired with a set of descriptions with timestamps.",
-            "content": "PDF Coming Soon"
+            "content": "[PDF](papers/livestream.pdf)"
         },
         {
             "name": "AVscript: Accessible Video Editing with Audio-Visual Scripts",
@@ -113,7 +146,7 @@
             "releaseDate": "10-31-2022",
             "authors": ["ypeng", "jwu", "jbigham","apavel"],
             "publisher": "UIST 2022",
-            "tags": ["paper", "bestpaper"],
+            "tags": ["paper"],
             "link": "https://dl.acm.org/doi/abs/10.1145/3526113.3545637",
             "image": "diffscriber",
             "imageAlt": "A thumbnail of Diffscriber's interface for reviewing slide changes.",
@@ -519,7 +552,15 @@
     ],
     "awards": [
         {
+            "title": "Adobe Gift Funding",
+            "date": "2024"
+        },
+        {
             "title": "UIST Best Paper Award",
+            "date": "2023"
+        },
+        {
+            "title": "Adobe Gift Funding",
             "date": "2023"
         },
         {
@@ -571,76 +612,154 @@
     ],
     "volunteer": [
         {
+            "position": "Panel Reviewer",
+            "organization": "NIDILRR",
+            "startDate": "2024",
+            "tags": ["grant-review-panel"]
+        },
+        {
+            "position": "Panel Reviewer",
+            "organization": "NSF",
+            "startDate": "2023",
+            "tags": ["grant-review-panel"]
+        },
+        {
             "position": "PC Committee Member (Subcommittee: Blending Interaction)",
-            "organization": "CHI",
+            "organization": "ACM CHI",
+            "startDate": "Fall 2024",
+            "tags": ["pc"]
+        },
+        {
+            "position": "PC Committee Member",
+            "organization": "ACM UIST",
+            "startDate": "Summer 2024",
+            "tags": ["pc"]
+        },
+        {
+            "position": "PC Committee Member",
+            "organization": "ACM ASSETS",
+            "startDate": "Summer 2024",
+            "tags": ["pc"]
+        },
+        {
+            "position": "PC Committee Member (Subcommittee: Blending Interaction)",
+            "organization": "ACM CHI",
             "startDate": "Fall 2023",
             "tags": ["pc"]
         },
         {
             "position": "PC Committee Member",
-            "organization": "UIST",
+            "organization": "ACM UIST",
             "startDate": "Summer 2023",
             "tags": ["pc"]
         },
         {
+            "position": "PC Committee Member",
+            "organization": "ACM ASSETS",
+            "startDate": "Summer 2023",
+            "tags": ["pc"]
+        },
+        {
+            "position": "PC Committee Member",
+            "organization": "ACM FAcCT",
+            "startDate": "Spring 2023",
+            "tags": ["pc"]
+        },
+        {
             "position": "PC Committee Member (Subcommittee: Blending Interaction)",
-            "organization": "CHI",
+            "organization": "ACM CHI",
             "startDate": "Fall 2022",
             "tags": ["pc"]
         },
         {
             "position": "PC Committee Member",
-            "organization": "UIST",
+            "organization": "ACM UIST",
             "startDate": "Summer 2022",
             "tags": ["pc"]
         },
         {
+            "position": "PC Committee Member",
+            "organization": "ACM SIGGRAPH Asia",
+            "startDate": "Fall 2021",
+            "tags": ["pc"]
+        },
+        {
             "position": "PC Committee Member (Subcommittee: Blending Interaction)",
-            "organization": "CHI",
+            "organization": "ACM CHI",
             "startDate": "Fall 2021",
             "tags": ["pc"]
         },
         {
             "position": "PC Committee Member",
-            "organization": "UIST",
+            "organization": "ACM UIST",
             "startDate": "Summer 2021",
             "tags": ["pc"]
         },
         {
             "position": "PC Committee Member (Subcommittee: Computational Interaction)",
-            "organization": "CHI",
+            "organization": "ACM CHI",
             "startDate": "Fall 2020",
             "tags": ["pc"]
         },
         {
             "position": "PC Committee Member",
-            "organization": "UIST",
+            "organization": "ACM UIST",
             "startDate": "Summer 2020",
             "tags": ["pc"]
         },
         {
             "position": "Student Volunteer",
-            "organization": "UIST PC Meeting",
+            "organization": "ACM UIST PC Meeting",
             "startDate": "Summer 2016",
             "tags": ["sv"]
         },
         {
             "position": "Student Volunteer",
-            "organization": "CHI Conference",
+            "organization": "ACM CHI Conference",
             "startDate": "Spring 2016",
             "tags": ["sv"]
         },
         {
             "position": "Student Volunteer",
-            "organization": "CHI PC Meeting",
+            "organization": "ACM CHI PC Meeting",
             "startDate": "Spring 2016",
             "tags": ["sv"]
         },
         {
             "position": "Student Volunteer",
-            "organization": "UIST PC Meeting",
+            "organization": "ACM UIST PC Meeting",
             "startDate": "Summer 2015",
             "tags": ["sv"]
+        },
+        {
+            "position": "Honors Thesis Committee",
+            "organization": "UT Austin, Computer Science",
+            "startDate": "Spring 2024",
+            "tags": ["department"]
+        },
+        {
+            "position": "Faculty Search Committee",
+            "organization": "UT Austin, Computer Science",
+            "startDate": "Spring 2024",
+            "tags": ["department"]
+        },
+        {
+            "position": "Graduate Student Search Committee",
+            "organization": "UT Austin, Computer Science",
+            "startDate": "Spring 2023",
+            "tags": ["department"]
+        },
+        {
+            "position": "Honors Thesis Committee",
+            "organization": "UT Austin, Computer Science",
+            "startDate": "Spring, Fall 2023",
+            "tags": ["department"]
+        },
+        {
+            "position": "Honors Thesis Committee",
+            "organization": "UT Austin, Computer Science",
+            "startDate": "Spring, Fall 2022",
+            "tags": ["department"]
         },
         {
             "position": "Faculty Search Student Committee",
@@ -663,19 +782,25 @@
         {
             "position": "Reviewer",
             "organization": "UIST",
-            "summary": "2014, 2015, 2016, 2017, 2018, 2019, 2020* (* special recognition)",
+            "summary": "2014, 2015, 2016, 2017, 2018, 2019, 2020**, 2021*, 2022*, 2023**, 2024*",
             "tags": ["peer-review"]
         },
         {
             "position": "Reviewer",
             "organization": "CHI",
-            "summary": "2013, 2015, 2016, 2017*, 2018**, 2019, 2020 (* special recognition)",
+            "summary": "2013, 2015, 2016, 2017*, 2018**, 2019, 2020, 2021*, 2022*, 2023****, 2024***",
+            "tags": ["peer-review"]
+        },
+        {
+            "position": "Reviewer",
+            "organization": "VIS",
+            "summary": "2023",
             "tags": ["peer-review"]
         },
         {
             "position": "Reviewer",
             "organization": "CSCW",
-            "summary": "2018",
+            "summary": "2018, 2023",
             "tags": ["peer-review"]
         },
         {
@@ -697,15 +822,33 @@
             "tags": ["peer-review"]
         },
         {
+            "position": "Course Creator and Instructor | Designing Accessible AI-Powered Interfaces",
+            "organization": "UTCS UT Austin, CS Academy for Women",
+            "startDate": "Summer 2024",
+            "tags": ["community"]
+        },
+        {
+            "position": "Course Creator and Instructor | Designing Accessible AI-Powered Interfaces",
+            "organization": "UTCS UT Austin, Academy for ML",
+            "startDate": "Summer 2024",
+            "tags": ["community"]
+        },
+        {
+            "position": "Course Creator and Instructor | Designing Accessible AI-Powered Interfaces",
+            "organization": "UTCS, CS Academy for All",
+            "startDate": "Summer 2024",
+            "tags": ["community"]
+        },
+        {
             "position": "Tech Help Desk",
             "organization": "Community Forge (Pittsburgh Small Business Incubator)",
-            "startDate": "2019-2020",
+            "startDate": "2019-2021",
             "tags": ["community"]
         },
         {
             "position": "Accessibility Seminar Co-Organizer",
             "organization": "CMU",
-            "startDate": "2019-2020",
+            "startDate": "2019-2021",
             "tags": ["community"]
         }
     ],
@@ -713,9 +856,17 @@
         {
             "position": "Instructor",
             "institution": "UT Austin",
+            "course": "CS 378: Introduction to Human-Computer Interaction",
+            "link": "",
+            "summary": ["59 students", "Course staff of 1 TA", "Instructor Rating: 4.54/5.0 (Response Ratio: 97%)"],
+            "startDate": "Spring 2024"
+        },
+        {
+            "position": "Instructor",
+            "institution": "UT Austin",
             "course": "CS 395T: Human-Computer Interaction Research",
             "link": "",
-            "summary": [],
+            "summary": ["15 students", "Semester Focus: Human-AI Interaction", "Instructor Rating: 5.0/5.0 (Response Ratio: 93.3%)"],
             "startDate": "Fall 2023"
         },
         {
@@ -723,7 +874,7 @@
             "institution": "UT Austin",
             "course": "CS 378: Introduction to Human-Computer Interaction",
             "link": "",
-            "summary": [],
+            "summary": ["55 students", "Course staff of 1 TA"],
             "startDate": "Spring 2023"
         },
         {
@@ -731,7 +882,7 @@
             "institution": "UT Austin",
             "course": "CS 378: Introduction to Human-Computer Interaction",
             "link": "https://amypavel.com/teaching/cs378sp22/",
-            "summary": [],
+            "summary": ["56 students", "Course staff of 1 TA"],
             "startDate": "Spring 2022"
         },
         {
@@ -742,6 +893,7 @@
             "summary": [
                 "77 students",
                 "Course staff of 5 TAs and 2 Readers",
+                "Campus award for instruction: Outstanding Graduate Student Instructor",
                 "Ratings: \\href{https://hkn.eecs.berkeley.edu/coursesurveys/course/CS/160}{\\tt hkn.eecs.berkeley.edu/coursesurveys/course/CS/160}"
             ],
             "startDate": "Summer 2018"

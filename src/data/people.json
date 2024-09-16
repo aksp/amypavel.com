@@ -1,8 +1,58 @@
 [
     {
-        "id": "skole",
-        "name": "Soumili Kole",
-        "link": "https://www.linkedin.com/in/soumilikole"
+        "id": "agm",
+        "name": "Ananya G M",
+        "link": "https://www.linkedin.com/in/ananyagm/"
+    },
+    {
+        "id": "abarua",
+        "name": "Aadit Barua",
+        "link": "https://www.linkedin.com/in/aaditbarua/"
+    },
+    {
+        "id": "dlee",
+        "name": "Doeun Lee",
+        "link": "https://www.linkedin.com/in/doeun-lee-1386bb204/"
+    },
+    {
+        "id": "kbenharrak",
+        "name": "Karim Benharrak",
+        "link": "https://www.linkedin.com/in/karimbenharrak/"
+    },
+    {
+        "id": "aiyer",
+        "name": "Akhil Iyer",
+        "link": ""
+    },
+    {
+        "id": "yzhang",
+        "name": "Yuning Zhang",
+        "link": ""
+    },
+    {
+        "id": "jhuynh",
+        "name": "Jessica Huynh",
+        "link": "https://www.lti.cs.cmu.edu/people/222227195/jessica-huynh"
+    },
+    {
+        "id": "eyjiang",
+        "name": "Emma Y Jiang",
+        "link": "https://www.linkedin.com/in/emma-jiang/"
+    },
+    {
+        "id": "ywu",
+        "name": "Yufei Wu",
+        "link": "https://www.linkedin.com/in/yufei-wu-450045235/"
+    },
+    {
+        "id": "twan",
+        "name": "Teresa Wan",
+        "link": "https://www.linkedin.com/in/teresa-wan-b745a8189/"
+    },
+    {
+        "id": "zzheng",
+        "name": "Zixuan Zheng",
+        "link": "https://www.lti.cs.cmu.edu/people/222227133/zixuan-zeng"
     },
     {
         "id": "cgupta",
@@ -18,6 +68,11 @@
         "id": "jderry",
         "name": "Jalyn Derry",
         "link": "https://www.linkedin.com/in/jalyn-derry/"
+    },
+    {
+        "id": "skole",
+        "name": "Soumili Kole",
+        "link": "https://www.linkedin.com/in/soumilikole"
     },
     {
         "id": "tvandaele",

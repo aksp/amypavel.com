@@ -196,7 +196,7 @@ function serviceItems({ volunteer }: CV): TwoColumnItem[] {
   }
   items.push({ left: deptLeft, right: deptRight });
 
-  const prLeft = [bold("Peer Review")];
+  const prLeft = [bold("Peer Review (* Denotes Special Recognition)")];
   const prRight = [""];
   for (const { organization, summary } of volunteer.filter(({ tags }) =>
     tags.includes("peer-review")
