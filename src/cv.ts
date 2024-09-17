@@ -34,6 +34,7 @@ const Publication = t.intersection([
         highlight: null,
         bestpaper: null,
         honorablemention: null,
+        oral: null,
       })
     ),
   }),
@@ -85,12 +86,16 @@ const Teaching = t.intersection([
   }),
 ]);
 
-const Mentorship = t.type({
-  name: t.string,
-  project: t.string,
-  summary: t.string,
-  startDate: t.string,
-});
+const Mentorship = t.intersection([
+  t.type({
+    name: t.string,
+    summary: t.string,
+    startDate: t.string,
+  }),
+  t.partial({
+    project: t.string,
+  })
+]);
 
 const Talk = t.type({
   title: t.string,
@@ -112,7 +117,8 @@ const CV = t.type({
   awards: t.array(Award),
   volunteer: t.array(Volunteer),
   teaching: t.array(Teaching),
-  mentorship: t.array(Mentorship),
+  undergraduate_and_masters_mentorship: t.array(Mentorship),
+  phd_mentorship: t.array(Mentorship),
   talks: t.array(Talk),
   press: t.array(Press),
 });

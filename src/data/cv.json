@@ -54,15 +54,59 @@
     ],
     "publications": [
         {
+            "name": "DesignChecker: Visual Design Support for Blind and Low Vision Web Developers",
+            "releaseDate": "10-01-2024",
+            "authors": ["mhuh", "apavel"],
+            "publisher": "UIST 2024",
+            "tags": ["paper"],
+            "link": "",
+            "image": "",
+            "imageAlt": "",
+            "content": ""
+        },
+        {
+            "name": "Long-Form Answers to Visual Questions from Blind and Low Vision People",
+            "releaseDate": "10-03-2024",
+            "authors": ["mhuh", "fxu", "ypeng", "cchen", "hmurugu", "dgurari", "echoi", "apavel"],
+            "publisher": "COLM 2024",
+            "tags": ["paper", "oral"],
+            "link": "",
+            "image": "",
+            "imageAlt": "",
+            "content": ""
+        },
+        {
+            "name": "Context-Aware Image Descriptions for Web Accessibility",
+            "releaseDate": "10-02-2024",
+            "authors": ["agmohanbabu", "apavel"],
+            "publisher": "ASSETS 2024",
+            "tags": ["paper"],
+            "link": "",
+            "image": "",
+            "imageAlt": "",
+            "content": ""
+        },
+        {
+            "name": "GeoLatent: A Geometric Approach to Latent Space Design for Deformable Shape Generators",
+            "releaseDate": "12-06-2023",
+            "authors": ["hyang", "bsun", "lchen", "apavel", "qhuang"],
+            "publisher": "SIGGRAPH ASIA 2023",
+            "tags": ["paper"],
+            "link": "",
+            "image": "",
+            "imageAlt": "",
+            "content": ""
+        },
+        {
             "name": "ShortScribe: Making Short-Form Videos Accessible with Hierarchical Video Summaries",
             "releaseDate": "05-06-2024",
             "authors": ["tvandaele", "aiyer", "yzhang", "jderry", "mhuh", "apavel"],
             "publisher": "CHI 2024",
             "tags": ["paper"],
-            "link": "",
+            "link": "https://minahuh.com/ShortScribe/",
             "image": "shortscribe",
             "imageAlt": "A thumbnail of the ShortScribe pipeline. The pipeline takes the video as input, transcribes it and describes the keyframes, then uses GPT-4 to generate multiple types of descriptions.",
-            "content": "PDF coming soon"
+            "content": "[PDF](https://dl.acm.org/doi/10.1145/3613904.3642839)"
         },
         {
             "name": "COMPA: Using Conversation Context to Achieve Common Ground in AAC",
@@ -70,17 +114,17 @@
             "authors": ["svalencia", "jhuynh", "eyjiang", "ywu", "twan", "zzheng", "hadmoni", "jbigham", "apavel"],
             "publisher": "CHI 2024",
             "tags": ["paper"],
-            "link": "",
+            "link": "https://dl.acm.org/doi/full/10.1145/3613904.3642762",
             "image": "compa",
             "imageAlt": "A thumbnail of the COMPA interface that features views for the AAC user and their conversational partners.",
-            "content": "PDF coming soon"
+            "content": "[PDF](https://www.cs.cmu.edu/~jbigham/pubs/pdfs/2024/compa.pdf)"
         },        
         {
             "name": "Barriers to Photosensitive Accessibility in Virtual Reality",
             "releaseDate": "05-04-2024",
             "authors": ["lsouth", "cyildirim", "apavel", "mborkin"],
             "publisher": "CHI 2024",
-            "tags": ["paper"],
+            "tags": ["paper", "honorablemention"],
             "link": "https://osf.io/preprints/osf/ywqba",
             "image": "photovr",
             "imageAlt": "A thumbnail of a table of potential accessibility barriers in VR.",
@@ -552,7 +596,11 @@
     ],
     "awards": [
         {
-            "title": "Adobe Gift Funding",
+            "title": "COLM Oral Presentation",
+            "date": "2024"
+        },
+        {
+            "title": "CHI Honorable Mention",
             "date": "2024"
         },
         {
@@ -560,12 +608,12 @@
             "date": "2023"
         },
         {
-            "title": "Adobe Gift Funding",
-            "date": "2023"
-        },
-        {
             "title": "UIST Best Paper Award",
             "date": "2022"
+        },
+        {
+            "title": "Adobe Gift Funding",
+            "date": "2022, 2023, 2024"
         },
         {
             "title": "Selected for EECS Rising Stars",
@@ -840,6 +888,12 @@
             "tags": ["community"]
         },
         {
+            "position": "UT HCI Co-Founder and Organizer (Seminar and Mailing List)",
+            "organization": "UT Austin", 
+            "startDate": "Fall 2022-Present",
+            "tags": ["community"]
+        }
+        {
             "position": "Tech Help Desk",
             "organization": "Community Forge (Pittsburgh Small Business Incubator)",
             "startDate": "2019-2021",
@@ -853,6 +907,14 @@
         }
     ],
     "teaching": [
+        {
+            "position": "Instructor",
+            "institution": "UT Austin",
+            "course": "CS 395T: Human-Computer Interaction Research",
+            "link": "",
+            "summary": ["25 students", "Semester Focus: Accessibility"],
+            "startDate": "Fall 2024"
+        }
         {
             "position": "Instructor",
             "institution": "UT Austin",
@@ -939,7 +1001,92 @@
             "endDate": "2010"
         }
     ],
-    "mentorship": [
+    "thesis_committees": [
+        
+        {
+            "name": "Alex Braylan", 
+            "summary": "PhD Student at UT Austin (Advised by Matt Lease)",
+            "tags": ["dissertation"],
+            "startDate": "Upcoming"
+        },
+        {
+            "name": "Jerry Tang", 
+            "summary": "PhD Student at UT Austin (Advised by Alexander Huth)",
+            "tags": ["dissertation"],
+            "startDate": "2024"
+        },
+        {
+            "name": "Laura South", 
+            "summary": "PhD Student at Northeastern (Advised by Michelle Borkin)",
+            "tags": ["dissertation"],
+            "startDate": "2023"
+        }
+        
+    ],
+    "phd_mentorship": [
+        {
+            "name": "Meng Chen",
+            "summary": "PhD Student, UT Austin.",
+            "startDate": "Fall 2024 - Present"
+        },
+        {
+            "name": "Ananya Gubbi Mohanbabu",
+            "summary": "PhD Student, UT Austin.",
+            "startDate": "Fall 2024 - Present"
+        },
+        {
+            "name": "Karim Benharrak",
+            "summary": "PhD Student, UT Austin.",
+            "startDate": "Fall 2023 - Present"
+        },
+        {
+            "name": "Mina Huh",
+            "summary": "PhD Student, UT Austin.",
+            "startDate": "Fall 2022 - Present"
+        },
+        {
+            "name": "Yi-Hao Peng (informally co-advised with Jeff Bigham at CMU)",
+            "summary": "PhD Student, CMU.",
+            "startDate": "Fall 2020 - Present"
+        }
+    ],
+    "undergraduate_and_masters_mentorship": [
+        {
+            "name": "Ananya Gubbi Mohanbabu",
+            "project": "Context-Aware Descriptions (first author ASSETS 2024).",
+            "summary": "Master's Student in Information, UT Austin.",
+            "startDate": "Fall 2023, Spring 2024"
+        },
+        {
+            "name": "Akhil Iyer",
+            "project": "Automatic Live Descriptions (co-author CHI 2024).",
+            "summary": "Undergradaute, UT Austin.",
+            "startDate": "Fall 2023-Present"
+        },
+        {
+            "name": "Tess Van Deaele",
+            "project": "Making Short Videos Accessible (first-author CHI 2024, thesis)",
+            "summary": "Undergradaute, UT Austin. Next: Software Engineer at Verkada",
+            "startDate": "Fall 2022, Spring 2023"
+        },
+        {
+            "name": "Yuning Zhang",
+            "project": "Making Short Videos Accessible (co-author CHI 2024).",
+            "summary": "Undergradaute, UT Austin. Next: MS at Cornell",
+            "startDate": "Spring 2023"
+        },
+        {
+            "name": "Jalyn Derry",
+            "project": "Making Short Videos Accessible (co-author CHI 2024).",
+            "summary": "Undergradaute, UT Austin. Next: UX Design at Indeed",
+            "startDate": "Spring 2023"
+        },
+        {
+            "name": "Daniel Killough",
+            "project": "Community-Driven Live Descriptions (first author ASSETS 2023).",
+            "summary": "Undergradaute, UT Austin. Next: PhD at University of Wisconsin Madison",
+            "startDate": "Summer 2022-Spring 2023"
+        },
         {
             "name": "Yi-Hao Peng",
             "project": "Making Lectures Non-Visually Accessible",
@@ -984,19 +1131,19 @@
         },
         {
             "name": "Christina Low",
-            "project": "Making Social Media Images Accessible",
+            "project": "Making Social Media Images Accessible (co-author CHI 2020)",
             "summary": "Undergraduate, Stony Brook University (REU program).",
             "startDate": "Summer 2019"
         },
         {
             "name": "Emma McCamey",
-            "project": "Making Social Media Images Accessible",
+            "project": "Making Social Media Images Accessible (co-author CHI 2020)",
             "summary": "Undergraduate, Virginia Commonwealth University (REU program).",
             "startDate": "Summer 2019"
         },
         {
             "name": "Tonya Nguyen",
-            "project": "SlideSpecs: Collaborative Presentation Feedback",
+            "project": "SlideSpecs: Collaborative Presentation Feedback (co-author IUI 2023)",
             "summary": "Undergraduate, UC Berkeley. Next: UC Berkeley PhD student.",
             "startDate": "Fall 2018"
         },
@@ -1082,6 +1229,24 @@
         }
     ],
     "press": [
+        {
+            "title": "UT computer science lab announces way to make short-form content more accessible",
+            "author": "Daniela Capistran",
+            "publisher": "Daily Texan",
+            "date": "2024-06-01"
+        },
+        {
+            "title": "Computer Science Professor Looks to Improve Accessible Technologies",
+            "author": "Amanda Figueroa-Nieves",
+            "publisher": "UT College of Natural Sciences News",
+            "date": "2022-08-29"
+        },
+        {
+            "title": "The red flag meme is a red flag for accessibility", 
+            "author": "Amanda Siblering",
+            "publisher": "Tech Crunch",
+            "date": "2021-10-20"
+        },
         {
             "title": "'I Wish We Could Connect on This Level.' Memes Still Aren't Accessible to People Who Are Blind. What's Being Done About It?",
             "author": "Rachel E. Greenspan",
