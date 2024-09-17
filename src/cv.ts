@@ -34,7 +34,7 @@ const Publication = t.intersection([
         highlight: null,
         bestpaper: null,
         honorablemention: null,
-        oral: null,
+        "oral-spotlight": null,
       })
     ),
   }),
@@ -94,7 +94,7 @@ const Mentorship = t.intersection([
   }),
   t.partial({
     project: t.string,
-  })
+  }),
 ]);
 
 const Talk = t.type({
@@ -111,6 +111,13 @@ const Press = t.type({
   date: t.string,
 });
 
+const ThesisCommittee = t.type({
+  name: t.string,
+  startDate: t.string,
+  summary: t.string,
+  tags: t.array(t.string),
+});
+
 const CV = t.type({
   work: t.array(Work),
   publications: t.array(Publication),
@@ -121,6 +128,7 @@ const CV = t.type({
   phd_mentorship: t.array(Mentorship),
   talks: t.array(Talk),
   press: t.array(Press),
+  thesis_committees: t.array(ThesisCommittee),
 });
 
 export type CV = t.TypeOf<typeof CV>;
@@ -132,6 +140,7 @@ export type Teaching = t.TypeOf<typeof Teaching>;
 export type Mentorship = t.TypeOf<typeof Mentorship>;
 export type Talk = t.TypeOf<typeof Talk>;
 export type Press = t.TypeOf<typeof Press>;
+export type ThesisCommittee = t.TypeOf<typeof ThesisCommittee>;
 
 export let cv: CV;
 

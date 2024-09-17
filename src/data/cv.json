@@ -69,7 +69,7 @@
             "releaseDate": "10-03-2024",
             "authors": ["mhuh", "fxu", "ypeng", "cchen", "hmurugu", "dgurari", "echoi", "apavel"],
             "publisher": "COLM 2024",
-            "tags": ["paper", "oral"],
+            "tags": ["paper", "oral-spotlight"],
             "link": "",
             "image": "",
             "imageAlt": "",
@@ -87,10 +87,10 @@
             "content": ""
         },
         {
-            "name": "GeoLatent: A Geometric Approach to Latent Space Design for Deformable Shape Generators",
-            "releaseDate": "12-06-2023",
-            "authors": ["hyang", "bsun", "lchen", "apavel", "qhuang"],
-            "publisher": "SIGGRAPH ASIA 2023",
+            "name": "DreamStruct: Understanding Slides and User Interfaces via Synthetic Data Generation",
+            "releaseDate": "10-01-2024",
+            "authors": ["ypeng", "fhuq", "yjiang", "jwu", "xyli", "jbigham", "apavel"],
+            "publisher": "ECCV 2024",
             "tags": ["paper"],
             "link": "",
             "image": "",
@@ -118,7 +118,7 @@
             "image": "compa",
             "imageAlt": "A thumbnail of the COMPA interface that features views for the AAC user and their conversational partners.",
             "content": "[PDF](https://www.cs.cmu.edu/~jbigham/pubs/pdfs/2024/compa.pdf)"
-        },        
+        },
         {
             "name": "Barriers to Photosensitive Accessibility in Virtual Reality",
             "releaseDate": "05-04-2024",
@@ -129,6 +129,17 @@
             "image": "photovr",
             "imageAlt": "A thumbnail of a table of potential accessibility barriers in VR.",
             "content": "[PDF](papers/photoVR.pdf)"
+        },
+        {
+            "name": "GeoLatent: A Geometric Approach to Latent Space Design for Deformable Shape Generators",
+            "releaseDate": "12-06-2023",
+            "authors": ["hyang", "bsun", "lchen", "apavel", "qhuang"],
+            "publisher": "SIGGRAPH ASIA 2023",
+            "tags": ["paper"],
+            "link": "",
+            "image": "",
+            "imageAlt": "",
+            "content": ""
         },
         {
             "name": "GenAssist: Making Image Generation Accessible",
@@ -596,7 +607,7 @@
     ],
     "awards": [
         {
-            "title": "COLM Oral Presentation",
+            "title": "COLM Oral Spotlight Paper",
             "date": "2024"
         },
         {
@@ -889,10 +900,10 @@
         },
         {
             "position": "UT HCI Co-Founder and Organizer (Seminar and Mailing List)",
-            "organization": "UT Austin", 
+            "organization": "UT Austin",
             "startDate": "Fall 2022-Present",
             "tags": ["community"]
-        }
+        },
         {
             "position": "Tech Help Desk",
             "organization": "Community Forge (Pittsburgh Small Business Incubator)",
@@ -914,7 +925,7 @@
             "link": "",
             "summary": ["25 students", "Semester Focus: Accessibility"],
             "startDate": "Fall 2024"
-        }
+        },
         {
             "position": "Instructor",
             "institution": "UT Austin",
@@ -1002,26 +1013,24 @@
         }
     ],
     "thesis_committees": [
-        
         {
-            "name": "Alex Braylan", 
+            "name": "Alex Braylan",
             "summary": "PhD Student at UT Austin (Advised by Matt Lease)",
             "tags": ["dissertation"],
             "startDate": "Upcoming"
         },
         {
-            "name": "Jerry Tang", 
+            "name": "Jerry Tang",
             "summary": "PhD Student at UT Austin (Advised by Alexander Huth)",
             "tags": ["dissertation"],
             "startDate": "2024"
         },
         {
-            "name": "Laura South", 
+            "name": "Laura South",
             "summary": "PhD Student at Northeastern (Advised by Michelle Borkin)",
             "tags": ["dissertation"],
             "startDate": "2023"
         }
-        
     ],
     "phd_mentorship": [
         {
@@ -1162,6 +1171,150 @@
     ],
     "talks": [
         {
+            "title": "Accessible Creativity.",
+            "venue": "Apple Workshop on Human Centered Machine Learning",
+            "location": "Cupertino, CA",
+            "date": "Summer 2024"
+        },
+        {
+            "title": "Human-AI Interaction (Invited discussant).",
+            "venue": "Human-Computer Interaction Consortium (HCIC)",
+            "location": "Delevan, WI",
+            "date": "Summer 2024"
+        },
+        {
+            "title": "Accessible Creativity with Generative AI.",
+            "venue": "UC Irvine Workshop on Accessible Work and Generative AI",
+            "location": "Irvine, CA",
+            "date": "Summer 2024"
+        },
+        {
+            "title": "Generative AI for Accessible Creativity.",
+            "venue": "Adobe HCI Seminar",
+            "location": "San Francisco, CA. Presented virtually",
+            "date": "Spring 2024"
+        },
+        {
+            "title": "The Promise and Peril of using Generative AI for Accessibility.",
+            "venue": "UT iSchool Colloquium",
+            "location": "Austin, TX",
+            "date": "Fall 2023"
+        },
+        {
+            "title": "Invited guest.",
+            "venue": "Fairness in Datasets for Machine Learning in Accessibility Workshop",
+            "location": "Virtual Event",
+            "date": "Summer 2023"
+        },
+        {
+            "title": "Accessible Creativity with Generative AI.",
+            "venue": "AIST Creative HCI Seminar",
+            "location": "Tokyo, Japan. Presented virtually",
+            "date": "Spring 2023"
+        },
+        {
+            "title": "Panelist (Computer Vision for Media Accessibility; Natural Language Processing for Media Accessibility).",
+            "venue": "WAI-CooP’s AI and Accessibility Research Symposium",
+            "location": "Virtual Event",
+            "date": "Winter 2023"
+        },
+        {
+            "title": "Human AI Systems for Making Media Accessible.",
+            "venue": "Marquette CS Colloquium",
+            "location": "Virtual Event",
+            "date": "Fall 2022"
+        },
+        {
+            "title": "The Job Search: Applicant's View.",
+            "venue": "EECS Rising Stars",
+            "location": "Austin, TX",
+            "date": "Fall 2022"
+        },
+        {
+            "title": "Human AI Systems for Making Videos Useful.",
+            "venue": "MIT HCI Seminar",
+            "location": "Cambridge, MA. Presented virtually",
+            "date": "Spring 2022"
+        },
+        {
+            "title": "Video Accessibility.",
+            "venue": "Stanford HCI Seminar",
+            "location": "Stanford, CA. Presented virtually",
+            "date": "Spring 2022"
+        },
+        {
+            "title": "Human AI Systems for Making Videos Useful.",
+            "venue": "Carnegie Mellon University HCII",
+            "location": "Pittsburgh, PA",
+            "date": "Winter 2021"
+        },
+        {
+            "title": "XR Access Research Panelist",
+            "venue": "XR Access Symposium",
+            "location": "Virtual Event",
+            "date": "Summer 2021"
+        },
+        {
+            "title": "Human AI Systems for Making Videos Useful.",
+            "venue": "Cornell University",
+            "location": "Virtual Event",
+            "date": "Spring 2021"
+        },
+        {
+            "title": "Human AI Systems for Making Videos Useful.",
+            "venue": "École Polytechnique Fédérale de Lausanne (EPFL)",
+            "location": "Virtual Event",
+            "date": "Spring 2021"
+        },
+        {
+            "title": "Human AI Systems for Making Videos Useful.",
+            "venue": "University of Texas, Austin",
+            "location": "Virtual Event",
+            "date": "Spring 2021"
+        },
+        {
+            "title": "Human AI Systems for Making Videos Useful.",
+            "venue": "University of Southern California",
+            "location": "Virtual Event",
+            "date": "Spring 2021"
+        },
+        {
+            "title": "Human AI Systems for Making Videos Useful.",
+            "venue": "University of Pennsylvania",
+            "location": "Virtual Event",
+            "date": "Spring 2021"
+        },
+        {
+            "title": "Human AI Systems for Making Videos Useful.",
+            "venue": "Johns Hopkins University",
+            "location": "Virtual Event",
+            "date": "Spring 2021"
+        },
+        {
+            "title": "Human AI Systems for Making Videos Useful.",
+            "venue": "University of Maryland, College Park",
+            "location": "Virtual Event",
+            "date": "Spring 2021"
+        },
+        {
+            "title": "Human AI Systems for Making Videos Useful.",
+            "venue": "Emory University",
+            "location": "Virtual Event",
+            "date": "Spring 2021"
+        },
+        {
+            "title": "Human AI Systems for Making Videos Useful.",
+            "venue": "University of Utah",
+            "location": "Virtual Event",
+            "date": "Spring 2021"
+        },
+        {
+            "title": "Human AI Systems for Making Videos Useful.",
+            "venue": "Adobe Research",
+            "location": "Virtual Event",
+            "date": "Spring 2021"
+        },
+        {
             "title": "Describing Videos.",
             "venue": "CMU HCII Seminar",
             "location": "Pittsburgh, PA",
@@ -1242,7 +1395,7 @@
             "date": "2022-08-29"
         },
         {
-            "title": "The red flag meme is a red flag for accessibility", 
+            "title": "The red flag meme is a red flag for accessibility",
             "author": "Amanda Siblering",
             "publisher": "Tech Crunch",
             "date": "2021-10-20"

@@ -133,6 +133,9 @@ function publicationItems(resume: CV, filterTags: string[]): TwoColumnItem[] {
       if (tags.includes("honorablemention")) {
         leftMatter += ` --- ${bold("Best Paper Honorable Mention Award")}`;
       }
+      if (tags.includes("oral-spotlight")) {
+        leftMatter += ` --- ${bold("Oral Spotlight")}`;
+      }
       const left = [leftMatter];
       const date = new Date(releaseDate);
       let dateStr = releaseDate;
@@ -160,6 +163,13 @@ function awardItems(resume: CV): TwoColumnItem[] {
       left: [leftMatter],
       right: [date],
     };
+  });
+}
+
+function thesisCommitteeItems({ thesis_committees }: CV): TwoColumnItem[] {
+  return thesis_committees.map(({ name, summary, startDate = "" }) => {
+    const left = [bold(name), summary];
+    return { left, right: [startDate] };
   });
 }
 
@@ -232,16 +242,24 @@ function teachingItems({ teaching }: CV): TwoColumnItem[] {
   );
 }
 
-function ugradMastersMentorshipItems({ undergraduate_and_masters_mentorship }: CV): TwoColumnItem[] {
-  return undergraduate_and_masters_mentorship.map(({ name, summary, startDate, project }) => ({
-    left: project ? [`${name}. \`\`${project}''`, summary] : [`${name}.`, summary],
-    right: [startDate],
-  }));
+function ugradMastersMentorshipItems({
+  undergraduate_and_masters_mentorship,
+}: CV): TwoColumnItem[] {
+  return undergraduate_and_masters_mentorship.map(
+    ({ name, summary, startDate, project }) => ({
+      left: project
+        ? [`${name}. \`\`${project}''`, summary]
+        : [`${name}.`, summary],
+      right: [startDate],
+    })
+  );
 }
 
 function phdMentorshipItems({ phd_mentorship }: CV): TwoColumnItem[] {
   return phd_mentorship.map(({ name, summary, startDate, project }) => ({
-    left: project ? [`${name}. \`\`${project}''`, summary] : [`${name}.`, summary],
+    left: project
+      ? [`${name}. \`\`${project}''`, summary]
+      : [`${name}.`, summary],
     right: [startDate],
   }));
 }
@@ -294,7 +312,14 @@ async function writeTables(): Promise<void> {
       ["service", escapeLatex(makeTable(serviceItems(cv), 1))],
       ["teaching", escapeLatex(makeTable(teachingItems(cv), 1))],
       ["phd_mentorship", escapeLatex(makeTable(phdMentorshipItems(cv), 1))],
-      ["undergrad_masters_mentorship", escapeLatex(makeTable(ugradMastersMentorshipItems(cv), 1))],
+      [
+        "undergrad_masters_mentorship",
+        escapeLatex(makeTable(ugradMastersMentorshipItems(cv), 1)),
+      ],
+      [
+        "thesis_committees",
+        escapeLatex(makeTable(thesisCommitteeItems(cv), 1)),
+      ],
       ["talks", escapeLatex(makeTable(talkItems(cv), 1))],
       ["press", escapeLatex(makeTable(pressItems(cv), 1))],
     ].map(async ([filename, contents]) => {

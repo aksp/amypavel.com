@@ -53,12 +53,14 @@ type DataJson = Node & {
   readonly children: ReadonlyArray<Node>;
   readonly id: Scalars['ID'];
   readonly internal: Internal;
-  readonly mentorship: Maybe<ReadonlyArray<Maybe<DataJsonMentorship>>>;
   readonly parent: Maybe<Node>;
+  readonly phd_mentorship: Maybe<ReadonlyArray<Maybe<DataJsonPhd_mentorship>>>;
   readonly press: Maybe<ReadonlyArray<Maybe<DataJsonPress>>>;
   readonly publications: Maybe<ReadonlyArray<Maybe<DataJsonPublications>>>;
   readonly talks: Maybe<ReadonlyArray<Maybe<DataJsonTalks>>>;
   readonly teaching: Maybe<ReadonlyArray<Maybe<DataJsonTeaching>>>;
+  readonly thesis_committees: Maybe<ReadonlyArray<Maybe<DataJsonThesis_committees>>>;
+  readonly undergraduate_and_masters_mentorship: Maybe<ReadonlyArray<Maybe<DataJsonUndergraduate_and_masters_mentorship>>>;
   readonly volunteer: Maybe<ReadonlyArray<Maybe<DataJsonVolunteer>>>;
   readonly work: Maybe<ReadonlyArray<Maybe<DataJsonWork>>>;
 };
@@ -184,11 +186,6 @@ type DataJsonFieldsEnum =
   | 'internal.mediaType'
   | 'internal.owner'
   | 'internal.type'
-  | 'mentorship'
-  | 'mentorship.name'
-  | 'mentorship.project'
-  | 'mentorship.startDate'
-  | 'mentorship.summary'
   | 'parent.children'
   | 'parent.children.children'
   | 'parent.children.children.children'
@@ -230,6 +227,10 @@ type DataJsonFieldsEnum =
   | 'parent.parent.internal.type'
   | 'parent.parent.parent.children'
   | 'parent.parent.parent.id'
+  | 'phd_mentorship'
+  | 'phd_mentorship.name'
+  | 'phd_mentorship.startDate'
+  | 'phd_mentorship.summary'
   | 'press'
   | 'press.author'
   | 'press.date'
@@ -261,6 +262,16 @@ type DataJsonFieldsEnum =
   | 'teaching.position'
   | 'teaching.startDate'
   | 'teaching.summary'
+  | 'thesis_committees'
+  | 'thesis_committees.name'
+  | 'thesis_committees.startDate'
+  | 'thesis_committees.summary'
+  | 'thesis_committees.tags'
+  | 'undergraduate_and_masters_mentorship'
+  | 'undergraduate_and_masters_mentorship.name'
+  | 'undergraduate_and_masters_mentorship.project'
+  | 'undergraduate_and_masters_mentorship.startDate'
+  | 'undergraduate_and_masters_mentorship.summary'
   | 'volunteer'
   | 'volunteer.organization'
   | 'volunteer.position'
@@ -281,12 +292,14 @@ type DataJsonFilterInput = {
   readonly children: InputMaybe<NodeFilterListInput>;
   readonly id: InputMaybe<StringQueryOperatorInput>;
   readonly internal: InputMaybe<InternalFilterInput>;
-  readonly mentorship: InputMaybe<DataJsonMentorshipFilterListInput>;
   readonly parent: InputMaybe<NodeFilterInput>;
+  readonly phd_mentorship: InputMaybe<DataJsonPhd_mentorshipFilterListInput>;
   readonly press: InputMaybe<DataJsonPressFilterListInput>;
   readonly publications: InputMaybe<DataJsonPublicationsFilterListInput>;
   readonly talks: InputMaybe<DataJsonTalksFilterListInput>;
   readonly teaching: InputMaybe<DataJsonTeachingFilterListInput>;
+  readonly thesis_committees: InputMaybe<DataJsonThesis_committeesFilterListInput>;
+  readonly undergraduate_and_masters_mentorship: InputMaybe<DataJsonUndergraduate_and_masters_mentorshipFilterListInput>;
   readonly volunteer: InputMaybe<DataJsonVolunteerFilterListInput>;
   readonly work: InputMaybe<DataJsonWorkFilterListInput>;
 };
@@ -336,22 +349,20 @@ type DataJsonGroupConnection_sumArgs = {
   field: DataJsonFieldsEnum;
 };
 
-type DataJsonMentorship = {
+type DataJsonPhd_mentorship = {
   readonly name: Maybe<Scalars['String']>;
-  readonly project: Maybe<Scalars['String']>;
   readonly startDate: Maybe<Scalars['String']>;
   readonly summary: Maybe<Scalars['String']>;
 };
 
-type DataJsonMentorshipFilterInput = {
+type DataJsonPhd_mentorshipFilterInput = {
   readonly name: InputMaybe<StringQueryOperatorInput>;
-  readonly project: InputMaybe<StringQueryOperatorInput>;
   readonly startDate: InputMaybe<StringQueryOperatorInput>;
   readonly summary: InputMaybe<StringQueryOperatorInput>;
 };
 
-type DataJsonMentorshipFilterListInput = {
-  readonly elemMatch: InputMaybe<DataJsonMentorshipFilterInput>;
+type DataJsonPhd_mentorshipFilterListInput = {
+  readonly elemMatch: InputMaybe<DataJsonPhd_mentorshipFilterInput>;
 };
 
 type DataJsonPress = {
@@ -475,6 +486,42 @@ type DataJsonTeachingFilterInput = {
 
 type DataJsonTeachingFilterListInput = {
   readonly elemMatch: InputMaybe<DataJsonTeachingFilterInput>;
+};
+
+type DataJsonThesis_committees = {
+  readonly name: Maybe<Scalars['String']>;
+  readonly startDate: Maybe<Scalars['String']>;
+  readonly summary: Maybe<Scalars['String']>;
+  readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
+};
+
+type DataJsonThesis_committeesFilterInput = {
+  readonly name: InputMaybe<StringQueryOperatorInput>;
+  readonly startDate: InputMaybe<StringQueryOperatorInput>;
+  readonly summary: InputMaybe<StringQueryOperatorInput>;
+  readonly tags: InputMaybe<StringQueryOperatorInput>;
+};
+
+type DataJsonThesis_committeesFilterListInput = {
+  readonly elemMatch: InputMaybe<DataJsonThesis_committeesFilterInput>;
+};
+
+type DataJsonUndergraduate_and_masters_mentorship = {
+  readonly name: Maybe<Scalars['String']>;
+  readonly project: Maybe<Scalars['String']>;
+  readonly startDate: Maybe<Scalars['String']>;
+  readonly summary: Maybe<Scalars['String']>;
+};
+
+type DataJsonUndergraduate_and_masters_mentorshipFilterInput = {
+  readonly name: InputMaybe<StringQueryOperatorInput>;
+  readonly project: InputMaybe<StringQueryOperatorInput>;
+  readonly startDate: InputMaybe<StringQueryOperatorInput>;
+  readonly summary: InputMaybe<StringQueryOperatorInput>;
+};
+
+type DataJsonUndergraduate_and_masters_mentorshipFilterListInput = {
+  readonly elemMatch: InputMaybe<DataJsonUndergraduate_and_masters_mentorshipFilterInput>;
 };
 
 type DataJsonVolunteer = {
@@ -1101,11 +1148,6 @@ type FileFieldsEnum =
   | 'childDataJson.internal.mediaType'
   | 'childDataJson.internal.owner'
   | 'childDataJson.internal.type'
-  | 'childDataJson.mentorship'
-  | 'childDataJson.mentorship.name'
-  | 'childDataJson.mentorship.project'
-  | 'childDataJson.mentorship.startDate'
-  | 'childDataJson.mentorship.summary'
   | 'childDataJson.parent.children'
   | 'childDataJson.parent.children.children'
   | 'childDataJson.parent.children.id'
@@ -1121,6 +1163,10 @@ type FileFieldsEnum =
   | 'childDataJson.parent.internal.type'
   | 'childDataJson.parent.parent.children'
   | 'childDataJson.parent.parent.id'
+  | 'childDataJson.phd_mentorship'
+  | 'childDataJson.phd_mentorship.name'
+  | 'childDataJson.phd_mentorship.startDate'
+  | 'childDataJson.phd_mentorship.summary'
   | 'childDataJson.press'
   | 'childDataJson.press.author'
   | 'childDataJson.press.date'
@@ -1152,6 +1198,16 @@ type FileFieldsEnum =
   | 'childDataJson.teaching.position'
   | 'childDataJson.teaching.startDate'
   | 'childDataJson.teaching.summary'
+  | 'childDataJson.thesis_committees'
+  | 'childDataJson.thesis_committees.name'
+  | 'childDataJson.thesis_committees.startDate'
+  | 'childDataJson.thesis_committees.summary'
+  | 'childDataJson.thesis_committees.tags'
+  | 'childDataJson.undergraduate_and_masters_mentorship'
+  | 'childDataJson.undergraduate_and_masters_mentorship.name'
+  | 'childDataJson.undergraduate_and_masters_mentorship.project'
+  | 'childDataJson.undergraduate_and_masters_mentorship.startDate'
+  | 'childDataJson.undergraduate_and_masters_mentorship.summary'
   | 'childDataJson.volunteer'
   | 'childDataJson.volunteer.organization'
   | 'childDataJson.volunteer.position'
@@ -1373,11 +1429,6 @@ type FileFieldsEnum =
   | 'childrenDataJson.internal.mediaType'
   | 'childrenDataJson.internal.owner'
   | 'childrenDataJson.internal.type'
-  | 'childrenDataJson.mentorship'
-  | 'childrenDataJson.mentorship.name'
-  | 'childrenDataJson.mentorship.project'
-  | 'childrenDataJson.mentorship.startDate'
-  | 'childrenDataJson.mentorship.summary'
   | 'childrenDataJson.parent.children'
   | 'childrenDataJson.parent.children.children'
   | 'childrenDataJson.parent.children.id'
@@ -1393,6 +1444,10 @@ type FileFieldsEnum =
   | 'childrenDataJson.parent.internal.type'
   | 'childrenDataJson.parent.parent.children'
   | 'childrenDataJson.parent.parent.id'
+  | 'childrenDataJson.phd_mentorship'
+  | 'childrenDataJson.phd_mentorship.name'
+  | 'childrenDataJson.phd_mentorship.startDate'
+  | 'childrenDataJson.phd_mentorship.summary'
   | 'childrenDataJson.press'
   | 'childrenDataJson.press.author'
   | 'childrenDataJson.press.date'
@@ -1424,6 +1479,16 @@ type FileFieldsEnum =
   | 'childrenDataJson.teaching.position'
   | 'childrenDataJson.teaching.startDate'
   | 'childrenDataJson.teaching.summary'
+  | 'childrenDataJson.thesis_committees'
+  | 'childrenDataJson.thesis_committees.name'
+  | 'childrenDataJson.thesis_committees.startDate'
+  | 'childrenDataJson.thesis_committees.summary'
+  | 'childrenDataJson.thesis_committees.tags'
+  | 'childrenDataJson.undergraduate_and_masters_mentorship'
+  | 'childrenDataJson.undergraduate_and_masters_mentorship.name'
+  | 'childrenDataJson.undergraduate_and_masters_mentorship.project'
+  | 'childrenDataJson.undergraduate_and_masters_mentorship.startDate'
+  | 'childrenDataJson.undergraduate_and_masters_mentorship.summary'
   | 'childrenDataJson.volunteer'
   | 'childrenDataJson.volunteer.organization'
   | 'childrenDataJson.volunteer.position'
@@ -3305,12 +3370,14 @@ type Query_dataJsonArgs = {
   children: InputMaybe<NodeFilterListInput>;
   id: InputMaybe<StringQueryOperatorInput>;
   internal: InputMaybe<InternalFilterInput>;
-  mentorship: InputMaybe<DataJsonMentorshipFilterListInput>;
   parent: InputMaybe<NodeFilterInput>;
+  phd_mentorship: InputMaybe<DataJsonPhd_mentorshipFilterListInput>;
   press: InputMaybe<DataJsonPressFilterListInput>;
   publications: InputMaybe<DataJsonPublicationsFilterListInput>;
   talks: InputMaybe<DataJsonTalksFilterListInput>;
   teaching: InputMaybe<DataJsonTeachingFilterListInput>;
+  thesis_committees: InputMaybe<DataJsonThesis_committeesFilterListInput>;
+  undergraduate_and_masters_mentorship: InputMaybe<DataJsonUndergraduate_and_masters_mentorshipFilterListInput>;
   volunteer: InputMaybe<DataJsonVolunteerFilterListInput>;
   work: InputMaybe<DataJsonWorkFilterListInput>;
 };

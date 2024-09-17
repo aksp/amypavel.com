@@ -86,7 +86,7 @@
     },
     {
         "id": "pvenkatesh",
-        "name": "Pranav Venkatesh", 
+        "name": "Pranav Venkatesh",
         "link": "https://www.cs.utexas.edu/~pranav42/"
     },
     {
@@ -193,6 +193,11 @@
         "link": "https://floraine.org"
     },
     {
+        "id": "fxu",
+        "name": "Fangyuan Xu",
+        "link": "https://www.cs.utexas.edu/~fxu/"
+    },
+    {
         "id": "greyes",
         "name": "Gabriel Reyes",
         "link": "https://www.gareyes.com/"
@@ -223,7 +228,7 @@
     },
     {
         "id": "jwarner",
-        "name": "Jeremy Warner", 
+        "name": "Jeremy Warner",
         "link": "https://jeremywrnr.com/"
     },
     {
@@ -421,5 +426,61 @@
         "id": "zlipton",
         "name": "Zachary Lipton",
         "link": "http://zacklipton.com/"
+    },
+    {
+        "id": "cchen",
+        "name": "Chongyan Chen",
+        "link": "https://chongyanchen.com/"
+    },
+    {
+        "id": "hmurugu",
+        "name": "Hansika Murugu"
+    },
+    {
+        "id": "dgurari",
+        "name": "Danna Gurari",
+        "link": "https://dannagurari.colorado.edu/"
+    },
+    {
+        "id": "echoi",
+        "name": "Eunsol Choi",
+        "link": "https://eunsol.github.io/"
+    },
+    {
+        "id": "agmohanbabu",
+        "name": "Ananya Gubbi Mohanbabu",
+        "link": "https://ananyagm.com/"
+    },
+    {
+        "id": "fhuq",
+        "name": "Faria Huq",
+        "link": "https://oaishi.github.io/"
+    },
+    {
+        "id": "yjiang",
+        "name": "Yue Jiang",
+        "link": "https://yuejiang-nj.github.io/"
+    },
+    {
+        "id": "xyli",
+        "name": "Amanda Xin Yue Li"
+    },
+    {
+        "id": "hyang",
+        "name": "Haitao Yang",
+        "link": "https://yanghtr.github.io/"
+    },
+    {
+        "id": "bsun",
+        "name": "Bo Sun"
+    },
+    {
+        "id": "lchen",
+        "name": "Liyan Chen"
+    },
+    {
+        "id": "qhuang",
+        "name": "Qixing Huang",
+        "link": "https://www.cs.utexas.edu/~huangqx/"
     }
 ]
