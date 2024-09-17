@@ -87,6 +87,17 @@
             "content": ""
         },
         {
+            "name": "Design Considerations for Photosensitivity Warnings in Visual Media",
+            "releaseDate": "10-02-2024",
+            "authors": ["lsouth", "cyildirim", "apavel", "mborkin"],
+            "publisher": "ASSETS 2024",
+            "tags": ["paper"],
+            "link": "",
+            "image": "",
+            "imageAlt": "",
+            "content": ""
+        },
+        {
             "name": "DreamStruct: Understanding Slides and User Interfaces via Synthetic Data Generation",
             "releaseDate": "10-01-2024",
             "authors": ["ypeng", "fhuq", "yjiang", "jwu", "xyli", "jbigham", "apavel"],
@@ -1370,13 +1381,13 @@
         },
         {
             "title": "SceneSkim: Searching and Browsing Movies Using Synchronized Captions, Scripts and Plot Summaries.",
-            "venue": "Berkeley Course: NWMEDIA 190: Making Sense of Cultural Data",
+            "venue": "UC Berkeley Course: NWMEDIA 190: Making Sense of Cultural Data",
             "location": "Berkeley, CA",
             "date": "Spring 2014"
         },
         {
             "title": "Automatically Extracting Command Names from Online Tutorials.",
-            "venue": "Visual Computing Lab Retreat",
+            "venue": "UC Berkeley Visual Computing Lab Retreat",
             "location": "Bodega Bay, CA",
             "date": "Fall 2011"
         }
