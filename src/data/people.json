@@ -17,7 +17,7 @@
     {
         "id": "kbenharrak",
         "name": "Karim Benharrak",
-        "link": "https://www.linkedin.com/in/karimbenharrak/"
+        "link": "https://benharrak.com/"
     },
     {
         "id": "aiyer",
@@ -482,5 +482,36 @@
         "id": "qhuang",
         "name": "Qixing Huang",
         "link": "https://www.cs.utexas.edu/~huangqx/"
+    },
+    {
+        "id": "mchen", 
+        "name": "Meng Chen",
+        "link": "https://mchen.dev/"
+    },
+    {
+        "id": "kclark",
+        "name": "Katie Clark"
+    },
+    {
+        "id": "udas",
+        "name": "Ujjaini Das",
+        "link": "https://www.linkedin.com/in/ujjainidas"
+    },
+    {
+        "id": "epark",
+        "name": "Elin Park"
+    },
+    {
+        "id": "salbedaiwi",
+        "name": "Sumaya Al-Bedaiwi",
+        "link": "https://www.linkedin.com/in/salbedaiwi"
+    },
+    {
+        "id": "jhe",
+        "name": "Jerry He"
+    },
+    {
+        "id": "szheng",
+        "name": "Sarah Zheng"
     }
 ]

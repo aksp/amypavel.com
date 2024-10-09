@@ -63,6 +63,19 @@ function Honor({ tags }: { tags: Publication["tags"] }) {
       </p>
     );
   }
+  const oral = tags.includes("oral-spotlight"); 
+  if (oral) {
+    const Icon = BookmarkIcon;
+    const text = "Oral Spotlight";
+    return (
+      <p className="pb-1">
+        <b>
+          <Icon className="h-4 w-4 inline-block align-middle" />
+          <div className="ml-1 inline-block align-middle">{text}</div>
+        </b>
+      </p>
+    );
+  }
   return null;
 }
 

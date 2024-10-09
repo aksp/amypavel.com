@@ -59,10 +59,10 @@
             "authors": ["mhuh", "apavel"],
             "publisher": "UIST 2024",
             "tags": ["paper"],
-            "link": "",
-            "image": "",
-            "imageAlt": "",
-            "content": ""
+            "link": "https://minahuh.com/DesignChecker/",
+            "image": "designchecker",
+            "imageAlt": "A thumbnail of 5 websites before and after using DesignChecker. The after websites have improved aesthetically according to design pricinples (e.g., color harmony, alignment).",
+            "content": "[Project Page](https://minahuh.com/DesignChecker/)"
         },
         {
             "name": "Long-Form Answers to Visual Questions from Blind and Low Vision People",
@@ -70,10 +70,10 @@
             "authors": ["mhuh", "fxu", "ypeng", "cchen", "hmurugu", "dgurari", "echoi", "apavel"],
             "publisher": "COLM 2024",
             "tags": ["paper", "oral-spotlight"],
-            "link": "",
-            "image": "",
-            "imageAlt": "",
-            "content": ""
+            "link": "https://minahuh.com/LFVQA/",
+            "image": "lfvqa",
+            "imageAlt": "A thumbnail of longform visual question answers across humans, GPT-4V and Gemini. Each answer sentence is labeled with a discourse role (e.g., confirmation, answer) and information source (e.g., image quality, image content).",
+            "content": "[Project Page](https://minahuh.com/LFVQA/)"
         },
         {
             "name": "Context-Aware Image Descriptions for Web Accessibility",
@@ -81,10 +81,10 @@
             "authors": ["agmohanbabu", "apavel"],
             "publisher": "ASSETS 2024",
             "tags": ["paper"],
-            "link": "",
-            "image": "",
-            "imageAlt": "",
-            "content": ""
+            "link": "https://ananyagm.com/context-aware-image-descriptions.html",
+            "image": "contextaware2",
+            "imageAlt": "A thumbnail of a couch listing image with a context free description that does not contain much information about the couch, and a context-aware description that focuses on the couch.",
+            "content": "[Project Page](https://ananyagm.com/context-aware-image-descriptions.html)"
         },
         {
             "name": "Design Considerations for Photosensitivity Warnings in Visual Media",
@@ -93,8 +93,8 @@
             "publisher": "ASSETS 2024",
             "tags": ["paper"],
             "link": "",
-            "image": "",
-            "imageAlt": "",
+            "image": "designconsiderations",
+            "imageAlt": "A thumbnail of an interface for browsing potentially harmful video segments.",
             "content": ""
         },
         {
@@ -104,9 +104,20 @@
             "publisher": "ECCV 2024",
             "tags": ["paper"],
             "link": "",
-            "image": "",
-            "imageAlt": "",
+            "image": "dreamstruct",
+            "imageAlt": "A thumbnail of DreamStruct's UI generation that starts with a UI description, then generates HTML UI code, then generates images for the UI and outputs the final user interface.",
             "content": ""
+        },
+        {
+            "name": "Barriers to Photosensitive Accessibility in Virtual Reality",
+            "releaseDate": "05-07-2024",
+            "authors": ["lsouth", "cyildirim", "apavel", "mborkin"],
+            "publisher": "CHI 2024",
+            "tags": ["paper", "honorablemention"],
+            "link": "https://osf.io/preprints/osf/ywqba",
+            "image": "photovr",
+            "imageAlt": "A thumbnail of a table of potential accessibility barriers in VR.",
+            "content": "[PDF](papers/photoVR.pdf)"
         },
         {
             "name": "ShortScribe: Making Short-Form Videos Accessible with Hierarchical Video Summaries",
@@ -117,7 +128,7 @@
             "link": "https://minahuh.com/ShortScribe/",
             "image": "shortscribe",
             "imageAlt": "A thumbnail of the ShortScribe pipeline. The pipeline takes the video as input, transcribes it and describes the keyframes, then uses GPT-4 to generate multiple types of descriptions.",
-            "content": "[PDF](https://dl.acm.org/doi/10.1145/3613904.3642839)"
+            "content": "[Project Page](https://minahuh.com/ShortScribe/)"
         },
         {
             "name": "COMPA: Using Conversation Context to Achieve Common Ground in AAC",
@@ -131,24 +142,13 @@
             "content": "[PDF](https://www.cs.cmu.edu/~jbigham/pubs/pdfs/2024/compa.pdf)"
         },
         {
-            "name": "Barriers to Photosensitive Accessibility in Virtual Reality",
-            "releaseDate": "05-04-2024",
-            "authors": ["lsouth", "cyildirim", "apavel", "mborkin"],
-            "publisher": "CHI 2024",
-            "tags": ["paper", "honorablemention"],
-            "link": "https://osf.io/preprints/osf/ywqba",
-            "image": "photovr",
-            "imageAlt": "A thumbnail of a table of potential accessibility barriers in VR.",
-            "content": "[PDF](papers/photoVR.pdf)"
-        },
-        {
             "name": "GeoLatent: A Geometric Approach to Latent Space Design for Deformable Shape Generators",
             "releaseDate": "12-06-2023",
             "authors": ["hyang", "bsun", "lchen", "apavel", "qhuang"],
             "publisher": "SIGGRAPH ASIA 2023",
             "tags": ["paper"],
-            "link": "",
-            "image": "",
+            "link": "https://dl.acm.org/doi/10.1145/3618371",
+            "image": "geolatent",
             "imageAlt": "",
             "content": ""
         },
