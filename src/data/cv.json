@@ -8,6 +8,14 @@
             "startDate": "2022-01-15"
         },
         {
+            "name": "Google",
+            "location": "Mountain View, CA",
+            "description": "Google Research",
+            "position": "Visiting Faculty Researcher",
+            "startDate": "2024-10-01",
+            "summary": "Remote, 20% appointment"
+        },
+        {
             "name": "Apple Inc",
             "location": "Cupertino, CA",
             "description": "AI/ML",
@@ -53,6 +61,34 @@
         }
     ],
     "publications": [
+        {
+            "name": "Creativejento: Supporting Accessible Authoring with Agency-Preserving User Interface Agents",
+            "releaseDate": "05-01-2025",
+            "authors": ["ypeng", "dli", "jbigham", "apavel"],
+            "publisher": "Under Review for CHI 2025",
+            "tags": ["paper"]
+        },
+        {
+            "name": "TalkLess: Balancing Extractive and Abstractive Summarization for Dynamic Speech Shortening",
+            "releaseDate": "05-01-2025",
+            "authors": ["kbenharrak", "ppeng", "apavel"],
+            "publisher": "Under Review for CHI 2025",
+            "tags": ["paper"]
+        },
+        {
+            "name": "VeasyGuide: Visual Guidance for Low Vision Users on Instructor Actions in Presentation Videos",
+            "releaseDate": "05-01-2025",
+            "authors": ["ysechayk", "ashamir", "apavel", "tigarashi"],
+            "publisher": "Under Review for CHI 2025",
+            "tags": ["paper"]
+        },
+        {
+            "name": "VideoDiff: Human-AI Video Co-Creation with Alternatives",
+            "releaseDate": "05-01-2025",
+            "authors": ["mhuh", "dli", "kpimmel", "vhijung", "apavel", "mdontcheva"],
+            "publisher": "Under Review for CHI 2025",
+            "tags": ["paper"]
+        },
         {
             "name": "DesignChecker: Visual Design Support for Blind and Low Vision Web Developers",
             "releaseDate": "10-01-2024",
