@@ -484,7 +484,7 @@
         "link": "https://www.cs.utexas.edu/~huangqx/"
     },
     {
-        "id": "mchen", 
+        "id": "mchen",
         "name": "Meng Chen",
         "link": "https://mchen.dev/"
     },
@@ -513,5 +513,33 @@
     {
         "id": "szheng",
         "name": "Sarah Zheng"
+    },
+    {
+        "id": "ppeng",
+        "name": "Puyuan Peng"
+    },
+    {
+        "id": "ysechayk",
+        "name": "Yotam Sechayk"
+    },
+    {
+        "id": "ashamir",
+        "name": "Ariel Shamir"
+    },
+    {
+        "id": "tigarashi",
+        "name": "Takeo Igarashi"
+    },
+    {
+        "id": "kpimmel",
+        "name": "Kim Pimmel"
+    },
+    {
+        "id": "vhijung",
+        "name": "Valentina Hijung"
+    },
+    {
+        "id": "mdontcheva",
+        "name": "Mira Dontcheva"
     }
 ]
