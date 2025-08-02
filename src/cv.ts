@@ -46,6 +46,7 @@ const Publication = t.intersection([
     imageAlt: t.string,
     content: t.string,
     shortName: t.string, // name used for highlights
+    highlightSortOrder: t.number, // used to sort highlights
   }),
 ]);
 

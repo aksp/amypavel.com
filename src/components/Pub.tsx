@@ -48,7 +48,7 @@ export function PeopleList({ people }: { people: Person[] }) {
   );
 }
 
-function Honor({ tags }: { tags: Publication["tags"] }) {
+export function Honor({ tags }: { tags: Publication["tags"] }) {
   const bestPaper = tags.includes("bestpaper");
   const hm = tags.includes("honorablemention");
   if (bestPaper || hm) {
@@ -73,6 +73,49 @@ function Honor({ tags }: { tags: Publication["tags"] }) {
           <Icon className="h-4 w-4 inline-block align-middle" />
           <div className="ml-1 inline-block align-middle">{text}</div>
         </b>
+      </p>
+    );
+  }
+  return null;
+}
+
+export function pubHonor({ tags }: { tags: Publication["tags"] }) {
+  const bestPaper = tags.includes("bestpaper");
+  if (bestPaper) {
+    return "Best Paper Award";
+  }
+  const hm = tags.includes("honorablemention");
+  if (hm) {
+    return "Honorable Mention Award";
+  }
+  const spotlight = tags.includes("oral-spotlight");
+  if (spotlight) {
+    return "Oral Spotlight";
+  }
+  return null;
+}
+
+export function HonorLite({ tags }: { tags: Publication["tags"] }) {
+  const bestPaper = tags.includes("bestpaper");
+  const hm = tags.includes("honorablemention");
+  if (bestPaper || hm) {
+    const Icon = bestPaper ? TrophyIcon : BookmarkIcon;
+    const text = bestPaper ? "Best Paper Award" : "Honorable Mention Award";
+    return (
+      <p className="pb-1">
+          {/* <Icon className="h-3 w-3 inline-block align-middle" /> */}
+          <div className="inline-block align-middle text-sm">{text}</div>
+      </p>
+    );
+  }
+  const oral = tags.includes("oral-spotlight"); 
+  if (oral) {
+    const Icon = BookmarkIcon;
+    const text = "Oral Spotlight";
+    return (
+      <p className="pb-1">
+          {/* <Icon className="h-3 w-3 inline-block align-middle" /> */}
+          <div className="inline-block align-middle text-sm">{text}</div>
       </p>
     );
   }

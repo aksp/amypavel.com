@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
-import PubComponent, { RawPeopleIdList, PeopleList } from "../components/Pub";
+import PubComponent, { RawPeopleIdList, PeopleList, pubHonor } from "../components/Pub";
 import { cv } from "../cv";
 import { PEOPLE } from "../people";
 import WorkComponent from "../components/Work";
@@ -114,27 +114,28 @@ export default function IndexPage({ data }) {
             dangerouslySetInnerHTML={{ __html: aboutHtml }}
           />
           <hr />
-          {/*<h2 className="text-2xl font-medium pb-7 pt-8">*/}
-          {/*  Research Highlights*/}
-          {/*</h2>*/}
-          {/*<div className="container">*/}
-          {/*  <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 gap-3">*/}
-          {/*    {pubs*/}
-          {/*      .filter((pub) => pub.tags.includes("highlight"))*/}
-          {/*      .map((pub) => (*/}
-          {/*        <div className="col-span-1 pb-4 sm:pb-0">*/}
-          {/*          <HighlightComponent*/}
-          {/*            title={pub.shortName ?? pub.name}*/}
-          {/*            subtitle={pub.publisher}*/}
-          {/*            imageName={pub.image}*/}
-          {/*            imageAlt={pub.imageAlt}*/}
-          {/*          >*/}
-          {/*            <ReactMarkdown>{pub.content ?? ""}</ReactMarkdown>*/}
-          {/*          </HighlightComponent>*/}
-          {/*        </div>*/}
-          {/*      ))}*/}
-          {/*  </div>*/}
-          {/*</div>*/}
+          <h2 className="text-2xl font-medium pb-7 pt-8">
+           Research Highlights
+          </h2>
+          <div className="container">
+           <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 gap-3">
+             {pubs
+                .filter((pub) => pub.tags.includes("highlight"))
+                .toSorted((a, b) => (a.highlightSortOrder ?? Infinity) - (b.highlightSortOrder ?? Infinity))
+                .map((pub) => (
+                  <div className="col-span-1 pb-4 sm:pb-0">
+                    <HighlightComponent
+                      title={pub.shortName ?? pub.name}
+                      subtitle={pub.publisher + (pubHonor(pub) ?  " – " + pubHonor(pub) : '')}
+                      imageName={pub.image}
+                      imageAlt={pub.imageAlt}
+                    >
+                      <ReactMarkdown>{pub.content ?? ""}</ReactMarkdown>
+                    </HighlightComponent>
+                  </div>
+                ))}
+            </div>
+          </div> 
           <h2 className="text-2xl font-medium pb-7 pt-8">Research Summary</h2>
           <div
             className="writing"

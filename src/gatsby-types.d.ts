@@ -240,6 +240,7 @@ type DataJsonFieldsEnum =
   | 'publications.authorNotes.equal'
   | 'publications.authors'
   | 'publications.content'
+  | 'publications.highlightSortOrder'
   | 'publications.image'
   | 'publications.imageAlt'
   | 'publications.link'
@@ -395,6 +396,7 @@ type DataJsonPublications = {
   readonly authorNotes: Maybe<DataJsonPublicationsAuthorNotes>;
   readonly authors: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly content: Maybe<Scalars['String']>;
+  readonly highlightSortOrder: Maybe<Scalars['Int']>;
   readonly image: Maybe<Scalars['String']>;
   readonly imageAlt: Maybe<Scalars['String']>;
   readonly link: Maybe<Scalars['String']>;
@@ -418,6 +420,7 @@ type DataJsonPublicationsFilterInput = {
   readonly authorNotes: InputMaybe<DataJsonPublicationsAuthorNotesFilterInput>;
   readonly authors: InputMaybe<StringQueryOperatorInput>;
   readonly content: InputMaybe<StringQueryOperatorInput>;
+  readonly highlightSortOrder: InputMaybe<IntQueryOperatorInput>;
   readonly image: InputMaybe<StringQueryOperatorInput>;
   readonly imageAlt: InputMaybe<StringQueryOperatorInput>;
   readonly link: InputMaybe<StringQueryOperatorInput>;
@@ -1176,6 +1179,7 @@ type FileFieldsEnum =
   | 'childDataJson.publications.authorNotes.equal'
   | 'childDataJson.publications.authors'
   | 'childDataJson.publications.content'
+  | 'childDataJson.publications.highlightSortOrder'
   | 'childDataJson.publications.image'
   | 'childDataJson.publications.imageAlt'
   | 'childDataJson.publications.link'
@@ -1457,6 +1461,7 @@ type FileFieldsEnum =
   | 'childrenDataJson.publications.authorNotes.equal'
   | 'childrenDataJson.publications.authors'
   | 'childrenDataJson.publications.content'
+  | 'childrenDataJson.publications.highlightSortOrder'
   | 'childrenDataJson.publications.image'
   | 'childrenDataJson.publications.imageAlt'
   | 'childrenDataJson.publications.link'
