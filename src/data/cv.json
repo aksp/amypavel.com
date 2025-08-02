@@ -562,6 +562,7 @@
             "authors": ["apavel", "creed", "bhartmann", "magrawala"],
             "summary": "(22.2% acceptance rate, 10 pages)",
             "publisher": "UIST 2014",
+            "tags": ["paper"],
             "shortName": "Video Digests",
             "link": "http://vis.berkeley.edu/papers/videodigests/",
             "image": "videodigests",
