@@ -65,28 +65,42 @@
             "name": "Creativejento: Supporting Accessible Authoring with Agency-Preserving User Interface Agents",
             "releaseDate": "05-01-2025",
             "authors": ["ypeng", "dli", "jbigham", "apavel"],
-            "publisher": "Under Review for CHI 2025",
+            "publisher": "Submitted to CHI 2025",
             "tags": ["paper"]
         },
         {
             "name": "TalkLess: Balancing Extractive and Abstractive Summarization for Dynamic Speech Shortening",
             "releaseDate": "05-01-2025",
             "authors": ["kbenharrak", "ppeng", "apavel"],
-            "publisher": "Under Review for CHI 2025",
+            "publisher": "Submitted to CHI 2025",
             "tags": ["paper"]
         },
         {
             "name": "VeasyGuide: Visual Guidance for Low Vision Users on Instructor Actions in Presentation Videos",
             "releaseDate": "05-01-2025",
             "authors": ["ysechayk", "ashamir", "apavel", "tigarashi"],
-            "publisher": "Under Review for CHI 2025",
+            "publisher": "Submitted to CHI 2025",
             "tags": ["paper"]
         },
         {
             "name": "VideoDiff: Human-AI Video Co-Creation with Alternatives",
             "releaseDate": "05-01-2025",
             "authors": ["mhuh", "dli", "kpimmel", "vhijung", "apavel", "mdontcheva"],
-            "publisher": "Under Review for CHI 2025",
+            "publisher": "Submitted to CHI 2025",
+            "tags": ["paper"]
+        },
+        {
+            "name": "HistoryPalette: Supporting Exploration and Reuse of Past Alternatives in Image Generation and Editing",
+            "releaseDate": "05-01-2025",
+            "authors": ["kbenharrak", "apavel"],
+            "publisher": "Submitted to CHI 2025",
+            "tags": ["paper"]
+        },
+        {
+            "name": "Lotus: Creating Short Videos From Long Videos With Abstractive and Extractive Summarization",
+            "releaseDate": "05-01-2025",
+            "authors": ["abarua", "kbenharrak", "mchen", "mhuh", "apavel"],
+            "publisher": "To Appear at IUI 2025",
             "tags": ["paper"]
         },
         {
@@ -659,7 +673,17 @@
             "image": "sifter"
         }
     ],
+    "student_awards": [
+        {
+            "title": "Google PhD Fellowship (2 Years) -- Mina Huh",
+            "date": "2024"
+        }
+    ],
     "awards": [
+        {
+            "title": "Apple Gift Funding",
+            "date": "2024"
+        },
         {
             "title": "COLM Oral Spotlight Paper",
             "date": "2024"
@@ -724,6 +748,18 @@
         }
     ],
     "volunteer": [
+        {
+            "position": "Best Paper Committee Member",
+            "organization": "ACM UIST",
+            "startDate": "Fall 2024",
+            "tags": ["research-community"]
+        },
+        {
+            "position": "Best Paper Committee Member",
+            "organization": "ACM CHI",
+            "startDate": "Fall 2023",
+            "tags": ["research-community"]
+        },
         {
             "position": "Panel Reviewer",
             "organization": "NIDILRR",
@@ -845,6 +881,66 @@
             "tags": ["sv"]
         },
         {
+            "position": "Generative AI and Accessibility Workshop Organizer",
+            "organization": "ACM CHI",
+            "startDate": "2025",
+            "tags": ["research-community"]
+        },
+        {
+            "position": "Invited Guest",
+            "organization": "ACM UIST, Student Volunteer's `Rockstars' Lunch",
+            "startDate": "2024",
+            "tags": ["research-community"]
+        },
+        {
+            "position": "Panelist: Women of UIST",
+            "organization": "ACM UIST",
+            "startDate": "2024",
+            "tags": ["research-community"]
+        },
+        {
+            "position": "Demo Awards Judge",
+            "organization": "ACM UIST",
+            "startDate": "2024",
+            "tags": ["research-community"]
+        },
+        {
+            "position": "Panelist: Women's Lunch",
+            "organization": "ACM UIST",
+            "startDate": "2023",
+            "tags": ["research-community"]
+        },
+        {
+            "position": "Co-Organizer",
+            "organization": "EECS Rising Stars (UT Austin)",
+            "startDate": "2022",
+            "tags": ["research-community"]
+        },
+        {
+            "position": "Digital Experience Co-Chair",
+            "organization": "ACM UIST",
+            "startDate": "2021",
+            "tags": ["research-community"]
+        },
+        {
+            "position": "CrowdCamp Workshop Co-Organizer",
+            "organization": "HCOMP",
+            "startDate": "2020",
+            "tags": ["research-community"]
+        },
+        {
+            "position": "Graduate Student Search Committee",
+            "organization": "UT Austin, Computer Science",
+            "startDate": "Spring 2025",
+            "tags": ["department"]
+        },
+        {
+            "position": "Honors Thesis Committee",
+            "organization": "UT Austin, Computer Science",
+            "startDate": "Fall 2024",
+            "tags": ["department"]
+        },
+        {
             "position": "Honors Thesis Committee",
             "organization": "UT Austin, Computer Science",
             "startDate": "Spring 2024",
@@ -935,21 +1031,51 @@
             "tags": ["peer-review"]
         },
         {
-            "position": "Course Creator and Instructor | Designing Accessible AI-Powered Interfaces",
-            "organization": "UTCS UT Austin, CS Academy for Women",
+            "position": "Course Creator and Instructor",
+            "organization": "UTCS, CS Academy for Women",
             "startDate": "Summer 2024",
             "tags": ["community"]
         },
         {
-            "position": "Course Creator and Instructor | Designing Accessible AI-Powered Interfaces",
-            "organization": "UTCS UT Austin, Academy for ML",
+            "position": "Course Creator and Instructor",
+            "organization": "UTCS, Academy for ML",
             "startDate": "Summer 2024",
             "tags": ["community"]
         },
         {
-            "position": "Course Creator and Instructor | Designing Accessible AI-Powered Interfaces",
+            "position": "Course Creator and Instructor",
             "organization": "UTCS, CS Academy for All",
             "startDate": "Summer 2024",
+            "tags": ["community"]
+        },
+        {
+            "position": "Panelist: CS Research",
+            "organization": "UTCS, Graduate Women and Gender Minorities in Computing",
+            "startDate": "2023",
+            "tags": ["community"]
+        },
+        {
+            "position": "Panelist: Getting Into Grad School",
+            "organization": "UTCS, ACM",
+            "startDate": "2023",
+            "tags": ["community"]
+        },
+        {
+            "position": "Panelist: Women in CS",
+            "organization": "UTCS, ACM 4 Change",
+            "startDate": "2023",
+            "tags": ["community"]
+        },
+        {
+            "position": "Faculty Mentor",
+            "organization": "SAGES Mentoring Program at UT Austin",
+            "startDate": "2022",
+            "tags": ["community"]
+        },
+        {
+            "position": "Demo Day Judge",
+            "organization": "Texas Convergent at UT Austin",
+            "startDate": "2022, 2023",
             "tags": ["community"]
         },
         {
@@ -975,17 +1101,9 @@
         {
             "position": "Instructor",
             "institution": "UT Austin",
-            "course": "CS 395T: Human-Computer Interaction Research",
-            "link": "",
-            "summary": ["25 students", "Semester Focus: Accessibility"],
-            "startDate": "Fall 2024"
-        },
-        {
-            "position": "Instructor",
-            "institution": "UT Austin",
             "course": "CS 378: Introduction to Human-Computer Interaction",
             "link": "",
-            "summary": ["59 students", "Course staff of 1 TA", "Instructor Rating: 4.54/5.0 (Response Ratio: 97%)"],
+            "summary": ["80 students"],
             "startDate": "Spring 2024"
         },
         {
@@ -993,7 +1111,23 @@
             "institution": "UT Austin",
             "course": "CS 395T: Human-Computer Interaction Research",
             "link": "",
-            "summary": ["15 students", "Semester Focus: Human-AI Interaction", "Instructor Rating: 5.0/5.0 (Response Ratio: 93.3%)"],
+            "summary": ["25 students", "Semester Focus: Accessibility", "Instructor Rating: 4.65/5.0", "Course Rating: 4.46/5.0", "Survey Response Ratio: 89.1%"],
+            "startDate": "Fall 2024"
+        },
+        {
+            "position": "Instructor",
+            "institution": "UT Austin",
+            "course": "CS 378: Introduction to Human-Computer Interaction",
+            "link": "",
+            "summary": ["59 students", "Instructor Rating: 4.54/5.0", "Course Rating: 4.33/5.0", "Survey Response Ratio: 96.6%"],
+            "startDate": "Spring 2024"
+        },
+        {
+            "position": "Instructor",
+            "institution": "UT Austin",
+            "course": "CS 395T: Human-Computer Interaction Research",
+            "link": "",
+            "summary": ["15 students", "Semester Focus: Human-AI Interaction", "Instructor Rating: 5.0/5.0", "Course Rating: 4.71/5.0", "Survey Response Ratio: 93.3%"],
             "startDate": "Fall 2023"
         },
         {
@@ -1001,7 +1135,7 @@
             "institution": "UT Austin",
             "course": "CS 378: Introduction to Human-Computer Interaction",
             "link": "",
-            "summary": ["55 students", "Course staff of 1 TA"],
+            "summary": ["55 students", "Instructor Rating: 3.39/5.0", "Course Rating: 3.74/5.0", "Survey Response Ratio: 69%"],
             "startDate": "Spring 2023"
         },
         {
@@ -1068,10 +1202,22 @@
     ],
     "thesis_committees": [
         {
+            "name": "Chongyan Chen",
+            "summary": "PhD Student at UC Boulder (Advised by Danna Gurari)",
+            "tags": ["dissertation"],
+            "startDate": "Upcoming"
+        },
+        {
+            "name": "Saelyne Yang",
+            "summary": "PhD Student at KAIST (Advised by Juho Kim)",
+            "tags": ["dissertation"],
+            "startDate": "Upcoming"
+        },
+        {
             "name": "Alex Braylan",
             "summary": "PhD Student at UT Austin (Advised by Matt Lease)",
             "tags": ["dissertation"],
-            "startDate": "Upcoming"
+            "startDate": "2024"
         },
         {
             "name": "Jerry Tang",
@@ -1115,22 +1261,70 @@
     ],
     "undergraduate_and_masters_mentorship": [
         {
-            "name": "Ananya Gubbi Mohanbabu",
-            "project": "Context-Aware Descriptions (first author ASSETS 2024).",
-            "summary": "Master's Student in Information, UT Austin.",
-            "startDate": "Fall 2023, Spring 2024"
+            "name": "Sumaya Al-Bedaiwi",
+            "project": "Assessment Support for Speech Languge Pathologists (Master's Thesis).",
+            "summary": "5-Year Master's Student, UT Austin",
+            "startDate": "Fall 2024 - Present"
+        },
+        {
+            "name": "Katie Clark",
+            "project": "2D Images to Tactile Graphics (Master's Thesis).",
+            "summary": "5-Year Master's Student, UT Austin",
+            "startDate": "Fall 2024 - Present"
+        },
+        {
+            "name": "Sarah Zheng",
+            "project": "Describing Scientific Diagrams (Honors Thesis).",
+            "summary": "Undergraduate Student, UT Austin",
+            "startDate": "Fall 2024 - Present"
+        },
+        {
+            "name": "Elin Park",
+            "project": "Audio Production for d/Deaf and Hard of Hearing Creators (Independent Study).",
+            "summary": "Undergraduate Student, UT Austin",
+            "startDate": "Fall 2024 - Present"
+        },
+        {
+            "name": "Jerry He",
+            "project": "Optimizing Sensor Position for Aiming (Independent Study).",
+            "summary": "Undergraduate Student, UT Austin",
+            "startDate": "Fall 2024"
         },
         {
             "name": "Akhil Iyer",
             "project": "Automatic Live Descriptions (co-author CHI 2024).",
             "summary": "Undergradaute, UT Austin.",
-            "startDate": "Fall 2023-Present"
+            "startDate": "Fall 2023 - Present"
+        },
+        {
+            "name": "Adi Barua",
+            "project": "Creating Short Videos from Long Videos (first author IUI 2024, Honors Thesis).",
+            "summary": "Undergradaute, UT Austin.",
+            "startDate": "Fall 2023 - Present"
+        },
+        {
+            "name": "Ananya Gubbi Mohanbabu",
+            "project": "Context-Aware Descriptions (first author ASSETS 2024 paper and Master's Thesis).",
+            "summary": "Master's Student, UT Austin. Next: PhD at UT Austin",
+            "startDate": "Fall 2023 - Spring 2024"
+        },
+        {
+            "name": "Hansika Murugu",
+            "project": "Evaluating Long Form Answers to Visual Questions (Independent Study).",
+            "summary": "Undergradaute at HKUST, Visiting UT Austin. Next: MS at UMD",
+            "startDate": "Fall 2023 - Spring 2024"
+        },
+        {
+            "name": "Ujjaini Das",
+            "project": "Describing Complex Motion (Independent Study).",
+            "summary": "Undergradaute, UT Austin.",
+            "startDate": "Fall 2023 - Spring 2024"
         },
         {
             "name": "Tess Van Deaele",
-            "project": "Making Short Videos Accessible (first-author CHI 2024, thesis)",
+            "project": "Making Short Videos Accessible (first-author CHI 2024 and Honors Thesis)",
             "summary": "Undergradaute, UT Austin. Next: Software Engineer at Verkada",
-            "startDate": "Fall 2022, Spring 2023"
+            "startDate": "Fall 2022 - Spring 2023"
         },
         {
             "name": "Yuning Zhang",
@@ -1141,14 +1335,26 @@
         {
             "name": "Jalyn Derry",
             "project": "Making Short Videos Accessible (co-author CHI 2024).",
-            "summary": "Undergradaute, UT Austin. Next: UX Design at Indeed",
+            "summary": "Undergradaute, UT Austin. Next: UX Design at Expedia",
             "startDate": "Spring 2023"
+        },
+        {
+            "name": "Pranav Venkatesh",
+            "project": "Comparing Web and LLM Search (Independent Study, Co-Advised with Eunsol Choi).",
+            "summary": "Undergradaute, UT Austin.",
+            "startDate": "Fall 2022 - Fall 2023"
+        },
+        {
+            "name": "Doeun Lee",
+            "project": "Comparing Web and LLM Search (Independent Study, Co-Advised with Eunsol Choi).",
+            "summary": "Undergradaute, UT Austin. Next: Master's at OSU",
+            "startDate": "Fall 2022 - Fall 2023"
         },
         {
             "name": "Daniel Killough",
             "project": "Community-Driven Live Descriptions (first author ASSETS 2023).",
             "summary": "Undergradaute, UT Austin. Next: PhD at University of Wisconsin Madison",
-            "startDate": "Summer 2022-Spring 2023"
+            "startDate": "Summer 2022 - Spring 2023"
         },
         {
             "name": "Yi-Hao Peng",
@@ -1225,6 +1431,12 @@
     ],
     "talks": [
         {
+            "title": "Panelist (AI for Accessiblity).",
+            "venue": "UT Austin: AI Live",
+            "location": "Austin, TX",
+            "date": "Summer 2024"
+        },
+        {
             "title": "Accessible Creativity.",
             "venue": "Apple Workshop on Human Centered Machine Learning",
             "location": "Cupertino, CA",
@@ -1255,7 +1467,7 @@
             "date": "Fall 2023"
         },
         {
-            "title": "Invited guest.",
+            "title": "Invited Guest.",
             "venue": "Fairness in Datasets for Machine Learning in Accessibility Workshop",
             "location": "Virtual Event",
             "date": "Summer 2023"
