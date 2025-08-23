@@ -95,8 +95,8 @@ function workItems(resume: CV): TwoColumnItem[] {
     endDate,
   } of work) {
     const left = [
-      `${bold(name)}, ${description} -- ${italic(position)}`,
-      summary ?? "",
+      `${bold(name)}, ${italic(position)}`,
+      `${description}${summary ? `. ${summary}` : ""}`,
     ];
     let start = startDate;
     let tryEnd = true;

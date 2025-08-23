@@ -1,7 +1,11 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
-import PubComponent, { RawPeopleIdList, PeopleList, pubHonor } from "../components/Pub";
+import PubComponent, {
+  RawPeopleIdList,
+  PeopleList,
+  pubHonor,
+} from "../components/Pub";
 import { cv } from "../cv";
 import { PEOPLE } from "../people";
 import WorkComponent from "../components/Work";
@@ -40,24 +44,39 @@ export default function IndexPage({ data }) {
             <p>
               Assistant Professor
               <br />
-              <a href="https://www.utexas.edu">University of Texas at Austin</a>
+              <a href="https://berkeley.edu">
+                University of California, Berkeley
+              </a>
               <br />
-              <a href="https://www.cs.utexas.edu/">Computer Science</a>
+              <a href="https://eecs.berkeley.edu/">
+                Electrical Engineering and Computer Sciences
+              </a>
             </p>
           </div>
           <div className="pb-7">
             <p>
               Email{" "}
-              <a href="mailto:apavel@cs.utexas.edu">apavel@cs.utexas.edu</a>
+              <a href="mailto:amypavel@berkeley.edu">amypavel@berkeley.edu</a>
             </p>
             <p>
               Office{" "}
-              <a href="https://utdirect.utexas.edu/apps/campus/buildings/nlogon/maps/utm/gdc/">
-                GDC 3.704
+              <a href="https://www.berkeley.edu/map/sutardja-dai-hall/">
+                SDH 415
               </a>
             </p>
             <p>
               Twitter <a href="https://twitter.com/amypavel">@amypavel</a>
+            </p>
+            <p>
+              Bluesky{" "}
+              <a href="https://bsky.app/profile/amypavel.bsky.social">
+                @amypavel.bsky.social
+              </a>
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/amy-pavel-02871821/">
+                LinkedIn
+              </a>
             </p>
             <p>
               Publications{" "}
@@ -75,7 +94,15 @@ export default function IndexPage({ data }) {
               <b>People</b>
               <br></br>
               <em>Ph.D. Students:</em>{" "}
-              <RawPeopleIdList peopleIds={["mhuh", "kbenharrak", "agmohanbabu", "mchen", "ypeng"]} />{" "}
+              <RawPeopleIdList
+                peopleIds={[
+                  "mhuh",
+                  "kbenharrak",
+                  "agmohanbabu",
+                  "mchen",
+                  "ypeng",
+                ]}
+              />{" "}
               (co-advised with <RawPeopleIdList peopleIds={["jbigham"]} />)
               <br></br>
               <em>Masters and Undergraduates:</em>{" "}
@@ -83,17 +110,27 @@ export default function IndexPage({ data }) {
                 peopleIds={[
                   "abarua",
                   "aiyer",
-                  "kclark", 
+                  "kclark",
                   "salbedaiwi",
                   "udas",
                   "jhe",
-                  "szheng"
+                  "szheng",
                 ]}
               />
               <br></br>
               <em>Recent Alumni:</em>{" "}
               <RawPeopleIdList
-                peopleIds={["dlee", "pvenkatesh", "tvandaele", "yzhang", "dkillough", "jderry", "ajiao", "skole", "cgupta"]}
+                peopleIds={[
+                  "dlee",
+                  "pvenkatesh",
+                  "tvandaele",
+                  "yzhang",
+                  "dkillough",
+                  "jderry",
+                  "ajiao",
+                  "skole",
+                  "cgupta",
+                ]}
               />
               <br></br>
               {/*<em>Recent Collaborators:</em>*/}
@@ -115,18 +152,25 @@ export default function IndexPage({ data }) {
           />
           <hr />
           <h2 className="text-2xl font-medium pb-7 pt-8">
-           Research Highlights
+            Research Highlights
           </h2>
           <div className="container">
-           <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 gap-3">
-             {pubs
+            <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 gap-3">
+              {pubs
                 .filter((pub) => pub.tags.includes("highlight"))
-                .toSorted((a, b) => (a.highlightSortOrder ?? Infinity) - (b.highlightSortOrder ?? Infinity))
+                .toSorted(
+                  (a, b) =>
+                    (a.highlightSortOrder ?? Infinity) -
+                    (b.highlightSortOrder ?? Infinity)
+                )
                 .map((pub) => (
                   <div className="col-span-1 pb-4 sm:pb-0">
                     <HighlightComponent
                       title={pub.shortName ?? pub.name}
-                      subtitle={pub.publisher + (pubHonor(pub) ?  " – " + pubHonor(pub) : '')}
+                      subtitle={
+                        pub.publisher +
+                        (pubHonor(pub) ? " – " + pubHonor(pub) : "")
+                      }
                       imageName={pub.image}
                       imageAlt={pub.imageAlt}
                     >
@@ -135,7 +179,7 @@ export default function IndexPage({ data }) {
                   </div>
                 ))}
             </div>
-          </div> 
+          </div>
           <h2 className="text-2xl font-medium pb-7 pt-8">Research Summary</h2>
           <div
             className="writing"

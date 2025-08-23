@@ -6,15 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="92b2505b-6ee0-4bc6-85ad-c87d8349cef8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-latex/cv-tables/posters.tex" beforeDir="false" afterPath="$PROJECT_DIR$/cv-latex/cv-tables/posters.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-latex/cv-tables/publications.tex" beforeDir="false" afterPath="$PROJECT_DIR$/cv-latex/cv-tables/publications.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-latex/cv-tables/teaching.tex" beforeDir="false" afterPath="$PROJECT_DIR$/cv-latex/cv-tables/teaching.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-latex/cv-tables/tech-reports.tex" beforeDir="false" afterPath="$PROJECT_DIR$/cv-latex/cv-tables/tech-reports.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pub.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pub.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/research.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/research.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/people.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/people.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv-latex/cv-tables/work.tex" beforeDir="false" afterPath="$PROJECT_DIR$/cv-latex/cv-tables/work.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv-latex/cv.tex" beforeDir="false" afterPath="$PROJECT_DIR$/cv-latex/cv.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv-latex/generateCvTables.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cv-latex/generateCvTables.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/cv.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cv.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gatsby-types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/gatsby-types.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/docs/pavel-cv.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/static/docs/pavel-cv.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +31,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;srubin&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/aksp/amypavel.com.git&quot;,
+    &quot;accountId&quot;: &quot;bd29dcf1-59b6-4b81-8c64-71787c2a82ce&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="1l5GOKSGzcpmtnK7lldzZHuLmnB" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -45,24 +62,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/srubin/code/amypavel.com/new/src/papers&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/srubin/code/amypavel.com/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/srubin/code/amypavel.com/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/srubin/code/amypavel.com",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/Users/srubin/code/amypavel.com/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Users/srubin/code/amypavel.com/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/new/src/papers" />
@@ -74,6 +94,13 @@
       <recent name="$PROJECT_DIR$/new/static/papers" />
       <recent name="$PROJECT_DIR$/new/static" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.411" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,6 +117,11 @@
       <workItem from="1665494091140" duration="5620000" />
       <workItem from="1665539526952" duration="426000" />
       <workItem from="1683768487484" duration="616000" />
+      <workItem from="1726534667664" duration="7223000" />
+      <workItem from="1731644487253" duration="1694000" />
+      <workItem from="1731699336972" duration="600000" />
+      <workItem from="1733205537083" duration="2051000" />
+      <workItem from="1755980439955" duration="1744000" />
     </task>
     <servers />
   </component>

@@ -57,6 +57,7 @@ type DataJson = Node & {
   readonly phd_mentorship: Maybe<ReadonlyArray<Maybe<DataJsonPhd_mentorship>>>;
   readonly press: Maybe<ReadonlyArray<Maybe<DataJsonPress>>>;
   readonly publications: Maybe<ReadonlyArray<Maybe<DataJsonPublications>>>;
+  readonly student_awards: Maybe<ReadonlyArray<Maybe<DataJsonStudent_awards>>>;
   readonly talks: Maybe<ReadonlyArray<Maybe<DataJsonTalks>>>;
   readonly teaching: Maybe<ReadonlyArray<Maybe<DataJsonTeaching>>>;
   readonly thesis_committees: Maybe<ReadonlyArray<Maybe<DataJsonThesis_committees>>>;
@@ -250,6 +251,9 @@ type DataJsonFieldsEnum =
   | 'publications.shortName'
   | 'publications.summary'
   | 'publications.tags'
+  | 'student_awards'
+  | 'student_awards.date'
+  | 'student_awards.title'
   | 'talks'
   | 'talks.date'
   | 'talks.location'
@@ -297,6 +301,7 @@ type DataJsonFilterInput = {
   readonly phd_mentorship: InputMaybe<DataJsonPhd_mentorshipFilterListInput>;
   readonly press: InputMaybe<DataJsonPressFilterListInput>;
   readonly publications: InputMaybe<DataJsonPublicationsFilterListInput>;
+  readonly student_awards: InputMaybe<DataJsonStudent_awardsFilterListInput>;
   readonly talks: InputMaybe<DataJsonTalksFilterListInput>;
   readonly teaching: InputMaybe<DataJsonTeachingFilterListInput>;
   readonly thesis_committees: InputMaybe<DataJsonThesis_committeesFilterListInput>;
@@ -439,6 +444,28 @@ type DataJsonPublicationsFilterListInput = {
 type DataJsonSortInput = {
   readonly fields: InputMaybe<ReadonlyArray<InputMaybe<DataJsonFieldsEnum>>>;
   readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+};
+
+type DataJsonStudent_awards = {
+  readonly date: Maybe<Scalars['Date']>;
+  readonly title: Maybe<Scalars['String']>;
+};
+
+
+type DataJsonStudent_awards_dateArgs = {
+  difference: InputMaybe<Scalars['String']>;
+  formatString: InputMaybe<Scalars['String']>;
+  fromNow: InputMaybe<Scalars['Boolean']>;
+  locale: InputMaybe<Scalars['String']>;
+};
+
+type DataJsonStudent_awardsFilterInput = {
+  readonly date: InputMaybe<DateQueryOperatorInput>;
+  readonly title: InputMaybe<StringQueryOperatorInput>;
+};
+
+type DataJsonStudent_awardsFilterListInput = {
+  readonly elemMatch: InputMaybe<DataJsonStudent_awardsFilterInput>;
 };
 
 type DataJsonTalks = {
@@ -1189,6 +1216,9 @@ type FileFieldsEnum =
   | 'childDataJson.publications.shortName'
   | 'childDataJson.publications.summary'
   | 'childDataJson.publications.tags'
+  | 'childDataJson.student_awards'
+  | 'childDataJson.student_awards.date'
+  | 'childDataJson.student_awards.title'
   | 'childDataJson.talks'
   | 'childDataJson.talks.date'
   | 'childDataJson.talks.location'
@@ -1471,6 +1501,9 @@ type FileFieldsEnum =
   | 'childrenDataJson.publications.shortName'
   | 'childrenDataJson.publications.summary'
   | 'childrenDataJson.publications.tags'
+  | 'childrenDataJson.student_awards'
+  | 'childrenDataJson.student_awards.date'
+  | 'childrenDataJson.student_awards.title'
   | 'childrenDataJson.talks'
   | 'childrenDataJson.talks.date'
   | 'childrenDataJson.talks.location'
@@ -3379,6 +3412,7 @@ type Query_dataJsonArgs = {
   phd_mentorship: InputMaybe<DataJsonPhd_mentorshipFilterListInput>;
   press: InputMaybe<DataJsonPressFilterListInput>;
   publications: InputMaybe<DataJsonPublicationsFilterListInput>;
+  student_awards: InputMaybe<DataJsonStudent_awardsFilterListInput>;
   talks: InputMaybe<DataJsonTalksFilterListInput>;
   teaching: InputMaybe<DataJsonTeachingFilterListInput>;
   thesis_committees: InputMaybe<DataJsonThesis_committeesFilterListInput>;
