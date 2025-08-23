@@ -122,6 +122,7 @@ const CV = t.type({
   work: t.array(Work),
   publications: t.array(Publication),
   awards: t.array(Award),
+  student_awards: t.array(Award),
   volunteer: t.array(Volunteer),
   teaching: t.array(Teaching),
   undergraduate_and_masters_mentorship: t.array(Mentorship),

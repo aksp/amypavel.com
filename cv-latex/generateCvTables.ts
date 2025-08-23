@@ -166,6 +166,22 @@ function awardItems(resume: CV): TwoColumnItem[] {
   });
 }
 
+function studentAwardItems(resume: CV): TwoColumnItem[] {
+  return resume.student_awards.map(({ title, awarder, date, summary }) => {
+    let leftMatter = title;
+    if (awarder) {
+      leftMatter += ` (${awarder})`;
+    }
+    if (summary) {
+      leftMatter += ` -- ${italic(summary)}`;
+    }
+    return {
+      left: [leftMatter],
+      right: [date],
+    };
+  });
+}
+
 function thesisCommitteeItems({ thesis_committees }: CV): TwoColumnItem[] {
   return thesis_committees.map(({ name, summary, startDate = "" }) => {
     const left = [bold(name), summary];
@@ -185,6 +201,26 @@ function serviceItems({ volunteer }: CV): TwoColumnItem[] {
     pcRight.push(startDate);
   }
   items.push({ left: pcLeft, right: pcRight });
+
+  const grpLeft = [bold("Grant Review Panels")];
+  const grpRight = [""];
+  for (const { position, organization, startDate = "" } of volunteer.filter(
+    ({ tags }) => tags.includes("grant-review-panel")
+  )) {
+    grpLeft.push(`${organization} ${position}`);
+    grpRight.push(startDate);
+  }
+  items.push({ left: grpLeft, right: grpRight });
+
+  const rcLeft = [bold("Research Community and Organizing")];
+  const rcRight = [""];
+  for (const { position, organization, startDate = "" } of volunteer.filter(
+    ({ tags }) => tags.includes("research-community")
+  )) {
+    rcLeft.push(`${organization} ${position}`);
+    rcRight.push(startDate);
+  }
+  items.push({ left: rcLeft, right: rcRight });
 
   const svLeft = [bold("Student Volunteering")];
   const svRight = [""];
@@ -221,7 +257,7 @@ function serviceItems({ volunteer }: CV): TwoColumnItem[] {
   for (const { position, organization, startDate = "" } of volunteer.filter(
     ({ tags }) => tags.includes("community")
   )) {
-    commLeft.push(`${position} -- ${organization}`);
+    commLeft.push(`${bold(position)} -- ${organization}`);
     commRight.push(startDate);
   }
   items.push({ left: commLeft, right: commRight });
@@ -248,8 +284,8 @@ function ugradMastersMentorshipItems({
   return undergraduate_and_masters_mentorship.map(
     ({ name, summary, startDate, project }) => ({
       left: project
-        ? [`${name}. \`\`${project}''`, summary]
-        : [`${name}.`, summary],
+        ? [`${bold(name)}. \`\`${project}''`, summary]
+        : [`${bold(name)}.`, summary],
       right: [startDate],
     })
   );
@@ -258,8 +294,8 @@ function ugradMastersMentorshipItems({
 function phdMentorshipItems({ phd_mentorship }: CV): TwoColumnItem[] {
   return phd_mentorship.map(({ name, summary, startDate, project }) => ({
     left: project
-      ? [`${name}. \`\`${project}''`, summary]
-      : [`${name}.`, summary],
+      ? [`${bold(name)}. \`\`${project}''`, summary]
+      : [`${bold(name)}.`, summary],
     right: [startDate],
   }));
 }
@@ -309,6 +345,7 @@ async function writeTables(): Promise<void> {
         ),
       ],
       ["awards", escapeLatex(makeTable(awardItems(cv)))],
+      ["student_awards", escapeLatex(makeTable(studentAwardItems(cv)))],
       ["service", escapeLatex(makeTable(serviceItems(cv), 1))],
       ["teaching", escapeLatex(makeTable(teachingItems(cv), 1))],
       ["phd_mentorship", escapeLatex(makeTable(phdMentorshipItems(cv), 1))],
