@@ -6,14 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="92b2505b-6ee0-4bc6-85ad-c87d8349cef8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-latex/cv-tables/work.tex" beforeDir="false" afterPath="$PROJECT_DIR$/cv-latex/cv-tables/work.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-latex/cv.tex" beforeDir="false" afterPath="$PROJECT_DIR$/cv-latex/cv.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-latex/generateCvTables.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cv-latex/generateCvTables.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv-latex/cv-tables/service.tex" beforeDir="false" afterPath="$PROJECT_DIR$/cv-latex/cv-tables/service.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv-latex/cv-tables/teaching.tex" beforeDir="false" afterPath="$PROJECT_DIR$/cv-latex/cv-tables/teaching.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cv.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cv.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gatsby-types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/gatsby-types.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/docs/pavel-cv.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/static/docs/pavel-cv.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +63,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
@@ -121,7 +119,7 @@
       <workItem from="1731644487253" duration="1694000" />
       <workItem from="1731699336972" duration="600000" />
       <workItem from="1733205537083" duration="2051000" />
-      <workItem from="1755980439955" duration="1744000" />
+      <workItem from="1755980439955" duration="7552000" />
     </task>
     <servers />
   </component>

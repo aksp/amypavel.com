@@ -27,6 +27,15 @@ export default function IndexPage({ data }) {
   const aboutHtml = data.about.children[0].html;
   const researchHtml = data.research.children[0].html;
   const pubs = sortByDate(cv.publications, "releaseDate").reverse();
+  const today = new Date();
+  const preprints = pubs.filter((pub) => {
+    const pubDate = parse(pub.releaseDate, "MM-dd-yyyy", new Date());
+    return pubDate > today;
+  });
+  const publishedPapers = pubs.filter((pub) => {
+    const pubDate = parse(pub.releaseDate, "MM-dd-yyyy", new Date());
+    return pubDate <= today;
+  });
   return (
     <div className="sm:container sm:mx-auto px-10 md:px-30 lg:px-30 xl:px-40 py-10 text">
       <h1 className="text-4xl py-8">Amy Pavel</h1>
@@ -44,9 +53,7 @@ export default function IndexPage({ data }) {
             <p>
               Assistant Professor
               <br />
-              <a href="https://berkeley.edu">
-                UC Berkeley
-              </a>
+              <a href="https://berkeley.edu">UC Berkeley</a>
               <br />
               <a href="https://eecs.berkeley.edu/">
                 Electrical Engineering and Computer Sciences
@@ -150,16 +157,38 @@ export default function IndexPage({ data }) {
             className="writing"
             dangerouslySetInnerHTML={{ __html: aboutHtml }}
           />
-          <div></div>
-          <hr />
+          <div className="bg-blue-50 text-blue-900 border border-blue-200 rounded-lg p-6 my-4">
+            {/*<b>Getting Involved</b>*/}
+            {/*<br></br>*/}
+            {/*<br></br>*/}
+            <p>
+              <b>Current UC Berkeley Students</b>: I am actively recruiting UC
+              Berkeley students for research positions in my lab! Check out{" "}
+              <a href="">this document</a> to learn more and apply.
+            </p>
+            <br></br>
+            <p>
+              <b>Prospective Students, Visitors, Interns, and Postdocs</b>: I
+              recruit PhD students every year. Please apply directly to the{" "}
+              <a href="https://eecs.berkeley.edu/academics/graduate/research-programs/admissions/">
+                UC Berkeley EECS PhD program
+              </a>{" "}
+              and list me as a potential advisor. For other questions or
+              positions, please read{" "}
+              <a href="https://docs.google.com/document/u/4/d/e/2PACX-1vSsB-lcy4Syh1TUVGyWECn9u2wD5BzrEIilDGroVR9Ct82z0EU6ZTpfcMM69JHlIG2930X1yVFKtbHg/pub">
+                these FAQs
+              </a>{" "}
+              before reaching out.
+            </p>
+          </div>
           <h2 className="text-2xl font-medium pb-7 pt-8">
             Research Highlights
           </h2>
           <div className="container">
             <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 gap-3">
-              {pubs
+              {publishedPapers
                 .filter((pub) => pub.tags.includes("highlight"))
-                .toSorted(
+                .sort(
                   (a, b) =>
                     (a.highlightSortOrder ?? Infinity) -
                     (b.highlightSortOrder ?? Infinity)
@@ -186,9 +215,21 @@ export default function IndexPage({ data }) {
             className="writing"
             dangerouslySetInnerHTML={{ __html: researchHtml }}
           />
+          {preprints.filter((p) => p.tags.includes("paper")).length > 0 && (
+            <>
+              <h2 className="text-2xl font-medium pb-7 pt-8">Preprints</h2>
+              <div className="md:container md:mx-auto">
+                {preprints
+                  .filter((p) => p.tags.includes("paper"))
+                  .map((pub) => (
+                    <PubComponent key={pub.name} pub={pub} />
+                  ))}
+              </div>
+            </>
+          )}
           <h2 className="text-2xl font-medium pb-7 pt-8">Research Papers</h2>
           <div className="md:container md:mx-auto">
-            {pubs
+            {publishedPapers
               .filter((p) => p.tags.includes("paper"))
               .map((pub) => (
                 <PubComponent key={pub.name} pub={pub} />
@@ -198,7 +239,7 @@ export default function IndexPage({ data }) {
             Thesis and Technical Reports
           </h2>
           <div className="md:container md:mx-auto">
-            {pubs
+            {publishedPapers
               .filter((p) => p.tags.includes("tech-report"))
               .map((pub) => (
                 <PubComponent key={pub.name} pub={pub} />
@@ -208,7 +249,7 @@ export default function IndexPage({ data }) {
             Posters, Demos, and Workshops
           </h2>
           <div className="md:container md:mx-auto">
-            {pubs
+            {publishedPapers
               .filter(
                 (p) => p.tags.includes("poster") || p.tags.includes("workshop")
               )
