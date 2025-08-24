@@ -45,7 +45,7 @@ export default function IndexPage({ data }) {
               Assistant Professor
               <br />
               <a href="https://berkeley.edu">
-                University of California, Berkeley
+                UC Berkeley
               </a>
               <br />
               <a href="https://eecs.berkeley.edu/">
@@ -67,7 +67,7 @@ export default function IndexPage({ data }) {
             <p>
               Twitter <a href="https://twitter.com/amypavel">@amypavel</a>
             </p>
-            <p>
+            {/* <p>
               Bluesky{" "}
               <a href="https://bsky.app/profile/amypavel.bsky.social">
                 @amypavel.bsky.social
@@ -77,7 +77,7 @@ export default function IndexPage({ data }) {
               <a href="https://www.linkedin.com/in/amy-pavel-02871821/">
                 LinkedIn
               </a>
-            </p>
+            </p> */}
             <p>
               Publications{" "}
               <a href="https://scholar.google.com/citations?user=bM4pEGoAAAAJ&hl=en">
@@ -91,7 +91,7 @@ export default function IndexPage({ data }) {
 
           <div className="pb-7">
             <p>
-              <b>People</b>
+              <b>Research Group</b>
               <br></br>
               <em>Ph.D. Students:</em>{" "}
               <RawPeopleIdList
@@ -150,6 +150,7 @@ export default function IndexPage({ data }) {
             className="writing"
             dangerouslySetInnerHTML={{ __html: aboutHtml }}
           />
+          <div></div>
           <hr />
           <h2 className="text-2xl font-medium pb-7 pt-8">
             Research Highlights
@@ -204,7 +205,7 @@ export default function IndexPage({ data }) {
               ))}
           </div>
           <h2 className="text-2xl font-medium pb-7 pt-8">
-            Posters and Workshops
+            Posters, Demos, and Workshops
           </h2>
           <div className="md:container md:mx-auto">
             {pubs

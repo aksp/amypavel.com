@@ -1,6 +1,6 @@
-I am an Assistant Professor in the Department of Computer Science at The University of Texas at Austin. Before I joined UT in 2022, I was a postdoc at [Carnegie Mellon University][cmu] (supervised by [Jeff Bigham][jeff]) and a Research Scientist at [Apple][apple]. I received my PhD from the department of [Electrical Engineering and Computer Science][eecs] at [UC Berkeley][berkeley], advised by professors [Björn Hartmann][bjoern] at UC Berkeley and [Maneesh Agrawala][maneesh] at Stanford. 
+I am an Assistant Professor in the Department of [Electrical Engineering and Computer Sciences][eecs] at the [University of California, Berkeley][berkeley] and a Visiting Faculty Resesarcher at [Google Research][googleresearch]. Before joining UC Berkeley, I spent three wonderful years (Spring 2022-Spring 2025) as an Assistant Professor in the [Department of Computer Science][utcs] at the [University of Texas at Austin][utaustin].  
 
-I regularly teach a Computer Science class covers the design and development of user interfaces (Introduction to Human-Computer Interaction). Prior versions of this class include [CS160 at UC Berkeley in Summer 2018][coursewebsite] and [CS378 at UT Austin in Spring 2022][coursewebsiteut].
+I was previously a postdoc at [Carnegie Mellon University][cmu], a Research Scientist at [Apple][apple], and I received my PhD from [UC Berkeley EECS][eecs]. I regularly teach a Computer Science class that covers the design and development of user interfaces (Introduction to Human-Computer Interaction). Prior versions include [CS160 at UC Berkeley in 2018][coursewebsite] and [CS378 at UT Austin in 2022][coursewebsiteut].
 
 [berkeley]: http://www.berkeley.edu
 [maneesh]: http://vis.berkeley.edu/~maneesh/
@@ -14,3 +14,6 @@ I regularly teach a Computer Science class covers the design and development of 
 [apple]: https://machinelearning.apple.com/
 [cmu]: https://www.hcii.cmu.edu/
 [NDSEGgeneral]: https://ndseg.sysplus.com/
+[utcs]: https://www.cs.utexas.edu/
+[utaustin]: https://www.utexas.edu/
+[googleresearch]: https://research.google/

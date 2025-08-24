@@ -77,46 +77,160 @@
   ],
   "publications": [
     {
-      "name": "Creativejento: Supporting Accessible Authoring with Agency-Preserving User Interface Agents",
+      "name": "TaskArtisan: Flexible Authoring and Manipulation of Task-specific Interactive Widgets via Sketch and Voice",
+      "releaseDate": "10-01-2025",
+      "authors": ["mchen", "apavel"],
+      "publisher": "UIST 2025 Posters",
+      "tags": ["poster"],
+      "link": "",
+      "image": "taskartisan",
+      "imageAlt": "A thumbnail of TaskArtisan's interface with sketch-style mockups.",
+      "content": "",
+      "shortName": "TaskArtisan"
+    },
+    {
+      "name": "Simultaneously Generating Multiple Mediums of Tactile Graphics",
+      "releaseDate": "10-01-2025",
+      "authors": ["kclark", "apavel"],
+      "publisher": "ASSETS 2025 Posters and Demos",
+      "tags": ["poster"],
+      "link": "",
+      "image": "simultaneously",
+      "imageAlt": "A thumbnail of the creation tool workflow converting images into multiple tactile format: embossings, bas-relief models, and 3D models.",
+      "content": "",
+      "shortName": "Tactile Graphics"
+    },
+    {
+      "name": "Accessible Cyber-Physical Activities",
+      "releaseDate": "10-01-2025",
+      "authors": ["rarakawa", "fli", "nzhang", "mhuh", "apavel", "rsuzuki", "pcarrington", "yyan"],
+      "publisher": "UIST 2025 Workshops",
+      "tags": ["workshop"],
+      "link": "https://accessible-cps.github.io/",
+      "image": "accessiblecps",
+      "imageAlt": "A thumbnail of the workshop website.",
+      "content": "[Workshop Website](https://accessible-cps.github.io/)",
+      "shortName": "Accessible CPS"
+    },
+    {
+      "name": "Generative AI and Accessibility Workshop: Surfacing Opportunities and Risks",
       "releaseDate": "05-01-2025",
+      "authors": ["kglazko", "mhuh", "jjohnson", "apavel", "jmankoff"],
+      "publisher": "CHI 2025 Workshop",
+      "tags": ["workshop"],
+      "link": "https://accessgaichi.com/",
+      "image": "genaiaccess",
+      "imageAlt": "A thumbnail of the workshop website.",
+      "content": "[Workshop Website](https://accessgaichi.com/)",
+      "shortName": "GenAI Accessibility"
+    },
+    {
+      "name": "Vid2Coach: Transforming How-To Videos into Task Assistants",
+      "releaseDate": "10-06-2025",
+      "authors": ["mhuh", "zxue", "udas", "kashutosh", "kgrauman", "apavel"],
+      "publisher": "To Appear at UIST 2025",
+      "tags": ["paper"],
+      "link": "https://minahuh.com/Vid2Coach/",
+      "image": "vid2coach",
+      "imageAlt": "A thumbnail of the Vid2Coach system transforming instructional videos and accessible tips into interactive task assistants.",
+      "content": "[Project Page](https://minahuh.com/Vid2Coach/) | [arXiv](https://arxiv.org/abs/2506.00717)",
+      "shortName": "Vid2Coach"
+    },
+    {
+      "name": "Morae: Proactively Pausing UI Agents for User Choices",
+      "releaseDate": "10-05-2025",
       "authors": ["ypeng", "dli", "jbigham", "apavel"],
-      "publisher": "Submitted to CHI 2025",
-      "tags": ["paper"]
+      "publisher": "To Appear at UIST 2025",
+      "tags": ["paper"],
+      "link": "",
+      "image": "morae",
+      "imageAlt": "A thumbnail of the Morae system pausing agent interactions to allow for user choice.",
+      "content": "",
+      "shortName": "Morae"
     },
     {
-      "name": "TalkLess: Balancing Extractive and Abstractive Summarization for Dynamic Speech Shortening",
-      "releaseDate": "05-01-2025",
+      "name": "TalkLess: Blending Extractive and Abstractive Speech Summarization for Editing Speech to Preserve Content and Style",
+      "releaseDate": "10-04-2025",
       "authors": ["kbenharrak", "ppeng", "apavel"],
-      "publisher": "Submitted to CHI 2025",
-      "tags": ["paper"]
+      "publisher": "To Appear at UIST 2025",
+      "tags": ["paper"],
+      "link": "https://arxiv.org/abs/2507.15202",
+      "image": "talkless",
+      "imageAlt": "A thumbnail of text-based speech editing with multicolored highlights.",
+      "content": "[arXiv](https://arxiv.org/abs/2507.15202)",
+      "shortName": "TalkLess"
     },
     {
-      "name": "VeasyGuide: Visual Guidance for Low Vision Users on Instructor Actions in Presentation Videos",
-      "releaseDate": "05-01-2025",
+      "name": "CoSight: Exploring Viewer Contributions to Online Video Accessibility Through Descriptive Commenting",
+      "releaseDate": "10-02-2025",
+      "authors": ["rwang", "xliu", "bwang", "wzhang", "zliao", "zli", "apavel", "xchen"],
+      "publisher": "To Appear at UIST 2025",
+      "tags": ["paper"],
+      "link": "https://arxiv.org/abs/2508.08582",
+      "image": "cosight",
+      "imageAlt": "A thumbnail of the CoSight Chrome extension interface.",
+      "content": "[arXiv](https://arxiv.org/abs/2508.08582)",
+      "shortName": "CoSight"
+    },
+    {
+      "name": "Surfacing Variations to Calibrate Perceived Reliability of MLLM-generated Image Descriptions",
+      "releaseDate": "10-01-2025",
+      "authors": ["mchen", "aiyer", "apavel"],
+      "publisher": "To Appear at ASSETS 2025",
+      "tags": ["paper"],
+      "link": "https://arxiv.org/abs/2507.15692",
+      "image": "surfacingvariations",
+      "imageAlt": "A thumbnail of two image descriptions with variations.",
+      "content": "[arXiv](https://arxiv.org/abs/2507.15692)",
+      "shortName": "Surfacing Variations"
+    },
+    {
+      "name": "Task Mode: Dynamic Filtering for Task-Specific Web Navigation using LLMs",
+      "releaseDate": "10-01-2025",
+      "authors": ["agmohanbabu", "ysechayk", "apavel"],
+      "publisher": "To Appear at ASSETS 2025",
+      "tags": ["paper"],
+      "link": "https://arxiv.org/abs/2507.14769",
+      "image": "taskmode",
+      "imageAlt": "A thumbnail of a Wikipedia page with varying opacity according to task relevance.",
+      "content": "[arXiv](https://arxiv.org/abs/2507.14769)",
+      "shortName": "Task Mode"
+    },
+    {
+      "name": "VeasyGuide: Personalized Visual Guidance for Low-vision Learners on Instructor Actions in Presentation Videos",
+      "releaseDate": "10-01-2025",
       "authors": ["ysechayk", "ashamir", "apavel", "tigarashi"],
-      "publisher": "Submitted to CHI 2025",
-      "tags": ["paper"]
+      "publisher": "To Appear at ASSETS 2025",
+      "tags": ["paper"],
+      "link": "https://veasyguide.github.io/",
+      "image": "veasyguide",
+      "imageAlt": "A thumbnail of VeasyGuide's highlight and zoom features.",
+      "content": "[Project Page](https://veasyguide.github.io/) | [arXiv](https://arxiv.org/abs/2507.21837)",
+      "shortName": "VeasyGuide"
     },
     {
       "name": "VideoDiff: Human-AI Video Co-Creation with Alternatives",
       "releaseDate": "05-01-2025",
       "authors": ["mhuh", "dli", "kpimmel", "vhijung", "apavel", "mdontcheva"],
-      "publisher": "Submitted to CHI 2025",
-      "tags": ["paper"]
-    },
-    {
-      "name": "HistoryPalette: Supporting Exploration and Reuse of Past Alternatives in Image Generation and Editing",
-      "releaseDate": "05-01-2025",
-      "authors": ["kbenharrak", "apavel"],
-      "publisher": "Submitted to CHI 2025",
-      "tags": ["paper"]
+      "publisher": "CHI 2025",
+      "tags": ["paper"],
+      "link": "https://arxiv.org/abs/2502.10190",
+      "image": "videodiff",
+      "imageAlt": "A thumbnail of an interface comparing three video timelines.",
+      "content": "[arXiv](https://arxiv.org/abs/2502.10190)",
+      "shortName": "VideoDiff"
     },
     {
       "name": "Lotus: Creating Short Videos From Long Videos With Abstractive and Extractive Summarization",
-      "releaseDate": "05-01-2025",
+      "releaseDate": "03-01-2025",
       "authors": ["abarua", "kbenharrak", "mchen", "mhuh", "apavel"],
-      "publisher": "To Appear at IUI 2025",
-      "tags": ["paper"]
+      "publisher": "IUI 2025",
+      "tags": ["paper"],
+      "link": "https://arxiv.org/abs/2502.07096",
+      "image": "lotus",
+      "imageAlt": "A thumbnail of abstractive and extractive video summarization.",
+      "content": "[arXiv](https://arxiv.org/abs/2502.07096)",
+      "shortName": "Lotus"
     },
     {
       "name": "DesignChecker: Visual Design Support for Blind and Low Vision Web Developers",
@@ -285,7 +399,7 @@
       "name": "Exploratory Thematic Analysis of Crowdsourced Photosensitivity Warnings",
       "releaseDate": "04-02-2023",
       "authors": ["lsouth", "cyildirim", "apavel", "mborkin"],
-      "publisher": "CHI 2023 (Extended Abstract)",
+      "publisher": "CHI 2023 Extended Abstracts",
       "tags": ["poster"],
       "image": "photosensitive",
       "imageAlt": "A thumbnail screenshot of a forum people use to report flashing lights.",
@@ -686,7 +800,7 @@
       "authorNotes": {
         "equal": ["clow", "emccamey"]
       },
-      "publisher": "ASSETS 2019",
+      "publisher": "ASSETS 2019 Posters",
       "summary": "(Poster)",
       "tags": ["poster"],
       "link": "https://dl.acm.org/doi/10.1145/3308561.3354629",
@@ -705,7 +819,7 @@
         "bhartmann",
         "sdow"
       ],
-      "publisher": "CSCW 2014",
+      "publisher": "CSCW 2014 Extended Abstracts",
       "summary": "(Extended Abstract)",
       "tags": ["poster"],
       "link": "https://dl.acm.org/doi/10.1145/2556420.2556788",
@@ -758,6 +872,14 @@
     }
   ],
   "awards": [
+    {
+      "title": "Google ML and Systems Junior Faculty Award",
+      "date": "2025"
+    },
+    {
+      "title": "ND Tech Ethics Award",
+      "date": "2025"
+    },
     {
       "title": "Apple Gift Funding",
       "date": "2024"
@@ -1111,6 +1233,12 @@
     {
       "position": "Course Creator and Instructor",
       "organization": "UTCS, CS Academy for Women",
+      "startDate": "Summer 2025",
+      "tags": ["community"]
+    },
+    {
+      "position": "Course Creator and Instructor",
+      "organization": "UTCS, CS Academy for Women",
       "startDate": "Summer 2024",
       "tags": ["community"]
     },
@@ -1182,7 +1310,7 @@
       "course": "CS 378: Introduction to Human-Computer Interaction",
       "link": "",
       "summary": ["80 students"],
-      "startDate": "Spring 2024"
+      "startDate": "Spring 2025"
     },
     {
       "position": "Instructor",

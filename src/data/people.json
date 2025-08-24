@@ -486,7 +486,7 @@
     {
         "id": "mchen",
         "name": "Meng Chen",
-        "link": "https://mchen.dev/"
+        "link": "https://meng-chen.com/"
     },
     {
         "id": "kclark",
@@ -516,30 +516,107 @@
     },
     {
         "id": "ppeng",
-        "name": "Puyuan Peng"
+        "name": "Puyuan Peng",
+        "link": "https://jasonppy.github.io/"
     },
     {
         "id": "ysechayk",
-        "name": "Yotam Sechayk"
+        "name": "Yotam Sechayk",
+        "link": "https://tomfluff.github.io/"
     },
     {
         "id": "ashamir",
-        "name": "Ariel Shamir"
+        "name": "Ariel Shamir",
+        "link": "https://faculty.runi.ac.il/arik/site/index.asp"
     },
     {
         "id": "tigarashi",
-        "name": "Takeo Igarashi"
+        "name": "Takeo Igarashi",
+        "link": "https://www-ui.is.s.u-tokyo.ac.jp/~takeo/"
     },
     {
         "id": "kpimmel",
-        "name": "Kim Pimmel"
+        "name": "Kim Pimmel",
+        "link": "https://www.kimpimmel.com/"
     },
     {
         "id": "vhijung",
-        "name": "Valentina Hijung"
+        "name": "Valentina Hijung",
+        "link": "https://hishin.github.io/"
     },
     {
         "id": "mdontcheva",
         "name": "Mira Dontcheva"
+    },
+    {
+        "id": "zxue",
+        "name": "Zihui Xue",
+        "link": "https://zihuixue.github.io/"
+    },
+    {
+        "id": "kashutosh",
+        "name": "Kumar Ashutosh",
+        "link": "https://thechargedneutron.github.io/"
+    },
+    {
+        "id": "kgrauman",
+        "name": "Kristen Grauman",
+        "link": "https://www.cs.utexas.edu/~grauman/"
+    },
+    {
+        "id": "bwang",
+        "name": "Biao Wang"
+    },
+    {
+        "id": "wzhang",
+        "name": "Wayne Zhang"
+    },
+    {
+        "id": "zliao",
+        "name": "Ziqian Liao"
+    },
+    {
+        "id": "zli",
+        "name": "Ziwen Li"
+    },
+        {
+        "id": "rarakawa",
+        "name": "Riku Arakawa",
+        "link": "https://rikky0611.github.io/"
+    },
+    {
+        "id": "fli",
+        "name": "Franklin Mingzhe Li",
+        "link": "https://franklin-li.com/"
+    },
+    {
+        "id": "nzhang",
+        "name": "Nandi Zhang",
+        "link": "https://nandi-zhang.github.io/"
+    },
+    {
+        "id": "rsuzuki",
+        "name": "Ryo Suzuki",
+        "link": "https://ryosuzuki.org/"
+    },
+    {
+        "id": "yyan",
+        "name": "Yukang Yan",
+        "link": "https://rochester-bear-lab.github.io/yukang"
+    },
+    {
+        "id": "kglazko",
+        "name": "Kate Glazko",
+        "link": "https://kateglazko.com/"
+    },
+    {
+        "id": "jjohnson",
+        "name": "Jazette Johnson",
+        "link": "https://jazettejohnson.com/"
+    },
+    {
+        "id": "jmankoff",
+        "name": "Jennifer Mankoff",
+        "link": "https://www.cs.washington.edu/people/faculty/jennifer-mankoff/"
     }
 ]
