@@ -14,6 +14,7 @@ import HighlightComponent from "../components/Highlight";
 import parse from "date-fns/parse";
 import ReactMarkdown from "react-markdown";
 import AmyPavelSmall from "../images/amypavel-small.png";
+import { LockClosedIcon } from "@heroicons/react/20/solid";
 
 function sortByDate<T>(items: T[], key: keyof T): T[] {
   return [...items].sort((a, b) => {
@@ -28,13 +29,13 @@ export default function IndexPage({ data }) {
   const researchHtml = data.research.children[0].html;
   const pubs = sortByDate(cv.publications, "releaseDate").reverse();
   const today = new Date();
-  const preprints = pubs.filter((pub) => {
+  const preprintPapers = pubs.filter((pub) => {
     const pubDate = parse(pub.releaseDate, "MM-dd-yyyy", new Date());
-    return pubDate > today;
+    return pubDate > today && pub.tags.includes("paper");
   });
   const publishedPapers = pubs.filter((pub) => {
     const pubDate = parse(pub.releaseDate, "MM-dd-yyyy", new Date());
-    return pubDate <= today;
+    return pubDate <= today && pub.tags.includes("paper");
   });
   return (
     <div className="sm:container sm:mx-auto px-10 md:px-30 lg:px-30 xl:px-40 py-10 text">
@@ -164,7 +165,11 @@ export default function IndexPage({ data }) {
             <p>
               <b>Current UC Berkeley Students</b>: I am actively recruiting UC
               Berkeley students for research positions in my lab! Check out{" "}
-              <a href="">this document</a> to learn more and apply.
+              <a href="https://docs.google.com/document/d/e/2PACX-1vT2zul0IV1UVGEUJ4sGOjL3Xi6aMx07kVjh8gjiQd1WW39Ll4-upD3nUhmCbRkrkBnzeY-OanlvNXEs/pub">
+                this document (CalNet{" "}
+                <LockClosedIcon className="h-4 inline-block pb-1" />)
+              </a>{" "}
+              to learn more and apply.
             </p>
             <br></br>
             <p>
@@ -215,15 +220,13 @@ export default function IndexPage({ data }) {
             className="writing"
             dangerouslySetInnerHTML={{ __html: researchHtml }}
           />
-          {preprints.filter((p) => p.tags.includes("paper")).length > 0 && (
+          {preprintPapers.length > 0 && (
             <>
               <h2 className="text-2xl font-medium pb-7 pt-8">Preprints</h2>
               <div className="md:container md:mx-auto">
-                {preprints
-                  .filter((p) => p.tags.includes("paper"))
-                  .map((pub) => (
-                    <PubComponent key={pub.name} pub={pub} />
-                  ))}
+                {preprintPapers.map((pub) => (
+                  <PubComponent key={pub.name} pub={pub} />
+                ))}
               </div>
             </>
           )}
@@ -239,7 +242,7 @@ export default function IndexPage({ data }) {
             Thesis and Technical Reports
           </h2>
           <div className="md:container md:mx-auto">
-            {publishedPapers
+            {pubs
               .filter((p) => p.tags.includes("tech-report"))
               .map((pub) => (
                 <PubComponent key={pub.name} pub={pub} />
@@ -249,7 +252,7 @@ export default function IndexPage({ data }) {
             Posters, Demos, and Workshops
           </h2>
           <div className="md:container md:mx-auto">
-            {publishedPapers
+            {pubs
               .filter(
                 (p) => p.tags.includes("poster") || p.tags.includes("workshop")
               )
