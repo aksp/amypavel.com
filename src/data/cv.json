@@ -20,6 +20,7 @@
       "description": "Google Research",
       "position": "Visiting Faculty Researcher",
       "startDate": "2024-10-01",
+      "endDate": "2025-12-15",
       "summary": "Remote, 20% appointment"
     },
     {
@@ -103,7 +104,16 @@
     {
       "name": "Accessible Cyber-Physical Activities",
       "releaseDate": "10-01-2025",
-      "authors": ["rarakawa", "fli", "nzhang", "mhuh", "apavel", "rsuzuki", "pcarrington", "yyan"],
+      "authors": [
+        "rarakawa",
+        "fli",
+        "nzhang",
+        "mhuh",
+        "apavel",
+        "rsuzuki",
+        "pcarrington",
+        "yyan"
+      ],
       "publisher": "UIST 2025 Workshops",
       "tags": ["workshop"],
       "link": "https://accessible-cps.github.io/",
@@ -163,7 +173,16 @@
     {
       "name": "CoSight: Exploring Viewer Contributions to Online Video Accessibility Through Descriptive Commenting",
       "releaseDate": "10-02-2025",
-      "authors": ["rwang", "xliu", "bwang", "wzhang", "zliao", "zli", "apavel", "xchen"],
+      "authors": [
+        "rwang",
+        "xliu",
+        "bwang",
+        "wzhang",
+        "zliao",
+        "zli",
+        "apavel",
+        "xchen"
+      ],
       "publisher": "To Appear at UIST 2025",
       "tags": ["paper"],
       "link": "https://arxiv.org/abs/2508.08582",
