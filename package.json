@@ -11,7 +11,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "deploy": "npm run build && s3cmd --config=${S3_CONFIG:-~/.s3cfg-amy} sync public/ s3://amypavel.com/",
+    "deploy": "npm run build && aws s3 sync public/ s3://amypavel.com/ --profile amy",
     "cv": "cd cv-latex && ./build.sh && cd ..  && cp cv-latex/dist/cv.pdf static/docs/pavel-cv.pdf"
   },
   "dependencies": {
