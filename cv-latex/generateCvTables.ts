@@ -82,6 +82,9 @@ function authorsString(authors: string[]): string {
     .join(", ");
 }
 
+
+
+
 function workItems(resume: CV): TwoColumnItem[] {
   const items: TwoColumnItem[] = [];
   const work = resume.work;
@@ -101,14 +104,22 @@ function workItems(resume: CV): TwoColumnItem[] {
     let start = startDate;
     let tryEnd = true;
     const parsedStart = new Date(startDate).getUTCFullYear();
+
+    const formatter = new Intl.DateTimeFormat("en-US", {
+      month: "long",
+      year: "numeric"
+    });
+
     if (!isNaN(parsedStart)) {
-      start = parsedStart.toString();
+      start = formatter.format(new Date(`${startDate}T07:00:00`));
     } else {
       tryEnd = false;
     }
     let end = tryEnd ? "Present" : undefined;
+
+
     if (endDate && tryEnd) {
-      end = `${new Date(endDate).getUTCFullYear()}`;
+      end = formatter.format(new Date(`${endDate}T07:00:00`));
     }
     const combinedDate = end === undefined ? start : `${start}-${end}`;
     const right = [bold(location), combinedDate];
@@ -192,7 +203,37 @@ function thesisCommitteeItems({ thesis_committees }: CV): TwoColumnItem[] {
 function serviceItems({ volunteer }: CV): TwoColumnItem[] {
   let items: TwoColumnItem[] = [];
 
-  const pcLeft = [bold("Program Committees")];
+  const rcconfLeft = [bold("Research Community: Conference Organizing")];
+  const rcconfRight = [""];
+  for (const { position, organization, startDate = "" } of volunteer.filter(
+    ({ tags }) => tags.includes("research-community-conference-org")
+  )) {
+    rcconfLeft.push(`${organization} ${position}`);
+    rcconfRight.push(startDate);
+  }
+  items.push({ left: rcconfLeft, right: rcconfRight });
+
+  const rcworkshopLeft = [bold("Research Community: Workshop Organizing")];
+  const rcworkshopRight = [""];
+  for (const { position, organization, startDate = "" } of volunteer.filter(
+    ({ tags }) => tags.includes("research-community-workshop-org")
+  )) {
+    rcworkshopLeft.push(`${organization} ${position}`);
+    rcworkshopRight.push(startDate);
+  }
+  items.push({ left: rcworkshopLeft, right: rcworkshopRight });
+
+  const rcLeft = [bold("Research Community: Panelist, Invited Guest, or Jury")];
+  const rcRight = [""];
+  for (const { position, organization, startDate = "" } of volunteer.filter(
+    ({ tags }) => tags.includes("research-community")
+  )) {
+    rcLeft.push(`${organization} ${position}`);
+    rcRight.push(startDate);
+  }
+  items.push({ left: rcLeft, right: rcRight });
+
+  const pcLeft = [bold("Research Community: Program Committee Member")];
   const pcRight = [""];
   for (const { position, organization, startDate = "" } of volunteer.filter(
     ({ tags }) => tags.includes("pc")
@@ -201,6 +242,66 @@ function serviceItems({ volunteer }: CV): TwoColumnItem[] {
     pcRight.push(startDate);
   }
   items.push({ left: pcLeft, right: pcRight });
+
+  const prLeft = [bold("Research Community: Peer Review (* Denotes Special Recognition)")];
+  const prRight = [""];
+  for (const { organization, summary } of volunteer.filter(({ tags }) =>
+    tags.includes("peer-review")
+  )) {
+    prLeft.push(`${organization} -- ${summary}`);
+    prRight.push("");
+  }
+  items.push({ left: prLeft, right: prRight });
+
+  const svLeft = [bold("Research Community: Student Volunteering")];
+  const svRight = [""];
+  for (const { organization, position, startDate = "" } of volunteer.filter(
+    ({ tags }) => tags.includes("sv")
+  )) {
+    svLeft.push(`${organization}, ${position}`);
+    svRight.push(startDate);
+  }
+  items.push({ left: svLeft, right: svRight });
+
+  const deptLeft = [bold("University: Department Committees")];
+  const deptRight = [""];
+  for (const { organization, position, startDate = "" } of volunteer.filter(
+    ({ tags }) => tags.includes("department")
+  )) {
+    deptLeft.push(`${position} -- ${organization}`);
+    deptRight.push(startDate);
+  }
+  items.push({ left: deptLeft, right: deptRight });
+
+  const collegeLeft = [bold("University: College Committees")];
+  const collegeRight = [""];
+  for (const { organization, position, startDate = "" } of volunteer.filter(
+    ({ tags }) => tags.includes("college")
+  )) {
+    collegeLeft.push(`${position} -- ${organization}`);
+    collegeRight.push(startDate);
+  }
+  items.push({ left: collegeLeft, right: collegeRight });
+
+  const campusLeft = [bold("University: Campus Committees")];
+  const campusRight = [""];
+  for (const { organization, position, startDate = "" } of volunteer.filter(
+    ({ tags }) => tags.includes("campus")
+  )) {
+    campusLeft.push(`${position} -- ${organization}`);
+    campusRight.push(startDate);
+  }
+  items.push({ left: campusLeft, right: campusRight });
+
+  const commLeft = [bold("Local and Online Community")];
+  const commRight = [""];
+  for (const { position, organization, startDate = "" } of volunteer.filter(
+    ({ tags }) => tags.includes("community")
+  )) {
+    commLeft.push(`${position} -- ${organization}`);
+    commRight.push(startDate);
+  }
+  items.push({ left: commLeft, right: commRight });
 
   const grpLeft = [bold("Grant Review Panels")];
   const grpRight = [""];
@@ -212,55 +313,7 @@ function serviceItems({ volunteer }: CV): TwoColumnItem[] {
   }
   items.push({ left: grpLeft, right: grpRight });
 
-  const rcLeft = [bold("Research Community and Organizing")];
-  const rcRight = [""];
-  for (const { position, organization, startDate = "" } of volunteer.filter(
-    ({ tags }) => tags.includes("research-community")
-  )) {
-    rcLeft.push(`${organization} ${position}`);
-    rcRight.push(startDate);
-  }
-  items.push({ left: rcLeft, right: rcRight });
 
-  const svLeft = [bold("Student Volunteering")];
-  const svRight = [""];
-  for (const { organization, position, startDate = "" } of volunteer.filter(
-    ({ tags }) => tags.includes("sv")
-  )) {
-    svLeft.push(`${organization}, ${position}`);
-    svRight.push(startDate);
-  }
-  items.push({ left: svLeft, right: svRight });
-
-  const deptLeft = [bold("Department Committees")];
-  const deptRight = [""];
-  for (const { organization, position, startDate = "" } of volunteer.filter(
-    ({ tags }) => tags.includes("department")
-  )) {
-    deptLeft.push(`${position} (${organization})`);
-    deptRight.push(startDate);
-  }
-  items.push({ left: deptLeft, right: deptRight });
-
-  const prLeft = [bold("Peer Review (* Denotes Special Recognition)")];
-  const prRight = [""];
-  for (const { organization, summary } of volunteer.filter(({ tags }) =>
-    tags.includes("peer-review")
-  )) {
-    prLeft.push(`${organization} -- ${summary}`);
-    prRight.push("");
-  }
-  items.push({ left: prLeft, right: prRight });
-
-  const commLeft = [bold("Local and Online Community")];
-  const commRight = [""];
-  for (const { position, organization, startDate = "" } of volunteer.filter(
-    ({ tags }) => tags.includes("community")
-  )) {
-    commLeft.push(`${bold(position)} -- ${organization}`);
-    commRight.push(startDate);
-  }
-  items.push({ left: commLeft, right: commRight });
 
   return items;
 }

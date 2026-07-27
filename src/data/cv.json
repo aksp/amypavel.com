@@ -11,16 +11,17 @@
       "name": "University of Texas at Austin",
       "location": "Austin, TX",
       "description": "Department of Computer Science",
-      "position": "Affiliate Assistant Professor",
-      "startDate": "2025-07-01"
+      "position": "Affiliate Assistant Professor (0% time)",
+      "startDate": "2025-07-01",
+      "endDate": "2026-06-30"
     },
     {
       "name": "Google",
       "location": "Mountain View, CA",
       "description": "Google Research",
-      "position": "Visiting Faculty Researcher",
+      "position": "Visiting Faculty Researcher (20% time)",
       "startDate": "2024-10-01",
-      "summary": "Remote, 20% appointment"
+      "endDate": "2025-12-14"
     },
     {
       "name": "University of Texas at Austin",
@@ -77,12 +78,89 @@
   ],
   "publications": [
     {
+      "name": "DigitalCoach: Communication and Grounding Gaps in Human and Agentic Computer Use Coaching",
+      "releaseDate": "06-30-2026",
+      "authors": ["mchen", "aji", "thwu", "tmaringgele", "dchan", "asuhr", "apavel"],
+      "publisher": "arXiv",
+      "tags": ["preprint"],
+      "link": "https://arxiv.org/pdf/2606.31980",
+      "officialLink": "https://arxiv.org/pdf/2606.31980",
+      "image": "digitalcoach",
+      "imageAlt": "A thumbnail of a human giving instructions and a digital coach giving instructions on how to use an interface."
+    },
+    {
+      "name": "A11y-CUA Dataset: Characterizing the Accessibility Gap in Computer Use Agents",
+      "releaseDate": "04-13-2026",
+      "authors": ["agmohanbabu", "rnatalie", "bkim", "aguo", "apavel"],
+      "publisher": "CHI 2026",
+      "tags": ["paper"],
+      "link": "https://doi.org/10.1145/3772318.3791896",
+      "officialLink": "https://doi.org/10.1145/3772318.3791896",
+      "image": "a11ycua",
+      "imageAlt": "A thumbnail of the A11y-CUA dataset showing blind and low-vision users performing everyday tasks.",
+      "content": "[Paper](https://doi.org/10.1145/3772318.3791896) | [Project Page](https://ananyagm.com/a11y-cua/a11y-cua.html) | [Dataset](https://huggingface.co/datasets/berkeley-hci/A11y-CUA) | [Dataset Explorer](https://ananyagm.com/a11y-cua/dataset-explorer.html) | [Code](https://github.com/gmananya/Computer-Use-Recorder)",
+      "shortName": "A11y-CUA"
+    },
+    {
+      "name": "Co-Designing Multimodal Systems for Accessible Asynchronous Dance Instruction",
+      "releaseDate": "04-13-2026",
+      "authors": ["udas", "skappala", "mchen", "mhuh", "apavel"],
+      "publisher": "CHI 2026",
+      "tags": ["paper"],
+      "link": "https://doi.org/10.1145/3772318.3791376",
+      "officialLink": "https://doi.org/10.1145/3772318.3791376",
+      "image": "dance",
+      "imageAlt": "A thumbnail of the co-design workshop procedure with introduction, teaching, designing, presenting.",
+      "content": "[Paper](https://dl.acm.org/doi/10.1145/3772318.3791376)",
+      "shortName": "Dance Instruction"
+    },
+    {
+      "name": "HistoryPalette: Supporting Exploration and Reuse of Past Alternatives in Image Generation and Editing",
+      "releaseDate": "04-13-2026",
+      "authors": ["kbenharrak", "apavel"],
+      "publisher": "CHI 2026",
+      "tags": ["paper"],
+      "link": "https://doi.org/10.1145/3772318.3790742",
+      "officialLink": "https://doi.org/10.1145/3772318.3790742",
+      "image": "historypalette",
+      "imageAlt": "A thumbnail of the HistoryPalette interface showing a palette of prior design alternatives organized by position, concept, and time.",
+      "content": "[Paper](https://dl.acm.org/doi/10.1145/3772318.3790742) | [Talk](https://www.youtube.com/watch?v=4mTAe_IA82s)",
+      "shortName": "HistoryPalette"
+    },
+    {
+      "name": "Designing Accessible Robot Communication for Blind People",
+      "releaseDate": "04-13-2026",
+      "authors": ["mhuh", "hliu", "ayu", "rmartinmartin", "yzhu", "mcakmak", "apavel"],
+      "publisher": "InterAI Workshop @ CHI 2026",
+      "tags": ["workshop", "bestpaper"],
+      "link": "https://openreview.net/pdf/b486d35b3049e42b6eef0969c95727c4a977a110.pdf",
+      "officialLink": "https://openreview.net/pdf/b486d35b3049e42b6eef0969c95727c4a977a110.pdf",
+      "image": "robotcomm",
+      "imageAlt": "A thumbnail depicting blind people using robots.",
+      "content": "",
+      "shortName": "Robot Communication"
+    },
+    {
+      "name": "\"Made by People, Described by People\": The Changing Work Practices of Audio Description Professionals",
+      "releaseDate": "11-01-2025",
+      "authors": ["cbennett", "apavel", "abryant", "lmceberly", "rshelby", "skkane"],
+      "publisher": "TACCESS 2025",
+      "tags": ["paper"],
+      "link": "https://doi.org/10.1145/3777475",
+      "officialLink": "https://doi.org/10.1145/3777475",
+      "image": "audiodescriptionprofs",
+      "imageAlt": "A thumbnail of the workflow for audio description professionals.",
+      "content": "",
+      "shortName": "Audio Description Professionals"
+    },
+    {
       "name": "TaskArtisan: Flexible Authoring and Manipulation of Task-specific Interactive Widgets via Sketch and Voice",
       "releaseDate": "10-01-2025",
       "authors": ["mchen", "apavel"],
       "publisher": "UIST 2025 Posters",
       "tags": ["poster"],
-      "link": "",
+      "link": "https://dl.acm.org/doi/10.1145/3746058.3758430",
+      "officialLink": "https://doi.org/10.1145/3746058.3758430",
       "image": "taskartisan",
       "imageAlt": "A thumbnail of TaskArtisan's interface with sketch-style mockups.",
       "content": "",
@@ -94,7 +172,8 @@
       "authors": ["kclark", "apavel"],
       "publisher": "ASSETS 2025 Posters and Demos",
       "tags": ["poster"],
-      "link": "",
+      "link": "https://dl.acm.org/doi/10.1145/3663547.3759718",
+      "officialLink": "https://doi.org/10.1145/3663547.3759718",
       "image": "simultaneously",
       "imageAlt": "A thumbnail of the creation tool workflow converting images into multiple tactile format: embossings, bas-relief models, and 3D models.",
       "content": "",
@@ -107,6 +186,7 @@
       "publisher": "UIST 2025 Workshops",
       "tags": ["workshop"],
       "link": "https://accessible-cps.github.io/",
+      "officialLink": "https://accessible-cps.github.io/",
       "image": "accessiblecps",
       "imageAlt": "A thumbnail of the workshop website.",
       "content": "[Workshop Website](https://accessible-cps.github.io/)",
@@ -119,6 +199,7 @@
       "publisher": "CHI 2025 Workshop",
       "tags": ["workshop"],
       "link": "https://accessgaichi.com/",
+      "officialLink": "https://accessgaichi.com/",
       "image": "genaiaccess",
       "imageAlt": "A thumbnail of the workshop website.",
       "content": "[Workshop Website](https://accessgaichi.com/)",
@@ -128,21 +209,23 @@
       "name": "Vid2Coach: Transforming How-To Videos into Task Assistants",
       "releaseDate": "10-06-2025",
       "authors": ["mhuh", "zxue", "udas", "kashutosh", "kgrauman", "apavel"],
-      "publisher": "To Appear at UIST 2025",
+      "publisher": "UIST 2025",
       "tags": ["paper"],
       "link": "https://minahuh.com/Vid2Coach/",
+      "officialLink": "https://doi.org/10.1145/3746059.3747612",
       "image": "vid2coach",
       "imageAlt": "A thumbnail of the Vid2Coach system transforming instructional videos and accessible tips into interactive task assistants.",
-      "content": "[Project Page](https://minahuh.com/Vid2Coach/) | [arXiv](https://arxiv.org/abs/2506.00717)",
+      "content": "[Project Page](https://minahuh.com/Vid2Coach/) | [Talk](https://www.youtube.com/watch?v=KP_e29I09KA) | [arXiv](https://arxiv.org/abs/2506.00717)",
       "shortName": "Vid2Coach"
     },
     {
       "name": "Morae: Proactively Pausing UI Agents for User Choices",
       "releaseDate": "10-05-2025",
       "authors": ["ypeng", "dli", "jbigham", "apavel"],
-      "publisher": "To Appear at UIST 2025",
+      "publisher": "UIST 2025",
       "tags": ["paper"],
-      "link": "",
+      "link": "https://dl.acm.org/doi/abs/10.1145/3746059.3747797",
+      "officialLink": "https://doi.org/10.1145/3746059.3747797",
       "image": "morae",
       "imageAlt": "A thumbnail of the Morae system pausing agent interactions to allow for user choice.",
       "content": "",
@@ -152,21 +235,23 @@
       "name": "TalkLess: Blending Extractive and Abstractive Speech Summarization for Editing Speech to Preserve Content and Style",
       "releaseDate": "10-04-2025",
       "authors": ["kbenharrak", "ppeng", "apavel"],
-      "publisher": "To Appear at UIST 2025",
+      "publisher": "UIST 2025",
       "tags": ["paper"],
-      "link": "https://arxiv.org/abs/2507.15202",
+      "link": "https://benharrak.com/talkless-website/",
+      "officialLink": "https://doi.org/10.1145/3746059.3747795",
       "image": "talkless",
       "imageAlt": "A thumbnail of text-based speech editing with multicolored highlights.",
-      "content": "[arXiv](https://arxiv.org/abs/2507.15202)",
+      "content": "[Project Page](https://benharrak.com/talkless-website/) | [arXiv](https://arxiv.org/abs/2507.15202)",
       "shortName": "TalkLess"
     },
     {
       "name": "CoSight: Exploring Viewer Contributions to Online Video Accessibility Through Descriptive Commenting",
       "releaseDate": "10-02-2025",
       "authors": ["rwang", "xliu", "bwang", "wzhang", "zliao", "zli", "apavel", "xchen"],
-      "publisher": "To Appear at UIST 2025",
+      "publisher": "UIST 2025",
       "tags": ["paper"],
       "link": "https://arxiv.org/abs/2508.08582",
+      "officialLink": "https://doi.org/10.1145/3746059.3747747",
       "image": "cosight",
       "imageAlt": "A thumbnail of the CoSight Chrome extension interface.",
       "content": "[arXiv](https://arxiv.org/abs/2508.08582)",
@@ -176,21 +261,23 @@
       "name": "Surfacing Variations to Calibrate Perceived Reliability of MLLM-generated Image Descriptions",
       "releaseDate": "10-01-2025",
       "authors": ["mchen", "aiyer", "apavel"],
-      "publisher": "To Appear at ASSETS 2025",
+      "publisher": "ASSETS 2025",
       "tags": ["paper"],
       "link": "https://arxiv.org/abs/2507.15692",
+      "officialLink": "https://doi.org/10.1145/3663547.3746393",
       "image": "surfacingvariations",
       "imageAlt": "A thumbnail of two image descriptions with variations.",
-      "content": "[arXiv](https://arxiv.org/abs/2507.15692)",
+      "content": "[Project Page](https://meng-chen.com/image-desc-uncertainty/) | [arXiv](https://arxiv.org/abs/2507.15692)",
       "shortName": "Surfacing Variations"
     },
     {
       "name": "Task Mode: Dynamic Filtering for Task-Specific Web Navigation using LLMs",
       "releaseDate": "10-01-2025",
       "authors": ["agmohanbabu", "ysechayk", "apavel"],
-      "publisher": "To Appear at ASSETS 2025",
+      "publisher": "ASSETS 2025",
       "tags": ["paper"],
-      "link": "https://arxiv.org/abs/2507.14769",
+      "link": "https://ananyagm.com/task-mode.html",
+      "officialLink": "https://doi.org/10.1145/3663547.3746401",
       "image": "taskmode",
       "imageAlt": "A thumbnail of a Wikipedia page with varying opacity according to task relevance.",
       "content": "[arXiv](https://arxiv.org/abs/2507.14769)",
@@ -200,12 +287,13 @@
       "name": "VeasyGuide: Personalized Visual Guidance for Low-vision Learners on Instructor Actions in Presentation Videos",
       "releaseDate": "10-01-2025",
       "authors": ["ysechayk", "ashamir", "apavel", "tigarashi"],
-      "publisher": "To Appear at ASSETS 2025",
-      "tags": ["paper"],
+      "publisher": "ASSETS 2025",
+      "tags": ["paper", "honorablemention"],
       "link": "https://veasyguide.github.io/",
+      "officialLink": "https://doi.org/10.1145/3663547.3746372",
       "image": "veasyguide",
       "imageAlt": "A thumbnail of VeasyGuide's highlight and zoom features.",
-      "content": "[Project Page](https://veasyguide.github.io/) | [arXiv](https://arxiv.org/abs/2507.21837)",
+      "content": "[Project Page](https://veasyguide.github.io/) | [Deployed Web Application](https://veasyguide.github.io/app/) | [arXiv](https://arxiv.org/abs/2507.21837)",
       "shortName": "VeasyGuide"
     },
     {
@@ -215,6 +303,7 @@
       "publisher": "CHI 2025",
       "tags": ["paper"],
       "link": "https://arxiv.org/abs/2502.10190",
+      "officialLink": "https://doi.org/10.1145/3706598.3713417",
       "image": "videodiff",
       "imageAlt": "A thumbnail of an interface comparing three video timelines.",
       "content": "[arXiv](https://arxiv.org/abs/2502.10190)",
@@ -227,6 +316,7 @@
       "publisher": "IUI 2025",
       "tags": ["paper"],
       "link": "https://arxiv.org/abs/2502.07096",
+      "officialLink": "https://doi.org/10.1145/3708359.3712090",
       "image": "lotus",
       "imageAlt": "A thumbnail of abstractive and extractive video summarization.",
       "content": "[arXiv](https://arxiv.org/abs/2502.07096)",
@@ -239,6 +329,7 @@
       "publisher": "UIST 2024",
       "tags": ["paper"],
       "link": "https://minahuh.com/DesignChecker/",
+      "officialLink": "https://doi.org/10.1145/3654777.3676369",
       "image": "designchecker",
       "imageAlt": "A thumbnail of 5 websites before and after using DesignChecker. The after websites have improved aesthetically according to design pricinples (e.g., color harmony, alignment).",
       "content": "[Project Page](https://minahuh.com/DesignChecker/)"
@@ -259,6 +350,7 @@
       "publisher": "COLM 2024",
       "tags": ["paper", "oral-spotlight", "highlight"],
       "link": "https://minahuh.com/LFVQA/",
+      "officialLink": "https://arxiv.org/abs/2408.06303",
       "image": "lfvqa",
       "shortName": "Long-Form VQA",
       "highlightSortOrder": 4,
@@ -272,6 +364,7 @@
       "publisher": "ASSETS 2024",
       "tags": ["paper"],
       "link": "https://ananyagm.com/context-aware-image-descriptions.html",
+      "officialLink": "https://doi.org/10.1145/3663548.3675658",
       "image": "contextaware2",
       "imageAlt": "A thumbnail of a couch listing image with a context free description that does not contain much information about the couch, and a context-aware description that focuses on the couch.",
       "content": "[Project Page](https://ananyagm.com/context-aware-image-descriptions.html)"
@@ -282,7 +375,8 @@
       "authors": ["lsouth", "cyildirim", "apavel", "mborkin"],
       "publisher": "ASSETS 2024",
       "tags": ["paper"],
-      "link": "",
+      "link": "https://dl.acm.org/doi/10.1145/3663548.3675643",
+      "officialLink": "https://doi.org/10.1145/3663548.3675643",
       "image": "designconsiderations",
       "imageAlt": "A thumbnail of an interface for browsing potentially harmful video segments.",
       "content": ""
@@ -301,7 +395,8 @@
       ],
       "publisher": "ECCV 2024",
       "tags": ["paper"],
-      "link": "",
+      "link": "https://dl.acm.org/doi/abs/10.1007/978-3-031-72691-0_26",
+      "officialLink": "https://doi.org/10.1007/978-3-031-72691-0_26",
       "image": "dreamstruct",
       "imageAlt": "A thumbnail of DreamStruct's UI generation that starts with a UI description, then generates HTML UI code, then generates images for the UI and outputs the final user interface.",
       "content": ""
@@ -313,6 +408,7 @@
       "publisher": "CHI 2024",
       "tags": ["paper", "honorablemention"],
       "link": "https://osf.io/preprints/osf/ywqba",
+      "officialLink": "https://doi.org/10.1145/3613904.3642635",
       "image": "photovr",
       "imageAlt": "A thumbnail of a table of potential accessibility barriers in VR.",
       "content": "[PDF](papers/photoVR.pdf)"
@@ -324,6 +420,7 @@
       "publisher": "CHI 2024",
       "tags": ["paper"],
       "link": "https://minahuh.com/ShortScribe/",
+      "officialLink": "https://doi.org/10.1145/3613904.3642839",
       "image": "shortscribe",
       "imageAlt": "A thumbnail of the ShortScribe pipeline. The pipeline takes the video as input, transcribes it and describes the keyframes, then uses GPT-4 to generate multiple types of descriptions.",
       "content": "[Project Page](https://minahuh.com/ShortScribe/)"
@@ -345,6 +442,7 @@
       "publisher": "CHI 2024",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/full/10.1145/3613904.3642762",
+      "officialLink": "https://doi.org/10.1145/3613904.3642762",
       "image": "compa",
       "imageAlt": "A thumbnail of the COMPA interface that features views for the AAC user and their conversational partners.",
       "content": "[PDF](https://www.cs.cmu.edu/~jbigham/pubs/pdfs/2024/compa.pdf)"
@@ -356,6 +454,7 @@
       "publisher": "SIGGRAPH ASIA 2023",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/10.1145/3618371",
+      "officialLink": "https://doi.org/10.1145/3618371",
       "image": "geolatent",
       "imageAlt": "",
       "content": ""
@@ -367,6 +466,7 @@
       "publisher": "UIST 2023",
       "tags": ["paper", "bestpaper", "highlight"],
       "link": "https://minahuh.com/GenAssist/",
+      "officialLink": "https://doi.org/10.1145/3586183.3606735",
       "image": "genassist",
       "shortName": "GenAssist",
       "highlightSortOrder": 1,
@@ -380,6 +480,7 @@
       "publisher": "ASSETS 2023",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/10.1145/3597638.3608425",
+      "officialLink": "https://doi.org/10.1145/3597638.3608425",
       "image": "livestream",
       "imageAlt": "A thumbnail of a livestream paired with a set of descriptions with timestamps.",
       "content": "[PDF](papers/livestream.pdf)"
@@ -391,6 +492,7 @@
       "publisher": "CHI 2023",
       "tags": ["paper"],
       "link": "https://minahuh.com/AVscript/",
+      "officialLink": "https://doi.org/10.1145/3544548.3581494",
       "image": "avscript",
       "imageAlt": "A thumbnail of the audio visual script that includes a transcript of the video coupled with detected errors in the video footage (e.g., camera blur).",
       "content": "[PDF](papers/avscript.pdf) | [Project Page](https://minahuh.com/AVscript/)"
@@ -404,6 +506,7 @@
       "image": "photosensitive",
       "imageAlt": "A thumbnail screenshot of a forum people use to report flashing lights.",
       "link": "https://dl.acm.org/doi/10.1145/3544549.3585649",
+      "officialLink": "https://doi.org/10.1145/3544549.3585649",
       "content": "[PDF](papers/photosensitive.pdf)"
     },
     {
@@ -413,6 +516,7 @@
       "publisher": "IUI 2023",
       "tags": ["paper"],
       "link": "https://jeremywrnr.com/SlideSpecs/",
+      "officialLink": "https://doi.org/10.1145/3581641.3584035",
       "image": "slidespecs",
       "imageAlt": "A thumbnail of SlideSpecs featuring numbered slides and audience feedback on the slides.",
       "content": "[PDF](papers/slidespecs.pdf) | [Project Page](https://jeremywrnr.com/SlideSpecs/) | [Demo](https://slidespecs.berkeley.edu/guide) | [Code](https://github.com/BerkeleyHCI/SlideSpecs)"
@@ -424,6 +528,7 @@
       "publisher": "UIST 2022",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/abs/10.1145/3526113.3545637",
+      "officialLink": "https://doi.org/10.1145/3526113.3545637",
       "image": "diffscriber",
       "imageAlt": "A thumbnail of Diffscriber's interface for reviewing slide changes.",
       "content": "[PDF](papers/diffscriber.pdf) | [Video Preview](https://www.youtube.com/watch?v=zzgvQLxm5-U)"
@@ -435,6 +540,7 @@
       "publisher": "UIST 2022",
       "tags": ["paper", "bestpaper", "highlight"],
       "link": "https://liubruce.me/CrossA11y/",
+      "officialLink": "https://doi.org/10.1145/3526113.3545703",
       "image": "crossa11y",
       "shortName": "CrossA11y",
       "highlightSortOrder": 2,
@@ -455,6 +561,7 @@
       "publisher": "CHI 2022",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/10.1145/3491102.3517708",
+      "officialLink": "https://doi.org/10.1145/3491102.3517708",
       "image": "techhelpdesk",
       "imageAlt": "Three images of Tech Help Desk including the Tech Help Desk classroom, the Tech Help Desk sign on the classroom door and the building entrance.",
       "content": "[PDF](papers/techhelpdesk.pdf)"
@@ -466,6 +573,7 @@
       "publisher": "W4A 2022",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/10.1145/3493612.3520449",
+      "officialLink": "https://doi.org/10.1145/3493612.3520449",
       "image": "towardsalttext",
       "imageAlt": "A thumbnail image of a chart of alt text coverage that appears in the paper.",
       "content": "[PDF](papers/towardsalttext.pdf)"
@@ -477,6 +585,7 @@
       "publisher": "SUI 2021",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/10.1145/3485279.3485289",
+      "officialLink": "https://doi.org/10.1145/3485279.3485289",
       "image": "tutoriallens",
       "imageAlt": "A thumnbail image of the tutorial lens interface.",
       "content": "[PDF](papers/tutoriallens.pdf)"
@@ -488,6 +597,7 @@
       "publisher": "ASSETS 2021",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/10.1145/3441852.3471234",
+      "officialLink": "https://doi.org/10.1145/3441852.3471234",
       "image": "slidecho",
       "imageAlt": "A thumnail image of SlideCho's interface for surfacing information in slide videos.",
       "content": "[PDF](papers/slidecho.pdf)"
@@ -499,6 +609,7 @@
       "publisher": "HRI 2021",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/10.1145/3434073.3444646",
+      "officialLink": "https://doi.org/10.1145/3434073.3444646",
       "image": "codesigning",
       "imageAlt": "A photograph taken at a workshop with a person using an AAC device, her close conversational partner, and puppeteers. All participants stand around a table full of craft supplies and are engaged in coversation.",
       "content": "[PDF](papers/codesigning.pdf)"
@@ -510,6 +621,7 @@
       "publisher": "CHI 2021",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/10.1145/3411764.3445233",
+      "officialLink": "https://doi.org/10.1145/3411764.3445233",
       "image": "videosearch",
       "imageAlt": "A YouTube search result augmented with accessibility information. A thumbnail of the video shows a woman in Rome. The rest of the video information reads as follows: Rome, Italy! Tips & Photo Spots by Ruby Keyvani. 5/7 Somewhat Accessible. 76% of the video is speech. The speech is descriptive but contains many visual references (3 per minute). Visual changes occur infrequently (5 shots per minute); few on-screen objects are described (20%).",
       "content": "[PDF][1] | [30s Video][2] | [Presentation (5 min)][3]\n\n[1]: papers/videosearch.pdf\n[2]: https://www.youtube.com/watch?v=dNubi_koIsc\n[3]: https://www.youtube.com/watch?v=n2enrJJZdTs"
@@ -521,6 +633,7 @@
       "publisher": "CHI 2021",
       "tags": ["paper"],
       "link": "https://sayitall.github.io/",
+      "officialLink": "https://doi.org/10.1145/3411764.3445572",
       "image": "sayitall",
       "imageAlt": "A slide from a lecture where most text is in black but some of the text has been colored green to represent that it has been spoken by the presenter. There is an image with a squiggly circle brush on the slide, and it has a green border to indicate the presenter described the image.",
       "content": "[PDF][1] | [30s Video][2] | [Presentation (5 min)][3] | [Presentation Transcript][4]\n\n[1]: papers/sayitall.pdf\n[2]: https://www.youtube.com/watch?v=tBaSqMYP4yI\n[3]: https://www.youtube.com/watch?v=AvXBiZ3C3yY\n[4]: https://sayitall.github.io/slides/"
@@ -532,6 +645,7 @@
       "publisher": "NAACL 2021",
       "tags": ["paper"],
       "link": "https://aclanthology.org/2021.naacl-main.240/",
+      "officialLink": "https://doi.org/10.18653/v1/2021.naacl-main.240",
       "image": "exemplars",
       "imageAlt": "A thumnail image of a semantic exemplar with three corresponding examples.",
       "content": "[PDF](papers/exemplars.pdf)"
@@ -545,6 +659,7 @@
       "tags": ["paper", "highlight"],
       "shortName": "Rescribe",
       "link": "https://dl.acm.org/doi/10.1145/3379337.3415864",
+      "officialLink": "https://doi.org/10.1145/3379337.3415864",
       "image": "rescribe",
       "highlightSortOrder": 3,
       "imageAlt": "On one side, a set of extended audio description sentences with their corresponding frames, and in the other column a set of inline audio description sentences and the same frames. The shortened descriptions are as follows: `Shots of lavender in a farmers market' is shortened to `Shots of lavender', `Red flowers against a white house and blue sky' is shortened to `Red flowers', `a courtyard and a pool' is not shortened, `Gaby bikes along a path' is shortened to `Close up of french fries', and `Close up of tater tots and french fries' is shortened to `Close up of french fries'",
@@ -568,6 +683,7 @@
       "publisher": "ASSETS 2020",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/10.1145/3373625.3417023",
+      "officialLink": "https://doi.org/10.1145/3373625.3417023",
       "image": "disabilitycovid",
       "imageAlt": "Screenshot of a tweet by @CDCgov from April 1, 2020 3:55pm: Actions to reduce spread of the virus, such as social distancing, are key to #FlattenTheCurve. 2 of 3 (original tweet link: https://twitter.com/CDCgov/status/1245439600472084486) The tweet contains an image of the common public health infographic about “flattening the curve”, but the tweet did not include alt text for the image. The image shows an example of a common flatten the curve info-graphic. A tall peak indicates the height of the pandemic if left unchecked, and a shorter spread out curve depicts the effects of social distancing efforts.",
       "content": "[PDF](papers/disabilitycovid.pdf)\n"
@@ -580,6 +696,7 @@
       "publisher": "ASSETS 2020",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/10.1145/3373625.3417027",
+      "officialLink": "https://doi.org/10.1145/3373625.3417027",
       "image": "oprah",
       "imageAlt": "A cartoon stylized version of a popular reaction GIF of Oprah Winfrey shrugging. She turns to look to the camera, glances to the side, stares at the camera, then shrugs with her palms up.",
       "content": "[Paper][1] | [Link to Thumbnail GIF][2]\n\n[1]: https://dl.acm.org/doi/10.1145/3373625.3417027\n[2]: https://media.giphy.com/media/5Sztylo25gCVnBOWjq/giphy.gif\n"
@@ -600,6 +717,7 @@
       "publisher": "ASSETS 2020",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/10.1145/3373625.3417006",
+      "officialLink": "https://doi.org/10.1145/3373625.3417006",
       "image": "accessiblear",
       "imageAlt": "Two example prototypes for making AR apps accessible. A: Foundational Accessibility. Screenshot of a virtual chair with a voice over target around it, a speech bubble shows the app announcing 'Back of chair with blue cushion'. B: Scanning. Screenshot of AR grid overlaid on a coffee table. Speech bubbles show the app announcing 'Found a new horizontal surface' and 'Scanned 2 surfaces totaling 2.3 square meters'.",
       "content": "[PDF][1] | [Video][2]\n\n[1]: papers/accessiblear.pdf\n[2]: https://www.youtube.com/watch?v=AxKKGoD3TZk\n"
@@ -619,6 +737,7 @@
       "publisher": "CHI 2020",
       "tags": ["paper", "honorablemention"],
       "link": "https://dl.acm.org/doi/10.1145/3313831.3376376",
+      "officialLink": "https://doi.org/10.1145/3313831.3376376",
       "image": "aacagency",
       "imageAlt": "A thumbnail with a conversation between a person using an AAC device and two other people.",
       "content": "[PDF][1] \n\n[1]: papers/aacagency.pdf\n"
@@ -639,6 +758,7 @@
       "publisher": "CHI 2020",
       "tags": ["paper", "honorablemention"],
       "link": "https://dl.acm.org/doi/10.1145/3313831.3376728",
+      "officialLink": "https://doi.org/10.1145/3313831.3376728",
       "image": "twittera11y",
       "imageAlt": "A thumbnail with illegible examples of tweet images and their corresponding alt text.",
       "content": "[PDF][1] \n\n[1]: papers/twittera11y.pdf\n"
@@ -658,6 +778,7 @@
       "publisher": "SIGDIAL 2019",
       "tags": ["paper"],
       "link": "https://arxiv.org/abs/1907.10568",
+      "officialLink": "https://arxiv.org/abs/1907.10568",
       "image": "multiref",
       "imageAlt": "A thumbnail of a paper figure showing three memes with descriptions.",
       "content": "[PDF][1] | [Code][2] \n\n[1]: papers/multiref.pdf\n[2]: https://github.com/prakharguptaz/multirefeval\n"
@@ -677,6 +798,7 @@
       "publisher": "ASSETS 2019",
       "tags": ["paper"],
       "link": "https://dl.acm.org/doi/10.1145/3308561.3353792",
+      "officialLink": "https://doi.org/10.1145/3308561.3353792",
       "image": "memes",
       "imageAlt": "A thumbnail of a paper figure showing three memes with descriptions.",
       "content": "[PDF][1] | [Time article][2]\n\n[1]: papers/memes.pdf\n[2]: https://time.com/5759721/meme-accessibility-blind/\n"
@@ -700,6 +822,7 @@
       "publisher": "IEEE VR 2018",
       "tags": ["paper"],
       "link": "https://vsitzmann.github.io/vr-saliency/",
+      "officialLink": "https://doi.org/10.1109/TVCG.2018.2793599",
       "image": "saliency",
       "imageAlt": "A thumbnail of a paper figure including nine images with heat maps indicating visual saliency in VR.",
       "content": "[Project Page][1] | [Code][code] | [Video][2]\n\n[1]: https://vsitzmann.github.io/vr-saliency/\n[2]: https://www.youtube.com/watch?v=c0wW1EiAvlk\n[code]: https://github.com/vsitzmann/vr-saliency\n"
@@ -713,6 +836,7 @@
       "tags": ["paper"],
       "shortName": "360° Video",
       "link": "https://aksp.github.io/interactive360video/",
+      "officialLink": "https://doi.org/10.1145/3126594.3126636",
       "image": "shots",
       "imageAlt": "A thumbnail of a paper figure indicating three different editing techniques for 360 video: traditional, viewpoint-oriented cuts and active reorientation.",
       "content": "[PDF][1] | [Code][code] | [Video][2]\n\n[1]: https://aksp.github.io/interactive360video/paper-small.pdf\n[2]: https://www.youtube.com/watch?v=nGXe9qT19t8\n[demo]: https://people.eecs.berkeley.edu/~amypavel/interactivevrview/examples/interactivevideo/interface-demo.html\n[code]: https://github.com/aksp/interactivevrview\n"
@@ -725,6 +849,7 @@
       "publisher": "UIST 2016",
       "tags": ["paper"],
       "link": "http://vis.berkeley.edu/papers/vidcrit/",
+      "officialLink": "https://doi.org/10.1145/2984511.2984552",
       "image": "vidcrit",
       "imageAlt": "A thumbnail of the VidCrit interface with a video on the left and text critiques of the video on the right.",
       "content": "[PDF][1] | [Video][2]\n\n[1]: papers/vidcrit.pdf\n[2]: https://youtu.be/Pp-jDTbzi_4"
@@ -738,6 +863,7 @@
       "tags": ["paper"],
       "shortName": "SceneSkim",
       "link": "http://vis.berkeley.edu/papers/sceneskim/",
+      "officialLink": "https://doi.org/10.1145/2807442.2807502",
       "image": "sceneskim",
       "imageAlt": "",
       "content": "[PDF][1] | [Video][2]\n\n[1]: http://vis.berkeley.edu/papers/sceneskim/sceneskim.pdf\n[2]: https://youtu.be/umvD6TGwciE\n"
@@ -759,6 +885,7 @@
       "publisher": "CSCW 2015",
       "tags": ["paper"],
       "link": "http://vis.berkeley.edu/papers/crowdcrit/",
+      "officialLink": "https://doi.org/10.1145/2675133.2675283",
       "image": "crowdcrit",
       "imageAlt": "A thumbnail indicating an overview of the CrowdCrit critique process."
     },
@@ -771,6 +898,7 @@
       "tags": ["paper"],
       "shortName": "Video Digests",
       "link": "http://vis.berkeley.edu/papers/videodigests/",
+      "officialLink": "https://doi.org/10.1145/2642918.2647400",
       "image": "videodigests",
       "imageAlt": "A thumbnail of the Video Digests interface. Video thumbnails displayed alongside short summaries of the video content.",
       "content": "[PDF][1] | [Code][3]\n\n[1]: http://vis.berkeley.edu/papers/videodigests/videodigests_small.pdf\n[2]: https://videodigests.com\n[3]: https://github.com/ucbvislab/vdigests\n"
@@ -782,6 +910,7 @@
       "publisher": "W3PHIAI 2020 Workshop Paper",
       "tags": ["workshop"],
       "link": "https://arxiv.org/abs/2007.07151",
+      "officialLink": "https://doi.org/10.1007/978-3-030-53352-6_14",
       "image": "soapnotes",
       "imageAlt": "A thumbnail showing a line graph of the precision-at-one of an algorithm going up as the number of noteworthy sentences considered rises. After a certain point, the number of noteworthy sentences decreases the precision at one -- indicating that lower quality noteworthy sentences add noise rather than value to the prediction."
     },
@@ -804,6 +933,7 @@
       "summary": "(Poster)",
       "tags": ["poster"],
       "link": "https://dl.acm.org/doi/10.1145/3308561.3354629",
+      "officialLink": "https://doi.org/10.1145/3308561.3354629",
       "image": "twittera11yposter",
       "imageAlt": "A thumbnail with an illegible system diagram of Twitter A11y."
     },
@@ -823,6 +953,7 @@
       "summary": "(Extended Abstract)",
       "tags": ["poster"],
       "link": "https://dl.acm.org/doi/10.1145/2556420.2556788",
+      "officialLink": "https://doi.org/10.1145/2556420.2556788",
       "image": "crowdcrit",
       "imageAlt": "A thumbnail indicating an overview of the CrowdCrit critique process."
     },
@@ -834,15 +965,9 @@
       "summary": "(Poster)",
       "tags": ["poster"],
       "link": "http://vis.berkeley.edu/papers/sifter/",
+      "officialLink": "http://vis.berkeley.edu/papers/sifter/",
       "image": "sifter",
       "imageAlt": "A thumbnail of the Sifter interface for browsing common sets of image editing commands."
-    },
-    {
-      "name": "Extracting Structured Data from Physician-Patient Conversations By Predicting Noteworthy Utterances.",
-      "releaseDate": "07-14-2020",
-      "authors": ["kkrishna", "apavel", "bschloss", "jbigham", "zlipton"],
-      "publisher": "arXiv:2007.07151",
-      "tags": ["preprint"]
     },
     {
       "name": "Navigating Video Using Structured Text",
@@ -850,6 +975,7 @@
       "authors": ["apavel"],
       "publisher": "PhD in Computer Science, University of California, Berkeley",
       "link": "https://escholarship.org/uc/item/94x1w5r1",
+      "officialLink": "https://escholarship.org/uc/item/94x1w5r1",
       "summary": "Committee: Professors Björn Hartmann (Berkeley EECS), Maneesh Agrawala (Stanford), Eric Paulos (Berkeley New Media and EECS), and Abigail De Kosnick (Berkeley Department of Theater, Dance and Performance, and New Media).",
       "tags": ["tech-report"],
       "image": "thesis",
@@ -862,46 +988,59 @@
       "publisher": "UC Berkeley Technical Report, EECS-2013-167",
       "tags": ["tech-report"],
       "link": "http://vis.berkeley.edu/papers/sifter/",
+      "officialLink": "http://vis.berkeley.edu/papers/sifter/",
       "image": "sifter"
     }
   ],
   "student_awards": [
     {
       "title": "Google PhD Fellowship (2 Years) -- Mina Huh",
-      "date": "2024"
+      "date": "August 2024 - May 2026"
     }
   ],
   "awards": [
     {
-      "title": "Google ML and Systems Junior Faculty Award",
-      "date": "2025"
+      "title": "Hill Prize in AI (Co-PI)",
+      "date": "January 2026"
     },
     {
-      "title": "ND Tech Ethics Award",
-      "date": "2025"
+      "title": "Adobe Gift Funding (PI)",
+      "date": "November 2025"
     },
     {
-      "title": "Apple Gift Funding",
-      "date": "2024"
+      "title": "ASSETS Best Paper Honorable Mention",
+      "date": "October 2025"
+    },
+    {
+      "title": "Google ML and Systems Junior Faculty Award (PI)",
+      "date": "July 2025"
+    },
+    {
+      "title": "ND Tech Ethics Award (PI)",
+      "date": "January 2025"
+    },
+    {
+      "title": "Apple Gift Funding (PI)",
+      "date": "January 2025"
     },
     {
       "title": "COLM Oral Spotlight Paper",
-      "date": "2024"
+      "date": "October 2024"
     },
     {
       "title": "CHI Honorable Mention",
-      "date": "2024"
+      "date": "May 2024"
     },
     {
       "title": "UIST Best Paper Award",
-      "date": "2023"
+      "date": "October 2023"
     },
     {
       "title": "UIST Best Paper Award",
-      "date": "2022"
+      "date": "October 2022"
     },
     {
-      "title": "Adobe Gift Funding",
+      "title": "Adobe Gift Funding (PI)",
       "date": "2022, 2023, 2024"
     },
     {
@@ -917,7 +1056,7 @@
       "date": "2020"
     },
     {
-      "title": "Future of Work NSF Grant Co-PI",
+      "title": "Future of Work NSF Grant (Co-PI)",
       "date": "2019"
     },
     {
@@ -949,28 +1088,40 @@
   ],
   "volunteer": [
     {
-      "position": "Best Paper Committee Member",
+      "position": "Program Co-Chair",
       "organization": "ACM UIST",
-      "startDate": "Fall 2024",
-      "tags": ["research-community"]
+      "startDate": "October 2025 - Present",
+      "tags": ["research-community-conference-org"]
     },
     {
-      "position": "Best Paper Committee Member",
+      "position": "PC Committee Member (Subcommittee: Blending Interaction)",
       "organization": "ACM CHI",
-      "startDate": "Fall 2023",
-      "tags": ["research-community"]
+      "startDate": "September 2025 - January 2026",
+      "tags": ["pc"]
     },
     {
-      "position": "Panel Reviewer",
-      "organization": "NIDILRR",
-      "startDate": "2024",
-      "tags": ["grant-review-panel"]
+      "position": "PC Committee Member",
+      "organization": "ACM ASSETS",
+      "startDate": "April 2025 - July 2025",
+      "tags": ["pc"]
     },
     {
-      "position": "Panel Reviewer",
-      "organization": "NSF",
-      "startDate": "2023",
-      "tags": ["grant-review-panel"]
+      "position": "PC Committee Member",
+      "organization": "COLM",
+      "startDate": "March 2025 - July 2025",
+      "tags": ["pc"]
+    },
+    {
+      "position": "PC Committee Member",
+      "organization": "ACM SIGGRAPH Asia",
+      "startDate": "May 2025 - August 2025",
+      "tags": ["pc"]
+    },
+    {
+      "position": "PC Committee Member",
+      "organization": "ACM UIST",
+      "startDate": "April 2025 - August 2025",
+      "tags": ["pc"]
     },
     {
       "position": "PC Committee Member (Subcommittee: Blending Interaction)",
@@ -1081,52 +1232,118 @@
       "tags": ["sv"]
     },
     {
-      "position": "Generative AI and Accessibility Workshop Organizer",
+      "position": "Doctoral Symposium Jury and Panelist",
+      "organization": "UIST 2025",
+      "startDate": "August 2025 - October 2025",
+      "tags": ["research-community"]
+    },
+    {
+      "position": "Accessible Cyber Physical Activties Workshop Co-Organizer",
+      "organization": "ACM UIST",
+      "startDate": "October 2025",
+      "tags": ["research-community-workshop-org"]
+    },
+    {
+      "position": "Generative AI and Accessibility Workshop Co-Organizer",
       "organization": "ACM CHI",
-      "startDate": "2025",
+      "startDate": "April 2025",
+      "tags": ["research-community-workshop-org"]
+    },
+    {
+      "position": "Invited Guest",
+      "organization": "ACM UIST, Student Volunteer's `Rockstars' Lunch",
+      "startDate": "October 2025",
       "tags": ["research-community"]
     },
     {
       "position": "Invited Guest",
       "organization": "ACM UIST, Student Volunteer's `Rockstars' Lunch",
-      "startDate": "2024",
+      "startDate": "October 2024",
       "tags": ["research-community"]
     },
+        {
+      "position": "Reviewer",
+      "organization": "Google PhD Student Fellowships",
+      "startDate": "2025",
+      "tags": ["grant-review-panel"]
+    },
     {
-      "position": "Panelist: Women of UIST",
-      "organization": "ACM UIST",
+      "position": "Panel Reviewer",
+      "organization": "NIDILRR",
       "startDate": "2024",
+      "tags": ["grant-review-panel"]
+    },
+    {
+      "position": "Panel Reviewer",
+      "organization": "NSF",
+      "startDate": "2023",
+      "tags": ["grant-review-panel"]
+    },
+    {
+      "position": "Women of UIST Panelist",
+      "organization": "ACM UIST",
+      "startDate": "October 2024",
       "tags": ["research-community"]
     },
     {
       "position": "Demo Awards Judge",
       "organization": "ACM UIST",
-      "startDate": "2024",
+      "startDate": "October 2024",
       "tags": ["research-community"]
     },
     {
-      "position": "Panelist: Women's Lunch",
+      "position": "Best Paper Committee Member",
       "organization": "ACM UIST",
-      "startDate": "2023",
+      "startDate": "Fall 2024",
+      "tags": ["research-community"]
+    },
+    {
+      "position": "Best Paper Committee Member",
+      "organization": "ACM CHI",
+      "startDate": "Fall 2023",
+      "tags": ["research-community"]
+    },
+    {
+      "position": "Women's Lunch Panelist",
+      "organization": "ACM UIST",
+      "startDate": "October 2023",
       "tags": ["research-community"]
     },
     {
       "position": "Co-Organizer",
       "organization": "EECS Rising Stars (UT Austin)",
       "startDate": "2022",
-      "tags": ["research-community"]
+      "tags": ["research-community-workshop-org"]
     },
     {
       "position": "Digital Experience Co-Chair",
       "organization": "ACM UIST",
       "startDate": "2021",
-      "tags": ["research-community"]
+      "tags": ["research-community-conference-org"]
     },
     {
       "position": "CrowdCamp Workshop Co-Organizer",
       "organization": "HCOMP",
       "startDate": "2020",
-      "tags": ["research-community"]
+      "tags": ["research-community-workshop-org"]
+    },
+    {
+      "position": "Jacobs Executive Committee (Subcommittee: Design for All)",
+      "organization": "UC Berkeley, Jacobs and College of Engineering",
+      "startDate": "September 2025-Present",
+      "tags": ["college"]
+    },
+    {
+      "position": "Equity Advisor (Graduate Admissions Co-Lead)",
+      "organization": "UC Berkeley",
+      "startDate": "September 2025-Present",
+      "tags": ["campus"]
+    },
+    {
+      "position": "Graduate Student Admissions Committee (HCI Area Lead)",
+      "organization": "UC Berkeley, Computer Science",
+      "startDate": "November 2025-February 2026",
+      "tags": ["department"]
     },
     {
       "position": "Graduate Student Search Committee",
@@ -1190,43 +1407,67 @@
     },
     {
       "position": "Reviewer",
-      "organization": "UIST",
-      "summary": "2014, 2015, 2016, 2017, 2018, 2019, 2020**, 2021*, 2022*, 2023**, 2024*",
+      "organization": "UIST (Technical Papers)",
+      "summary": "2014, 2015, 2016, 2017, 2018, 2019, 2020**, 2021*, 2022*, 2023**, 2024*, 2025**",
       "tags": ["peer-review"]
     },
     {
       "position": "Reviewer",
-      "organization": "CHI",
-      "summary": "2013, 2015, 2016, 2017*, 2018**, 2019, 2020, 2021*, 2022*, 2023****, 2024***",
+      "organization": "CHI (Technical Papers)",
+      "summary": "2013, 2015, 2016, 2017*, 2018**, 2019, 2020, 2021*, 2022*, 2023****, 2024***, 2025, 2026*",
       "tags": ["peer-review"]
     },
     {
       "position": "Reviewer",
-      "organization": "VIS",
+      "organization": "ASSETS (Technical Papers)",
+      "summary": "2023, 2024, 2025",
+      "tags": ["peer-review"]
+    },
+    {
+      "position": "Reviewer",
+      "organization": "ASSETS (Posters and Demos)",
+      "summary": "2023, 2024, 2025",
+      "tags": ["peer-review"]
+    },
+    {
+      "position": "Reviewer",
+      "organization": "ACL ARR",
+      "summary": "2026",
+      "tags": ["peer-review"]
+    },
+    {
+      "position": "Reviewer",
+      "organization": "DIS (Technical Papers)",
+      "summary": "2025*",
+      "tags": ["peer-review"]
+    },
+    {
+      "position": "Reviewer",
+      "organization": "VIS (Technical Papers)",
       "summary": "2023",
       "tags": ["peer-review"]
     },
     {
       "position": "Reviewer",
-      "organization": "CSCW",
+      "organization": "CSCW (Technical Papers)",
       "summary": "2018, 2023",
       "tags": ["peer-review"]
     },
     {
       "position": "Reviewer",
-      "organization": "SCIVIS",
+      "organization": "SCIVIS (Technical Papers)",
       "summary": "2018",
       "tags": ["peer-review"]
     },
     {
       "position": "Reviewer",
-      "organization": "SIGGRAPH Asia",
+      "organization": "SIGGRAPH Asia (Technical Papers)",
       "summary": "2017",
       "tags": ["peer-review"]
     },
     {
       "position": "Reviewer",
-      "organization": "MM",
+      "organization": "MM (Technical Papers)",
       "summary": "2016",
       "tags": ["peer-review"]
     },
@@ -1287,7 +1528,7 @@
     {
       "position": "UT HCI Co-Founder and Organizer (Seminar and Mailing List)",
       "organization": "UT Austin",
-      "startDate": "Fall 2022-Present",
+      "startDate": "2022-2025",
       "tags": ["community"]
     },
     {
@@ -1309,7 +1550,12 @@
       "institution": "UT Austin",
       "course": "CS 378: Introduction to Human-Computer Interaction",
       "link": "",
-      "summary": ["80 students"],
+      "summary": [
+        "72 students",
+        "Instructor Rating: 4.62/5.0",
+        "Course Rating: 4.31/5.0",
+        "Survey Response Ratio: 94.4%"
+      ],
       "startDate": "Spring 2025"
     },
     {
@@ -1430,32 +1676,38 @@
   ],
   "thesis_committees": [
     {
-      "name": "Chongyan Chen",
-      "summary": "PhD Student at UC Boulder (Advised by Danna Gurari)",
+      "name": "Kevin Ma",
+      "summary": "PhD Student at UC Berkeley (Advised by Prof. Kosa Goucher-Lambert)",
       "tags": ["dissertation"],
       "startDate": "Upcoming"
+    },
+    {
+      "name": "Shm Garanganao Almeda",
+      "summary": "PhD Student at UC Berkeley (Advised by Prof. Björn Hartmann)",
+      "tags": ["dissertation", "chair"],
+      "startDate": "Upcoming"
+    },
+    {
+      "name": "Chongyan Chen",
+      "summary": "PhD Student at UC Boulder (Advised by Prof. Danna Gurari)",
+      "tags": ["dissertation"],
+      "startDate": "2025"
     },
     {
       "name": "Saelyne Yang",
-      "summary": "PhD Student at KAIST (Advised by Juho Kim)",
+      "summary": "PhD Student at KAIST (Advised by Prof. Juho Kim)",
       "tags": ["dissertation"],
-      "startDate": "Upcoming"
-    },
-    {
-      "name": "Alex Braylan",
-      "summary": "PhD Student at UT Austin (Advised by Matt Lease)",
-      "tags": ["dissertation"],
-      "startDate": "2024"
+      "startDate": "2025"
     },
     {
       "name": "Jerry Tang",
-      "summary": "PhD Student at UT Austin (Advised by Alexander Huth)",
+      "summary": "PhD Student at UT Austin (Advised by Prof. Alexander Huth)",
       "tags": ["dissertation"],
       "startDate": "2024"
     },
     {
       "name": "Laura South",
-      "summary": "PhD Student at Northeastern (Advised by Michelle Borkin)",
+      "summary": "PhD Student at Northeastern (Advised by Prof. Michelle Borkin)",
       "tags": ["dissertation"],
       "startDate": "2023"
     }
@@ -1489,28 +1741,58 @@
   ],
   "undergraduate_and_masters_mentorship": [
     {
+      "name": "Sampurn (Sam) Bhowmick",
+      "project": "Accessible Robot Communication.",
+      "summary": "Undergraduate Student (Jacobs Design Scholar), UC Berkeley",
+      "startDate": "June 2026 - Present"
+    },
+    {
+      "name": "Oskar Hokkanen Eriksson",
+      "project": "Intent Prediction for Blind and Low Vision People.",
+      "summary": "Visiting Master's Student, KTH",
+      "startDate": "March 2026 - Present"
+    },
+    {
+      "name": "Brian Chu",
+      "project": "Co-Designing Agents for People Experiencing Demand Avoidance.",
+      "summary": "Post-Bachelor Scholar, UC Berkeley",
+      "startDate": "January 2026 - Present"
+    },
+    {
+      "name": "Anika Bhagavatula",
+      "project": "Sychophancy in Multimodal Models for Blind People.",
+      "summary": "Master's Student, UC Berkeley",
+      "startDate": "February 2026 - Present"
+    },
+    {
+      "name": "Suk Min Huang",
+      "project": "Legible Computer Use Agents.",
+      "summary": "Master's Student, UC Berkeley",
+      "startDate": "January 2026 - Present"
+    },
+    {
       "name": "Sumaya Al-Bedaiwi",
-      "project": "Assessment Support for Speech Languge Pathologists (Master's Thesis).",
+      "project": "Assessment Support for Speech Languge Pathologists.",
       "summary": "5-Year Master's Student, UT Austin",
-      "startDate": "Fall 2024 - Present"
+      "startDate": "Fall 2024 - Spring 2025"
     },
     {
       "name": "Katie Clark",
-      "project": "2D Images to Tactile Graphics (Master's Thesis).",
+      "project": "2D Images to Tactile Graphics (First Author ASSETS 2025 Poster, Master's Thesis).",
       "summary": "5-Year Master's Student, UT Austin",
-      "startDate": "Fall 2024 - Present"
+      "startDate": "Fall 2024 - Spring 2025"
     },
     {
       "name": "Sarah Zheng",
       "project": "Describing Scientific Diagrams (Honors Thesis).",
       "summary": "Undergraduate Student, UT Austin",
-      "startDate": "Fall 2024 - Present"
+      "startDate": "Fall 2024 - Spring 2025"
     },
     {
       "name": "Elin Park",
       "project": "Audio Production for d/Deaf and Hard of Hearing Creators (Independent Study).",
       "summary": "Undergraduate Student, UT Austin",
-      "startDate": "Fall 2024 - Present"
+      "startDate": "Fall 2024 - Spring 2025"
     },
     {
       "name": "Jerry He",
@@ -1520,50 +1802,50 @@
     },
     {
       "name": "Akhil Iyer",
-      "project": "Automatic Live Descriptions (co-author CHI 2024).",
-      "summary": "Undergradaute, UT Austin.",
-      "startDate": "Fall 2023 - Present"
+      "project": "Automatic Live Descriptions (Co-Author CHI 2024 Full Paper, ASSETS 2025 Full Paper).",
+      "summary": "Undergradaute, UT Austin",
+      "startDate": "Fall 2023 - Spring 2025"
     },
     {
       "name": "Adi Barua",
-      "project": "Creating Short Videos from Long Videos (first author IUI 2024, Honors Thesis).",
-      "summary": "Undergradaute, UT Austin.",
-      "startDate": "Fall 2023 - Present"
+      "project": "Creating Short Videos from Long Videos (First Author IUI 2024 Full Paper, Honors Thesis).",
+      "summary": "Undergradaute, UT Austin",
+      "startDate": "Fall 2023 - Spring 2025"
     },
     {
       "name": "Ananya Gubbi Mohanbabu",
-      "project": "Context-Aware Descriptions (first author ASSETS 2024 paper and Master's Thesis).",
-      "summary": "Master's Student, UT Austin. Next: PhD at UT Austin",
+      "project": "Context-Aware Descriptions (First Author ASSETS 2024 Full Paper, Master's Thesis).",
+      "summary": "Master's Student, UT Austin; Next: PhD at UT Austin",
       "startDate": "Fall 2023 - Spring 2024"
     },
     {
       "name": "Hansika Murugu",
       "project": "Evaluating Long Form Answers to Visual Questions (Independent Study).",
-      "summary": "Undergradaute at HKUST, Visiting UT Austin. Next: MS at UMD",
+      "summary": "Undergradaute at HKUST, Visiting UT Austin; Next: MS at UMD",
       "startDate": "Fall 2023 - Spring 2024"
     },
     {
       "name": "Ujjaini Das",
-      "project": "Describing Complex Motion (Independent Study).",
-      "summary": "Undergradaute, UT Austin.",
-      "startDate": "Fall 2023 - Spring 2024"
+      "project": "Describing Complex Motion (First Author CHI 2025 Full Paper, Co-Author UIST 2025 Full Paper, Honors Thesis).",
+      "summary": "Undergradaute, UT Austin; Next: Apple then PhD at UW CSE",
+      "startDate": "Fall 2023 - Summer 2025"
     },
     {
       "name": "Tess Van Deaele",
-      "project": "Making Short Videos Accessible (first-author CHI 2024 and Honors Thesis)",
-      "summary": "Undergradaute, UT Austin. Next: Software Engineer at Verkada",
+      "project": "Making Short Videos Accessible (First Author CHI 2024 Full Paper, Honors Thesis)",
+      "summary": "Undergradaute, UT Austin; Next: Software Engineer at Verkada",
       "startDate": "Fall 2022 - Spring 2023"
     },
     {
       "name": "Yuning Zhang",
-      "project": "Making Short Videos Accessible (co-author CHI 2024).",
-      "summary": "Undergradaute, UT Austin. Next: MS at Cornell",
+      "project": "Making Short Videos Accessible (Co-Author CHI 2024 Full Paper).",
+      "summary": "Undergradaute, UT Austin; Next: MS at Cornell",
       "startDate": "Spring 2023"
     },
     {
       "name": "Jalyn Derry",
-      "project": "Making Short Videos Accessible (co-author CHI 2024).",
-      "summary": "Undergradaute, UT Austin. Next: UX Design at Expedia",
+      "project": "Making Short Videos Accessible (Co-Author CHI 2024 Full Paper).",
+      "summary": "Undergradaute, UT Austin; Next: UX Design at Expedia",
       "startDate": "Spring 2023"
     },
     {
@@ -1575,89 +1857,107 @@
     {
       "name": "Doeun Lee",
       "project": "Comparing Web and LLM Search (Independent Study, Co-Advised with Eunsol Choi).",
-      "summary": "Undergradaute, UT Austin. Next: Master's at OSU",
+      "summary": "Undergradaute, UT Austin; Next: OSU Master's Student",
       "startDate": "Fall 2022 - Fall 2023"
     },
     {
       "name": "Daniel Killough",
-      "project": "Community-Driven Live Descriptions (first author ASSETS 2023).",
-      "summary": "Undergradaute, UT Austin. Next: PhD at University of Wisconsin Madison",
+      "project": "Community-Driven Live Descriptions (First Author ASSETS 2023 Full Paper).",
+      "summary": "Undergradaute, UT Austin; Next: PhD at University of Wisconsin Madison",
       "startDate": "Summer 2022 - Spring 2023"
     },
     {
       "name": "Yi-Hao Peng",
       "project": "Making Lectures Non-Visually Accessible",
-      "summary": "Incoming Graduate, CMU.",
+      "summary": "Incoming Graduate, CMU",
       "startDate": "Summer 2020"
     },
     {
       "name": "Joon Jang",
       "project": "Understanding and Improving Presentation Accessibility",
-      "summary": "Undergraduate, CMU.",
+      "summary": "Undergraduate, CMU; Next: CMU PhD student",
       "startDate": "Spring/Summer 2020"
     },
     {
       "name": "Xingyu (Bruce) Liu",
       "project": "Automated Metrics for Predicting Video Accessibility",
-      "summary": "Undergraduate, CMU. Next: UCLA PhD student.",
+      "summary": "Undergraduate, CMU; Next: UCLA PhD student",
       "startDate": "Spring/Summer 2020"
     },
     {
       "name": "Junhan (Judy) Kong",
       "project": "Generating AR Tutorials by Demonstration",
-      "summary": "Undergraduate, CMU. Next: UW PhD student.",
+      "summary": "Undergraduate, CMU; Next: UW PhD student",
       "startDate": "Spring 2020"
     },
     {
       "name": "Kimberly Do",
       "project": "How does expertise impact video description?",
-      "summary": "Undergraduate, Georgia Tech (REU program).",
+      "summary": "Undergraduate, Georgia Tech (REU program)",
       "startDate": "Summer 2020"
     },
     {
       "name": "Annika Esau",
       "project": "Can we control dialog generation using scripts?",
-      "summary": "Undergraduate, University of Idaho (REU program).",
+      "summary": "Undergraduate, University of Idaho (REU program); Next: George Mason University PhD student",
       "startDate": "Summer 2020"
     },
     {
       "name": "Dena Sabha",
       "project": "Generating AR Tutorials",
-      "summary": "Undergraduate, UW (REU program).",
+      "summary": "Undergraduate, UW (REU program)",
       "startDate": "Summer 2020"
     },
     {
       "name": "Christina Low",
-      "project": "Making Social Media Images Accessible (co-author CHI 2020)",
-      "summary": "Undergraduate, Stony Brook University (REU program).",
+      "project": "Making Social Media Images Accessible (Co-Author CHI 2020 Full Paper, First Author ASSETS 2019 Poster)",
+      "summary": "Undergraduate, Stony Brook University (REU program)",
       "startDate": "Summer 2019"
     },
     {
       "name": "Emma McCamey",
-      "project": "Making Social Media Images Accessible (co-author CHI 2020)",
-      "summary": "Undergraduate, Virginia Commonwealth University (REU program).",
+      "project": "Making Social Media Images Accessible (Co-Author CHI 2020 Full Paper, First Author ASSETS 2019 Poster)",
+      "summary": "Undergraduate, Virginia Commonwealth University (REU program)",
       "startDate": "Summer 2019"
     },
     {
       "name": "Tonya Nguyen",
-      "project": "SlideSpecs: Collaborative Presentation Feedback (co-author IUI 2023)",
-      "summary": "Undergraduate, UC Berkeley. Next: UC Berkeley PhD student.",
+      "project": "SlideSpecs: Collaborative Presentation Feedback (Co-Author IUI 2023 Full Paper)",
+      "summary": "Undergraduate, UC Berkeley; Next: UC Berkeley PhD student",
       "startDate": "Fall 2018"
     },
     {
       "name": "Kaushik Kasi",
       "project": "Detecting Slide Transitions for Facilitating Feedback",
-      "summary": "Undergraduate, UC Berkeley. Next: Apple.",
+      "summary": "Undergraduate, UC Berkeley; Next: Apple",
       "startDate": "Spring 2018"
     },
     {
       "name": "Vivian Liu",
       "project": "How is food represented on Instagram?",
-      "summary": "Undergraduate, UC Berkeley. Next: Columbia PhD student.",
+      "summary": "Undergraduate, UC Berkeley; Next: Columbia PhD student",
       "startDate": "Fall 2016"
     }
   ],
   "talks": [
+    {
+      "title": "Guest Lecture: Generative AI and Accessibility",
+      "venue": "Rochester HCI Class",
+      "location": "Remote",
+      "date": "January 2026"
+    },
+    {
+      "title": "Invited Speaker at SLOMO: Story-Level Movie Understanding and Audio Description Workshop",
+      "venue": "ICCV 2025",
+      "location": "Honolulu, HI",
+      "date": "October 2025"
+    },
+    {
+      "title": "Keynote Speaker at VizWiz Workshop",
+      "venue": "CVPR 2025",
+      "location": "Nashville, TN",
+      "date": "June 2025"
+    },
     {
       "title": "Panelist (AI for Accessiblity).",
       "venue": "UT Austin: AI Live",

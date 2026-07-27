@@ -246,6 +246,7 @@ type DataJsonFieldsEnum =
   | 'publications.imageAlt'
   | 'publications.link'
   | 'publications.name'
+  | 'publications.officialLink'
   | 'publications.publisher'
   | 'publications.releaseDate'
   | 'publications.shortName'
@@ -406,6 +407,7 @@ type DataJsonPublications = {
   readonly imageAlt: Maybe<Scalars['String']>;
   readonly link: Maybe<Scalars['String']>;
   readonly name: Maybe<Scalars['String']>;
+  readonly officialLink: Maybe<Scalars['String']>;
   readonly publisher: Maybe<Scalars['String']>;
   readonly releaseDate: Maybe<Scalars['String']>;
   readonly shortName: Maybe<Scalars['String']>;
@@ -430,6 +432,7 @@ type DataJsonPublicationsFilterInput = {
   readonly imageAlt: InputMaybe<StringQueryOperatorInput>;
   readonly link: InputMaybe<StringQueryOperatorInput>;
   readonly name: InputMaybe<StringQueryOperatorInput>;
+  readonly officialLink: InputMaybe<StringQueryOperatorInput>;
   readonly publisher: InputMaybe<StringQueryOperatorInput>;
   readonly releaseDate: InputMaybe<StringQueryOperatorInput>;
   readonly shortName: InputMaybe<StringQueryOperatorInput>;
@@ -447,20 +450,12 @@ type DataJsonSortInput = {
 };
 
 type DataJsonStudent_awards = {
-  readonly date: Maybe<Scalars['Date']>;
+  readonly date: Maybe<Scalars['String']>;
   readonly title: Maybe<Scalars['String']>;
 };
 
-
-type DataJsonStudent_awards_dateArgs = {
-  difference: InputMaybe<Scalars['String']>;
-  formatString: InputMaybe<Scalars['String']>;
-  fromNow: InputMaybe<Scalars['Boolean']>;
-  locale: InputMaybe<Scalars['String']>;
-};
-
 type DataJsonStudent_awardsFilterInput = {
-  readonly date: InputMaybe<DateQueryOperatorInput>;
+  readonly date: InputMaybe<StringQueryOperatorInput>;
   readonly title: InputMaybe<StringQueryOperatorInput>;
 };
 
@@ -1211,6 +1206,7 @@ type FileFieldsEnum =
   | 'childDataJson.publications.imageAlt'
   | 'childDataJson.publications.link'
   | 'childDataJson.publications.name'
+  | 'childDataJson.publications.officialLink'
   | 'childDataJson.publications.publisher'
   | 'childDataJson.publications.releaseDate'
   | 'childDataJson.publications.shortName'
@@ -1496,6 +1492,7 @@ type FileFieldsEnum =
   | 'childrenDataJson.publications.imageAlt'
   | 'childrenDataJson.publications.link'
   | 'childrenDataJson.publications.name'
+  | 'childrenDataJson.publications.officialLink'
   | 'childrenDataJson.publications.publisher'
   | 'childrenDataJson.publications.releaseDate'
   | 'childrenDataJson.publications.shortName'
