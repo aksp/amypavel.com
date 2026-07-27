@@ -618,5 +618,42 @@
         "id": "jmankoff",
         "name": "Jennifer Mankoff",
         "link": "https://www.cs.washington.edu/people/faculty/jennifer-mankoff/"
+    },
+    { "id": "rnatalie", "name": "Rosiana Natalie", "link": "https://rosiananatalie.com/" },
+    { "id": "bkim", "name": "Brandon Kim", "link": "https://www.linkedin.com/in/brandon-kim-2b11a1362" },
+    { "id": "skappala", "name": "Shreya Kappala", "link": "https://www.linkedin.com/in/shreya-kappala-13b004276" },
+    { "id": "hliu", "name": "Huihan Liu", "link": "https://huihanl.github.io/" },
+    { "id": "ayu", "name": "Albert Yu", "link": "https://albertyu.org/" },
+    { "id": "rmartinmartin", "name": "Roberto Martín-Martín", "link": "https://robertomartinmartin.com/" },
+    { "id": "yzhu", "name": "Yuke Zhu", "link": "https://yukezhu.me/" },
+    { "id": "mcakmak", "name": "Maya Cakmak", "link": "https://mayacakmak.io/" },
+    { "id": "abryant", "name": "Aidan Bryant", "link": "https://www.linkedin.com/in/aidanbryant" },
+    { "id": "lmceberly", "name": "Laura J. McCarthy Eberly", "link": "https://www.linkedin.com/in/laurajmeberly" },
+    { "id": "rshelby", "name": "Renee Shelby", "link": "https://reneeshelby.com/" },
+    { "id": "skkane", "name": "Shaun K. Kane", "link": "https://shaunkane.com/" },
+    {
+        "id": "aji",
+        "name": "Anya Ji",
+        "link": "https://anya-ji.github.io/"
+    },
+    {
+        "id": "thwu",
+        "name": "Tsung-Han Wu",
+        "link": "https://patrickthwu.com/"
+    },
+    {
+        "id": "tmaringgele",
+        "name": "Tobias Maringgele",
+        "link": "https://tmaringgele.dev/"
+    },
+    {
+        "id": "dchan",
+        "name": "David M. Chan",
+        "link": "https://dchan.cc/"
+    },
+    {
+        "id": "asuhr",
+        "name": "Alane Suhr",
+        "link": "https://www.alanesuhr.com/"
     }
 ]
