@@ -1,6 +1,6 @@
 import React from "react";
 import { Person, PEOPLE } from "../people";
-import { Publication } from "../cv";
+import { Publication, equalContributionMarks } from "../cv";
 import ReactMarkdown from "react-markdown";
 import PubImage from "./PubImage";
 import { BookmarkIcon, TrophyIcon } from "@heroicons/react/20/solid";
@@ -16,7 +16,13 @@ export function RawPeopleIdList({ peopleIds }: { peopleIds: string[] }) {
   return <RawPeopleList people={people} />;
 }
 
-export function RawPeopleList({ people }: { people: Person[] }) {
+export function RawPeopleList({
+  people,
+  marks,
+}: {
+  people: Person[];
+  marks?: Map<string, string> | undefined;
+}) {
   return (
     <>
       {people.map((person, i) => {
@@ -29,9 +35,11 @@ export function RawPeopleList({ people }: { people: Person[] }) {
               {person.name}
             </a>
           );
+        const mark = marks?.get(person.id);
         return (
           <>
             {name}
+            {mark && <sup>{mark}</sup>}
             {comma}
           </>
         );
@@ -40,14 +48,19 @@ export function RawPeopleList({ people }: { people: Person[] }) {
   );
 }
 
-export function PeopleList({ people }: { people: Person[] }) {
+export function PeopleList({
+  people,
+  marks,
+}: {
+  people: Person[];
+  marks?: Map<string, string>;
+}) {
   return (
     <p>
-      <RawPeopleList people={people} />
+      <RawPeopleList people={people} marks={marks} />
     </p>
   );
 }
-
 export function Honor({ tags }: { tags: Publication["tags"] }) {
   const bestPaper = tags.includes("bestpaper");
   const hm = tags.includes("honorablemention");
@@ -130,6 +143,7 @@ export default function PubComponent({ pub }: { pub: Publication }) {
   ) : (
     pub.name
   );
+  const marks = equalContributionMarks(pub);
 
   return (
     <div className="grid grid-cols-4 gap-x-4 pb-10 text-sm">
@@ -149,8 +163,8 @@ export default function PubComponent({ pub }: { pub: Publication }) {
               }
               return person;
             })}
-          />
-        </div>
+            marks={marks}
+          />        </div>
         <p className="pb-1">{pub.publisher}</p>
         <Honor tags={pub.tags} />
         <div>

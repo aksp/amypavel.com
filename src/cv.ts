@@ -47,6 +47,8 @@ const Publication = t.intersection([
     content: t.string,
     shortName: t.string, // name used for highlights
     highlightSortOrder: t.number, // used to sort highlights
+    // groups of author ids who contributed equally, e.g. [["a", "b"], ["y", "z"]]
+    equalContribution: t.array(t.array(t.string)),
   }),
 ]);
 
@@ -143,6 +145,28 @@ export type Mentorship = t.TypeOf<typeof Mentorship>;
 export type Talk = t.TypeOf<typeof Talk>;
 export type Press = t.TypeOf<typeof Press>;
 export type ThesisCommittee = t.TypeOf<typeof ThesisCommittee>;
+
+const EQUAL_CONTRIBUTION_MARKS = ["*", "†", "‡", "§"];
+
+// Maps author id -> marker symbol for each equal contribution group
+export function equalContributionMarks(pub: Publication): Map<string, string> {
+  const marks = new Map<string, string>();
+  (pub.equalContribution ?? []).forEach((group, i) => {
+    const mark = EQUAL_CONTRIBUTION_MARKS[i];
+    if (!mark) {
+      throw new Error(`Too many equal contribution groups in "${pub.name}"`);
+    }
+    for (const id of group) {
+      if (!pub.authors.includes(id)) {
+        throw new Error(
+          `Equal contribution author ${id} is not an author of "${pub.name}"`
+        );
+      }
+      marks.set(id, mark);
+    }
+  });
+  return marks;
+}
 
 export let cv: CV;
 

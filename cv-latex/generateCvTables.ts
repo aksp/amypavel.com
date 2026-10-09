@@ -1,4 +1,4 @@
-import { cv, CV } from "../src/cv";
+import { cv, CV, equalContributionMarks } from "../src/cv";
 import { PEOPLE } from "../src/people";
 import { promises as fs } from "fs";
 import * as path from "path";
@@ -70,18 +70,28 @@ function boldami(str: string): string {
   return str === "Amy Pavel" ? bold(str) : str;
 }
 
-function authorsString(authors: string[]): string {
+const LATEX_MARKS: Record<string, string> = {
+  "*": "*",
+  "†": "\\textdagger",
+  "‡": "\\textdaggerdbl",
+  "§": "\\textsection",
+};
+
+function authorsString(authors: string[], marks: Map<string, string>): string {
   return authors
     .map((id) => {
       const person = PEOPLE.get(id);
       if (!person) {
         throw new Error(`No person with id ${id}`);
       }
-      return boldami(person.name);
+      const mark = marks.get(id);
+      return (
+        boldami(person.name) +
+        (mark ? `\\textsuperscript{${LATEX_MARKS[mark]}}` : "")
+      );
     })
     .join(", ");
 }
-
 
 
 
@@ -131,8 +141,10 @@ function workItems(resume: CV): TwoColumnItem[] {
 function publicationItems(resume: CV, filterTags: string[]): TwoColumnItem[] {
   return resume.publications
     .filter(({ tags }) => tags.some((tag) => filterTags.some((t) => t === tag)))
-    .map(({ authors, summary, name, publisher, releaseDate, tags }) => {
-      let leftMatter = `${authorsString(authors)}. \`\`${name}'' ${italic(
+    .map((pub) => {
+      const { authors, summary, name, publisher, releaseDate, tags } = pub;
+      const marks = equalContributionMarks(pub);
+      let leftMatter = `${authorsString(authors, marks)}. \`\`${name}'' ${italic(
         publisher
       )}`;
       if (summary) {
